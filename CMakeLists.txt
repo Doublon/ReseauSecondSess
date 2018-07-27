@@ -1,0 +1,5 @@
+cmake_minimum_required (VERSION 3.10)
+project (CheckIn)
+add_subdirectory (Serveur)
+add_subdirectory (Tests)
+enable_testing ()

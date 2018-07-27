@@ -1,1 +1,0 @@
-/usr/bin/c++.exe -g   -shared -Wl,--enable-auto-import -o cygServeurCheckIn.dll -Wl,--out-implib,libServeurCheckIn.dll.a -Wl,--major-image-version,0,--minor-image-version,0 CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.o CMakeFiles/ServeurCheckIn.dir/Socket.cpp.o 

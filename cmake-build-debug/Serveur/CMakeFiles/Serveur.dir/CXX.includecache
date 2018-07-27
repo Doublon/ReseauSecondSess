@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/GitHub/ReseauSecondSess/Serveur/Socket.h
+sys/socket.h
+-
+netinet/in.h
+-
+
+/cygdrive/d/GitHub/ReseauSecondSess/Serveur/main.cpp
+iostream
+-
+Socket.h
+/cygdrive/d/GitHub/ReseauSecondSess/Serveur/Socket.h
+
