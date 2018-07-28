@@ -197,6 +197,33 @@ Serveur/fast:
 	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Serveur/CMakeFiles/Serveur.dir/build.make Serveur/CMakeFiles/Serveur.dir/build
 .PHONY : Serveur/fast
 
+Serveur.o: Serveur.cpp.o
+
+.PHONY : Serveur.o
+
+# target to build an object file
+Serveur.cpp.o:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Serveur/CMakeFiles/ServeurCheckIn.dir/build.make Serveur/CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.o
+.PHONY : Serveur.cpp.o
+
+Serveur.i: Serveur.cpp.i
+
+.PHONY : Serveur.i
+
+# target to preprocess a source file
+Serveur.cpp.i:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Serveur/CMakeFiles/ServeurCheckIn.dir/build.make Serveur/CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.i
+.PHONY : Serveur.cpp.i
+
+Serveur.s: Serveur.cpp.s
+
+.PHONY : Serveur.s
+
+# target to generate assembly for a file
+Serveur.cpp.s:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Serveur/CMakeFiles/ServeurCheckIn.dir/build.make Serveur/CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.s
+.PHONY : Serveur.cpp.s
+
 Socket.o: Socket.cpp.o
 
 .PHONY : Socket.o
@@ -266,6 +293,9 @@ help:
 	@echo "... Serveur"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... Serveur.o"
+	@echo "... Serveur.i"
+	@echo "... Serveur.s"
 	@echo "... Socket.o"
 	@echo "... Socket.i"
 	@echo "... Socket.s"

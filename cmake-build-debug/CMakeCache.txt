@@ -288,8 +288,20 @@ ProcessorCount_cmd_getconf:FILEPATH=/usr/bin/getconf.exe
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=ProcessorCount_cmd_sysctl-NOTFOUND
 
+//Value Computed by CMake
+ServeurCheckIn_BINARY_DIR:STATIC=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur
+
 //Dependencies for target
 ServeurCheckIn_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+ServeurCheckIn_SOURCE_DIR:STATIC=/cygdrive/d/GitHub/ReseauSecondSess/Serveur
+
+//Value Computed by CMake
+Tests_BINARY_DIR:STATIC=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Tests
+
+//Value Computed by CMake
+Tests_SOURCE_DIR:STATIC=/cygdrive/d/GitHub/ReseauSecondSess/Tests
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Tests/lib/googletest-master/googlemock

@@ -9,21 +9,22 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 
-namespace Serveur
+namespace ServeurCheckIn
 {
 class Socket
 {
     public:
-        Socket(int domaine, int type, int protocole);
+        Socket(int domain, int type, int protocol);
 
-        int Domaine();
+        int InitSocket();
+        int Domain();
         int Type();
-        int Protocole();
+        int Protocol();
 
     private:
-        int _domaine;
+        int _domain;
         int _type;
-        int _protocole;
+        int _protocol;
 };
 }
 

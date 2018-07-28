@@ -6,6 +6,34 @@
 
 #IncludeRegexTransform: 
 
+..//Serveur/Serveur.h
+iostream
+-
+cstdint
+-
+cstring
+-
+netdb.h
+-
+stdio.h
+-
+stdlib.h
+-
+Socket.h
+../Serveur/Socket.h
+
+..//Serveur/Socket.h
+sys/socket.h
+-
+netinet/in.h
+-
+
+../Serveur/Socket.h
+sys/socket.h
+-
+netinet/in.h
+-
+
 ../Tests/lib/googletest-master/googlemock/include/gmock/gmock-actions.h
 errno.h
 -
@@ -472,17 +500,17 @@ cxxabi.h
 acxx_demangle.h
 -
 
-/cygdrive/d/GitHub/ReseauSecondSess/Serveur/Socket.h
-sys/socket.h
+/cygdrive/d/GitHub/ReseauSecondSess/Tests/ServeurTests.cpp
+gtest/gtest.h
 -
-netinet/in.h
--
+Serveur/Serveur.h
+/cygdrive/d/GitHub/ReseauSecondSess/Tests/Serveur/Serveur.h
 
 /cygdrive/d/GitHub/ReseauSecondSess/Tests/SocketTests.cpp
 gtest/gtest.h
 -
-../Serveur/Socket.h
-/cygdrive/d/GitHub/ReseauSecondSess/Serveur/Socket.h
+Serveur/Socket.h
+/cygdrive/d/GitHub/ReseauSecondSess/Tests/Serveur/Socket.h
 
 /cygdrive/d/GitHub/ReseauSecondSess/Tests/main.cpp
 gtest/gtest.h

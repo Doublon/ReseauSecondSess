@@ -81,17 +81,43 @@ Serveur/CMakeFiles/ServeurCheckIn.dir/Socket.cpp.o.provides: Serveur/CMakeFiles/
 Serveur/CMakeFiles/ServeurCheckIn.dir/Socket.cpp.o.provides.build: Serveur/CMakeFiles/ServeurCheckIn.dir/Socket.cpp.o
 
 
+Serveur/CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.o: Serveur/CMakeFiles/ServeurCheckIn.dir/flags.make
+Serveur/CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.o: ../Serveur/Serveur.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Serveur/CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.o"
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur && /usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.o -c /cygdrive/d/GitHub/ReseauSecondSess/Serveur/Serveur.cpp
+
+Serveur/CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.i"
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur && /usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/GitHub/ReseauSecondSess/Serveur/Serveur.cpp > CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.i
+
+Serveur/CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.s"
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur && /usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/GitHub/ReseauSecondSess/Serveur/Serveur.cpp -o CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.s
+
+Serveur/CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.o.requires:
+
+.PHONY : Serveur/CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.o.requires
+
+Serveur/CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.o.provides: Serveur/CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.o.requires
+	$(MAKE) -f Serveur/CMakeFiles/ServeurCheckIn.dir/build.make Serveur/CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.o.provides.build
+.PHONY : Serveur/CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.o.provides
+
+Serveur/CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.o.provides.build: Serveur/CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.o
+
+
 # Object files for target ServeurCheckIn
 ServeurCheckIn_OBJECTS = \
-"CMakeFiles/ServeurCheckIn.dir/Socket.cpp.o"
+"CMakeFiles/ServeurCheckIn.dir/Socket.cpp.o" \
+"CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.o"
 
 # External object files for target ServeurCheckIn
 ServeurCheckIn_EXTERNAL_OBJECTS =
 
 Serveur/libServeurCheckIn.a: Serveur/CMakeFiles/ServeurCheckIn.dir/Socket.cpp.o
+Serveur/libServeurCheckIn.a: Serveur/CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.o
 Serveur/libServeurCheckIn.a: Serveur/CMakeFiles/ServeurCheckIn.dir/build.make
 Serveur/libServeurCheckIn.a: Serveur/CMakeFiles/ServeurCheckIn.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libServeurCheckIn.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libServeurCheckIn.a"
 	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur && $(CMAKE_COMMAND) -P CMakeFiles/ServeurCheckIn.dir/cmake_clean_target.cmake
 	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ServeurCheckIn.dir/link.txt --verbose=$(VERBOSE)
 
@@ -101,6 +127,7 @@ Serveur/CMakeFiles/ServeurCheckIn.dir/build: Serveur/libServeurCheckIn.a
 .PHONY : Serveur/CMakeFiles/ServeurCheckIn.dir/build
 
 Serveur/CMakeFiles/ServeurCheckIn.dir/requires: Serveur/CMakeFiles/ServeurCheckIn.dir/Socket.cpp.o.requires
+Serveur/CMakeFiles/ServeurCheckIn.dir/requires: Serveur/CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.o.requires
 
 .PHONY : Serveur/CMakeFiles/ServeurCheckIn.dir/requires
 

@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/cygdrive/d/GitHub/ReseauSecondSess/Tests/ServeurTests.cpp" "/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Tests/CMakeFiles/Tests.dir/ServeurTests.cpp.o"
   "/cygdrive/d/GitHub/ReseauSecondSess/Tests/SocketTests.cpp" "/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Tests/CMakeFiles/Tests.dir/SocketTests.cpp.o"
   "/cygdrive/d/GitHub/ReseauSecondSess/Tests/main.cpp" "/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Tests/CMakeFiles/Tests.dir/main.cpp.o"
   )
@@ -12,6 +13,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/Serveur"
+  "../"
   "../Tests/lib/googletest-master/googletest/include"
   "../Tests/lib/googletest-master/googlemock/include"
   )

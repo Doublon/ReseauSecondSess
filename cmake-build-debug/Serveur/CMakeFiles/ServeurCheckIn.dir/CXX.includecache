@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+/cygdrive/d/GitHub/ReseauSecondSess/Serveur/Serveur.cpp
+Serveur.h
+/cygdrive/d/GitHub/ReseauSecondSess/Serveur/Serveur.h
+
+/cygdrive/d/GitHub/ReseauSecondSess/Serveur/Serveur.h
+iostream
+-
+cstdint
+-
+cstring
+-
+netdb.h
+-
+stdio.h
+-
+stdlib.h
+-
+Socket.h
+/cygdrive/d/GitHub/ReseauSecondSess/Serveur/Socket.h
+
 /cygdrive/d/GitHub/ReseauSecondSess/Serveur/Socket.cpp
 Socket.h
 /cygdrive/d/GitHub/ReseauSecondSess/Serveur/Socket.h

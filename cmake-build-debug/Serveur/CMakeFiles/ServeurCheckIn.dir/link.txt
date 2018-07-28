@@ -1,2 +1,2 @@
-/usr/bin/ar.exe qc libServeurCheckIn.a  CMakeFiles/ServeurCheckIn.dir/Socket.cpp.o
+/usr/bin/ar.exe qc libServeurCheckIn.a  CMakeFiles/ServeurCheckIn.dir/Socket.cpp.o CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.o
 /usr/bin/ranlib.exe libServeurCheckIn.a

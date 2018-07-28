@@ -4,16 +4,16 @@
 
 #include "Socket.h"
 
-using namespace Serveur;
+using namespace ServeurCheckIn;
 
-Socket::Socket(int domaine, int type, int protocole) :
-        _domaine(domaine), _type(type), _protocole(protocole)
+Socket::Socket(int domain, int type, int protocol) :
+        _domain(domain), _type(type), _protocol(protocol)
 {
 }
 
-int Socket::Domaine()
+int Socket::Domain()
 {
-    return _domaine;
+    return _domain;
 }
 
 int Socket::Type()
@@ -21,7 +21,12 @@ int Socket::Type()
     return _type;
 }
 
-int Socket::Protocole()
+int Socket::Protocol()
 {
-    return _protocole;
+    return _protocol;
+}
+
+int Socket::InitSocket()
+{
+    return socket(_domain, _type, _protocol);
 }

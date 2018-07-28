@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/cygdrive/d/GitHub/ReseauSecondSess/Serveur/../libCSV 
 

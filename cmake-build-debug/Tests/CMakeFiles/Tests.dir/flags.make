@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Serveur -isystem /cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest/include -I/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googlemock/include 
+CXX_INCLUDES = -I/Serveur -I/cygdrive/d/GitHub/ReseauSecondSess -isystem /cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest/include -I/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googlemock/include 
 
