@@ -426,25 +426,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Serveur/Serveur.cpp">
+		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Serveur/SocketUtilities.cpp">
 			<Option target="ServeurCheckIn"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Serveur/Serveur.h">
-			<Option target="ServeurCheckIn"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Serveur/Socket.cpp">
-			<Option target="ServeurCheckIn"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Serveur/Socket.h">
+		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Serveur/SocketUtilities.h">
 			<Option target="ServeurCheckIn"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Serveur/main.cpp">
 			<Option target="Serveur"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Tests/ServeurTests.cpp">
-			<Option target="Tests"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Tests/SocketTests.cpp">
+		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Tests/SocketUtilitiesTests.cpp">
 			<Option target="Tests"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googlemock/src/gmock-all.cc">

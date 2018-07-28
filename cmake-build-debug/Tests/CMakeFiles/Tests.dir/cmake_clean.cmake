@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Tests.dir/main.cpp.o"
-  "CMakeFiles/Tests.dir/SocketTests.cpp.o"
-  "CMakeFiles/Tests.dir/ServeurTests.cpp.o"
+  "CMakeFiles/Tests.dir/SocketUtilitiesTests.cpp.o"
   "Tests.pdb"
   "Tests.exe"
   "libTests.dll.a"

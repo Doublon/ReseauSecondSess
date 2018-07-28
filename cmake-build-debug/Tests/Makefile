@@ -182,59 +182,32 @@ Tests/fast:
 	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Tests/CMakeFiles/Tests.dir/build.make Tests/CMakeFiles/Tests.dir/build
 .PHONY : Tests/fast
 
-ServeurTests.o: ServeurTests.cpp.o
+SocketUtilitiesTests.o: SocketUtilitiesTests.cpp.o
 
-.PHONY : ServeurTests.o
-
-# target to build an object file
-ServeurTests.cpp.o:
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Tests/CMakeFiles/Tests.dir/build.make Tests/CMakeFiles/Tests.dir/ServeurTests.cpp.o
-.PHONY : ServeurTests.cpp.o
-
-ServeurTests.i: ServeurTests.cpp.i
-
-.PHONY : ServeurTests.i
-
-# target to preprocess a source file
-ServeurTests.cpp.i:
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Tests/CMakeFiles/Tests.dir/build.make Tests/CMakeFiles/Tests.dir/ServeurTests.cpp.i
-.PHONY : ServeurTests.cpp.i
-
-ServeurTests.s: ServeurTests.cpp.s
-
-.PHONY : ServeurTests.s
-
-# target to generate assembly for a file
-ServeurTests.cpp.s:
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Tests/CMakeFiles/Tests.dir/build.make Tests/CMakeFiles/Tests.dir/ServeurTests.cpp.s
-.PHONY : ServeurTests.cpp.s
-
-SocketTests.o: SocketTests.cpp.o
-
-.PHONY : SocketTests.o
+.PHONY : SocketUtilitiesTests.o
 
 # target to build an object file
-SocketTests.cpp.o:
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Tests/CMakeFiles/Tests.dir/build.make Tests/CMakeFiles/Tests.dir/SocketTests.cpp.o
-.PHONY : SocketTests.cpp.o
+SocketUtilitiesTests.cpp.o:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Tests/CMakeFiles/Tests.dir/build.make Tests/CMakeFiles/Tests.dir/SocketUtilitiesTests.cpp.o
+.PHONY : SocketUtilitiesTests.cpp.o
 
-SocketTests.i: SocketTests.cpp.i
+SocketUtilitiesTests.i: SocketUtilitiesTests.cpp.i
 
-.PHONY : SocketTests.i
+.PHONY : SocketUtilitiesTests.i
 
 # target to preprocess a source file
-SocketTests.cpp.i:
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Tests/CMakeFiles/Tests.dir/build.make Tests/CMakeFiles/Tests.dir/SocketTests.cpp.i
-.PHONY : SocketTests.cpp.i
+SocketUtilitiesTests.cpp.i:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Tests/CMakeFiles/Tests.dir/build.make Tests/CMakeFiles/Tests.dir/SocketUtilitiesTests.cpp.i
+.PHONY : SocketUtilitiesTests.cpp.i
 
-SocketTests.s: SocketTests.cpp.s
+SocketUtilitiesTests.s: SocketUtilitiesTests.cpp.s
 
-.PHONY : SocketTests.s
+.PHONY : SocketUtilitiesTests.s
 
 # target to generate assembly for a file
-SocketTests.cpp.s:
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Tests/CMakeFiles/Tests.dir/build.make Tests/CMakeFiles/Tests.dir/SocketTests.cpp.s
-.PHONY : SocketTests.cpp.s
+SocketUtilitiesTests.cpp.s:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Tests/CMakeFiles/Tests.dir/build.make Tests/CMakeFiles/Tests.dir/SocketUtilitiesTests.cpp.s
+.PHONY : SocketUtilitiesTests.cpp.s
 
 main.o: main.cpp.o
 
@@ -277,12 +250,9 @@ help:
 	@echo "... test"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... ServeurTests.o"
-	@echo "... ServeurTests.i"
-	@echo "... ServeurTests.s"
-	@echo "... SocketTests.o"
-	@echo "... SocketTests.i"
-	@echo "... SocketTests.s"
+	@echo "... SocketUtilitiesTests.o"
+	@echo "... SocketUtilitiesTests.i"
+	@echo "... SocketUtilitiesTests.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -4,8 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/d/GitHub/ReseauSecondSess/Serveur/Serveur.cpp" "/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur/CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.o"
-  "/cygdrive/d/GitHub/ReseauSecondSess/Serveur/Socket.cpp" "/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur/CMakeFiles/ServeurCheckIn.dir/Socket.cpp.o"
+  "/cygdrive/d/GitHub/ReseauSecondSess/Serveur/SocketUtilities.cpp" "/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur/CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

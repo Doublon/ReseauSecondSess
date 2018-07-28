@@ -197,59 +197,32 @@ Serveur/fast:
 	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Serveur/CMakeFiles/Serveur.dir/build.make Serveur/CMakeFiles/Serveur.dir/build
 .PHONY : Serveur/fast
 
-Serveur.o: Serveur.cpp.o
+SocketUtilities.o: SocketUtilities.cpp.o
 
-.PHONY : Serveur.o
-
-# target to build an object file
-Serveur.cpp.o:
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Serveur/CMakeFiles/ServeurCheckIn.dir/build.make Serveur/CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.o
-.PHONY : Serveur.cpp.o
-
-Serveur.i: Serveur.cpp.i
-
-.PHONY : Serveur.i
-
-# target to preprocess a source file
-Serveur.cpp.i:
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Serveur/CMakeFiles/ServeurCheckIn.dir/build.make Serveur/CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.i
-.PHONY : Serveur.cpp.i
-
-Serveur.s: Serveur.cpp.s
-
-.PHONY : Serveur.s
-
-# target to generate assembly for a file
-Serveur.cpp.s:
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Serveur/CMakeFiles/ServeurCheckIn.dir/build.make Serveur/CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.s
-.PHONY : Serveur.cpp.s
-
-Socket.o: Socket.cpp.o
-
-.PHONY : Socket.o
+.PHONY : SocketUtilities.o
 
 # target to build an object file
-Socket.cpp.o:
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Serveur/CMakeFiles/ServeurCheckIn.dir/build.make Serveur/CMakeFiles/ServeurCheckIn.dir/Socket.cpp.o
-.PHONY : Socket.cpp.o
+SocketUtilities.cpp.o:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Serveur/CMakeFiles/ServeurCheckIn.dir/build.make Serveur/CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.o
+.PHONY : SocketUtilities.cpp.o
 
-Socket.i: Socket.cpp.i
+SocketUtilities.i: SocketUtilities.cpp.i
 
-.PHONY : Socket.i
+.PHONY : SocketUtilities.i
 
 # target to preprocess a source file
-Socket.cpp.i:
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Serveur/CMakeFiles/ServeurCheckIn.dir/build.make Serveur/CMakeFiles/ServeurCheckIn.dir/Socket.cpp.i
-.PHONY : Socket.cpp.i
+SocketUtilities.cpp.i:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Serveur/CMakeFiles/ServeurCheckIn.dir/build.make Serveur/CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.i
+.PHONY : SocketUtilities.cpp.i
 
-Socket.s: Socket.cpp.s
+SocketUtilities.s: SocketUtilities.cpp.s
 
-.PHONY : Socket.s
+.PHONY : SocketUtilities.s
 
 # target to generate assembly for a file
-Socket.cpp.s:
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Serveur/CMakeFiles/ServeurCheckIn.dir/build.make Serveur/CMakeFiles/ServeurCheckIn.dir/Socket.cpp.s
-.PHONY : Socket.cpp.s
+SocketUtilities.cpp.s:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Serveur/CMakeFiles/ServeurCheckIn.dir/build.make Serveur/CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.s
+.PHONY : SocketUtilities.cpp.s
 
 main.o: main.cpp.o
 
@@ -293,12 +266,9 @@ help:
 	@echo "... Serveur"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... Serveur.o"
-	@echo "... Serveur.i"
-	@echo "... Serveur.s"
-	@echo "... Socket.o"
-	@echo "... Socket.i"
-	@echo "... Socket.s"
+	@echo "... SocketUtilities.o"
+	@echo "... SocketUtilities.i"
+	@echo "... SocketUtilities.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

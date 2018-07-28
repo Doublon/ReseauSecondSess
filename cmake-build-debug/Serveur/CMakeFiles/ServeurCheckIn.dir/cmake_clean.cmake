@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ServeurCheckIn.dir/Socket.cpp.o"
-  "CMakeFiles/ServeurCheckIn.dir/Serveur.cpp.o"
+  "CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.o"
   "libServeurCheckIn.pdb"
   "libServeurCheckIn.a"
 )
