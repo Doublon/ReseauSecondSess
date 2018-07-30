@@ -1,2 +1,2 @@
-/usr/bin/ar.exe qc libSocketUtilities.a  CMakeFiles/SocketUtilities.dir/SocketUtilities.cpp.o
+/usr/bin/ar.exe qc libSocketUtilities.a  CMakeFiles/SocketUtilities.dir/SocketUtilities.cpp.o CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.o CMakeFiles/SocketUtilities.dir/SocketClient.cpp.o
 /usr/bin/ranlib.exe libSocketUtilities.a

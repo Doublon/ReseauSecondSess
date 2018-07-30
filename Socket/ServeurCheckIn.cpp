@@ -1,14 +1,14 @@
 //
 // Created by Doublon on 27/07/2018.
 //
-#include "SocketUtilities.h"
+#include "SocketServeur.h"
 
 using namespace std;
 using namespace ServeurCheckIn;
 
 int main(int argc, char* argv[])
 {
-    SocketUtilities socket;
+    SocketServeur socket;
 
     socket.InitSocket();
     socket.GetInfoHost("127.0.0.1");

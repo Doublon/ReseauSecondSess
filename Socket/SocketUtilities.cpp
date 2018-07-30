@@ -14,7 +14,7 @@ SocketUtilities::~SocketUtilities()
 
 void SocketUtilities::InitSocket()
 {
-    if( (_listeningSocket = socket(AF_INET, SOCK_STREAM, 0)) == -1)
+    if( (_hListeningSocket = socket(AF_INET, SOCK_STREAM, 0)) == -1)
     {
         cerr << "Erreur lors de la création de la socket : " << strerror(errno) << endl;
         exit(1);
@@ -46,80 +46,15 @@ void SocketUtilities::PrepareSockAddrIn(int port)
     memcpy(&_socketAddress.sin_addr, _infoHost->h_addr, _infoHost->h_length);
 }
 
-void SocketUtilities::Bind()
-{
-    if( bind(_listeningSocket, (struct sockaddr *)&_socketAddress, sizeof(struct sockaddr_in)) == -1 )
-    {
-        cerr << "Erreur de bind : " << strerror(errno) << endl;
-        CloseConnexion();
-        exit(1);
-    }
-    else
-        cout << "bind() ok !" << endl;
-
-}
-
-void SocketUtilities::Listen()
-{
-    if(listen(_listeningSocket,SOMAXCONN) == -1)
-    {
-        cerr << "Erreur d'écoute : " << strerror(errno) << endl;
-        CloseConnexion();
-        exit(1);
-    }
-    else
-        cout << "listen() ok !" << endl;
-}
-
-void SocketUtilities::Accept(struct sockaddr_in clientAddress)
-{
-    int structSize = sizeof(struct sockaddr_in);
-
-    cout << "En attende de connexion" << endl;
-
-    if(_serviceSocket = accept(_listeningSocket,(struct sockaddr*)&clientAddress, &structSize) == -1)
-    {
-        cerr << "Erreur d'accept : " << strerror(errno) << endl;
-        CloseConnexion();
-        exit(1);
-    }
-    else
-        cout << "accept() ok !" << endl;
-}
-
-void SocketUtilities::Connect(struct sockaddr_in serveurAddress)
-{
-    unsigned int sizeSockaddr_in = sizeof(struct sockaddr_in);
-
-    cout << "Tentative de connexion" << endl;
-
-    if( connect(_listeningSocket, (struct sockaddr *)&serveurAddress, sizeSockaddr_in) == -1)
-    {
-        cerr << "Erreur de connect : " << strerror(errno) << endl;
-        CloseConnexion();
-        exit(1);
-    }
-    else
-        cout << "connect() ok !" << endl;
-}
-
 void SocketUtilities::CloseConnexion()
 {
-    close(_listeningSocket);
+    close(_hListeningSocket);
     cout << "Socket d'écoute fermée" << endl;
-
-    close (_serviceSocket);
-    cout << "Socket de service fermée" << endl;
 }
 
 int SocketUtilities::ListenningSocket() const
 {
-    return _listeningSocket;
-}
-
-int SocketUtilities::ServiceSocket() const
-{
-    return _serviceSocket;
+    return _hListeningSocket;
 }
 
 struct hostent *SocketUtilities::InfoHost() const
@@ -130,14 +65,4 @@ struct hostent *SocketUtilities::InfoHost() const
 struct sockaddr_in SocketUtilities::SocketAddress() const
 {
     return _socketAddress;
-}
-
-std::string SocketUtilities::IpAddressHost() const
-{
-    return _ipAddressHost;
-}
-
-int SocketUtilities::Port() const
-{
-    return _port;
 }

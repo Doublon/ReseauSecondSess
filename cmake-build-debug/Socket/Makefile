@@ -266,6 +266,60 @@ ServeurCheckIn.cpp.s:
 	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Socket/CMakeFiles/ServeurCheckIn.dir/build.make Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.s
 .PHONY : ServeurCheckIn.cpp.s
 
+SocketClient.o: SocketClient.cpp.o
+
+.PHONY : SocketClient.o
+
+# target to build an object file
+SocketClient.cpp.o:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Socket/CMakeFiles/SocketUtilities.dir/build.make Socket/CMakeFiles/SocketUtilities.dir/SocketClient.cpp.o
+.PHONY : SocketClient.cpp.o
+
+SocketClient.i: SocketClient.cpp.i
+
+.PHONY : SocketClient.i
+
+# target to preprocess a source file
+SocketClient.cpp.i:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Socket/CMakeFiles/SocketUtilities.dir/build.make Socket/CMakeFiles/SocketUtilities.dir/SocketClient.cpp.i
+.PHONY : SocketClient.cpp.i
+
+SocketClient.s: SocketClient.cpp.s
+
+.PHONY : SocketClient.s
+
+# target to generate assembly for a file
+SocketClient.cpp.s:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Socket/CMakeFiles/SocketUtilities.dir/build.make Socket/CMakeFiles/SocketUtilities.dir/SocketClient.cpp.s
+.PHONY : SocketClient.cpp.s
+
+SocketServeur.o: SocketServeur.cpp.o
+
+.PHONY : SocketServeur.o
+
+# target to build an object file
+SocketServeur.cpp.o:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Socket/CMakeFiles/SocketUtilities.dir/build.make Socket/CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.o
+.PHONY : SocketServeur.cpp.o
+
+SocketServeur.i: SocketServeur.cpp.i
+
+.PHONY : SocketServeur.i
+
+# target to preprocess a source file
+SocketServeur.cpp.i:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Socket/CMakeFiles/SocketUtilities.dir/build.make Socket/CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.i
+.PHONY : SocketServeur.cpp.i
+
+SocketServeur.s: SocketServeur.cpp.s
+
+.PHONY : SocketServeur.s
+
+# target to generate assembly for a file
+SocketServeur.cpp.s:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Socket/CMakeFiles/SocketUtilities.dir/build.make Socket/CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.s
+.PHONY : SocketServeur.cpp.s
+
 SocketUtilities.o: SocketUtilities.cpp.o
 
 .PHONY : SocketUtilities.o
@@ -315,6 +369,12 @@ help:
 	@echo "... ServeurCheckIn.o"
 	@echo "... ServeurCheckIn.i"
 	@echo "... ServeurCheckIn.s"
+	@echo "... SocketClient.o"
+	@echo "... SocketClient.i"
+	@echo "... SocketClient.s"
+	@echo "... SocketServeur.o"
+	@echo "... SocketServeur.i"
+	@echo "... SocketServeur.s"
 	@echo "... SocketUtilities.o"
 	@echo "... SocketUtilities.i"
 	@echo "... SocketUtilities.s"

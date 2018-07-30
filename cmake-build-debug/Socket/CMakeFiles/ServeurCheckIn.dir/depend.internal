@@ -3,4 +3,5 @@
 
 Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.o
  /cygdrive/d/GitHub/ReseauSecondSess/Socket/ServeurCheckIn.cpp
+ /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketServeur.h
  /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketUtilities.h
