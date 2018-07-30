@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 project(Tests)
 
 find_package(Threads REQUIRED)
-include_directories(${CTEST_SOURCE_DIRECTORY}/Serveur)
+include_directories(${CTEST_SOURCE_DIRECTORY}/Socket)
 
 add_subdirectory(lib/googletest-master)
 include_directories(${CMAKE_SOURCE_DIR})

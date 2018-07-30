@@ -57,50 +57,50 @@ include Socket/CMakeFiles/ServeurCheckIn.dir/progress.make
 # Include the compile flags for this target's objects.
 include Socket/CMakeFiles/ServeurCheckIn.dir/flags.make
 
-Socket/CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.o: Socket/CMakeFiles/ServeurCheckIn.dir/flags.make
-Socket/CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.o: ../Socket/SocketUtilities.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Socket/CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.o"
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket && /usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.o -c /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketUtilities.cpp
+Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.o: Socket/CMakeFiles/ServeurCheckIn.dir/flags.make
+Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.o: ../Socket/ServeurCheckIn.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.o"
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket && /usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.o -c /cygdrive/d/GitHub/ReseauSecondSess/Socket/ServeurCheckIn.cpp
 
-Socket/CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.i"
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket && /usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketUtilities.cpp > CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.i
+Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.i"
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket && /usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/GitHub/ReseauSecondSess/Socket/ServeurCheckIn.cpp > CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.i
 
-Socket/CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.s"
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket && /usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketUtilities.cpp -o CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.s
+Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.s"
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket && /usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/GitHub/ReseauSecondSess/Socket/ServeurCheckIn.cpp -o CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.s
 
-Socket/CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.o.requires:
+Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.o.requires:
 
-.PHONY : Socket/CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.o.requires
+.PHONY : Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.o.requires
 
-Socket/CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.o.provides: Socket/CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.o.requires
-	$(MAKE) -f Socket/CMakeFiles/ServeurCheckIn.dir/build.make Socket/CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.o.provides.build
-.PHONY : Socket/CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.o.provides
+Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.o.provides: Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.o.requires
+	$(MAKE) -f Socket/CMakeFiles/ServeurCheckIn.dir/build.make Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.o.provides.build
+.PHONY : Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.o.provides
 
-Socket/CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.o.provides.build: Socket/CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.o
+Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.o.provides.build: Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.o
 
 
 # Object files for target ServeurCheckIn
 ServeurCheckIn_OBJECTS = \
-"CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.o"
+"CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.o"
 
 # External object files for target ServeurCheckIn
 ServeurCheckIn_EXTERNAL_OBJECTS =
 
-Socket/libServeurCheckIn.a: Socket/CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.o
-Socket/libServeurCheckIn.a: Socket/CMakeFiles/ServeurCheckIn.dir/build.make
-Socket/libServeurCheckIn.a: Socket/CMakeFiles/ServeurCheckIn.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libServeurCheckIn.a"
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket && $(CMAKE_COMMAND) -P CMakeFiles/ServeurCheckIn.dir/cmake_clean_target.cmake
+Socket/ServeurCheckIn.exe: Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.o
+Socket/ServeurCheckIn.exe: Socket/CMakeFiles/ServeurCheckIn.dir/build.make
+Socket/ServeurCheckIn.exe: Socket/libSocketUtilities.a
+Socket/ServeurCheckIn.exe: Socket/CMakeFiles/ServeurCheckIn.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ServeurCheckIn.exe"
 	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ServeurCheckIn.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-Socket/CMakeFiles/ServeurCheckIn.dir/build: Socket/libServeurCheckIn.a
+Socket/CMakeFiles/ServeurCheckIn.dir/build: Socket/ServeurCheckIn.exe
 
 .PHONY : Socket/CMakeFiles/ServeurCheckIn.dir/build
 
-Socket/CMakeFiles/ServeurCheckIn.dir/requires: Socket/CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.o.requires
+Socket/CMakeFiles/ServeurCheckIn.dir/requires: Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.o.requires
 
 .PHONY : Socket/CMakeFiles/ServeurCheckIn.dir/requires
 

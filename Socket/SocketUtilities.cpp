@@ -46,11 +46,12 @@ void SocketUtilities::PrepareSockAddrIn(int port)
     memcpy(&_socketAddress.sin_addr, _infoHost->h_addr, _infoHost->h_length);
 }
 
-void SocketUtilities::SocketBind()
+void SocketUtilities::Bind()
 {
     if( bind(_listeningSocket, (struct sockaddr *)&_socketAddress, sizeof(struct sockaddr_in)) == -1 )
     {
         cerr << "Erreur de bind : " << strerror(errno) << endl;
+        CloseConnexion();
         exit(1);
     }
     else
@@ -63,6 +64,7 @@ void SocketUtilities::Listen()
     if(listen(_listeningSocket,SOMAXCONN) == -1)
     {
         cerr << "Erreur d'écoute : " << strerror(errno) << endl;
+        CloseConnexion();
         exit(1);
     }
     else
@@ -73,9 +75,12 @@ void SocketUtilities::Accept(struct sockaddr_in clientAddress)
 {
     int structSize = sizeof(struct sockaddr_in);
 
+    cout << "En attende de connexion" << endl;
+
     if(_serviceSocket = accept(_listeningSocket,(struct sockaddr*)&clientAddress, &structSize) == -1)
     {
         cerr << "Erreur d'accept : " << strerror(errno) << endl;
+        CloseConnexion();
         exit(1);
     }
     else
@@ -86,9 +91,12 @@ void SocketUtilities::Connect(struct sockaddr_in serveurAddress)
 {
     unsigned int sizeSockaddr_in = sizeof(struct sockaddr_in);
 
+    cout << "Tentative de connexion" << endl;
+
     if( connect(_listeningSocket, (struct sockaddr *)&serveurAddress, sizeSockaddr_in) == -1)
     {
         cerr << "Erreur de connect : " << strerror(errno) << endl;
+        CloseConnexion();
         exit(1);
     }
     else

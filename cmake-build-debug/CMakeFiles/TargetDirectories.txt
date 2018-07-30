@@ -10,10 +10,11 @@
 /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/CMakeFiles/install.dir
 /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/CMakeFiles/list_install_components.dir
 /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/CMakeFiles/rebuild_cache.dir
-/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir
-/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/CMakeFiles/Socket.dir
-/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/CMakeFiles/test.dir
 /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/CMakeFiles/edit_cache.dir
+/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir
+/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir
+/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir
+/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/CMakeFiles/test.dir
 /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Tests/CMakeFiles/install/strip.dir
 /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Tests/CMakeFiles/install/local.dir
 /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Tests/CMakeFiles/install.dir

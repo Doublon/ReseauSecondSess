@@ -131,8 +131,8 @@
 					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Socket">
-				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Socket.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="ServeurCheckIn">
+				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/ServeurCheckIn.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -147,14 +147,14 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 Socket"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 ServeurCheckIn"/>
 					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Socket/fast">
-				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Socket.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="ServeurCheckIn/fast">
+				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/ServeurCheckIn.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -169,7 +169,51 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 Socket/fast"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 ServeurCheckIn/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ClientCheckIn">
+				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/ClientCheckIn.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Socket/../libCSV"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 ClientCheckIn"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ClientCheckIn/fast">
+				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/ClientCheckIn.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Socket/../libCSV"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 ClientCheckIn/fast"/>
 					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
@@ -182,7 +226,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Serveur"/>
+					<Add directory="/Socket"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googlemock/include"/>
@@ -207,7 +251,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Serveur"/>
+					<Add directory="/Socket"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googlemock/include"/>
@@ -232,7 +276,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Serveur"/>
+					<Add directory="/Socket"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googlemock/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googlemock"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest/include"/>
@@ -258,7 +302,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Serveur"/>
+					<Add directory="/Socket"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googlemock/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googlemock"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest/include"/>
@@ -284,7 +328,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Serveur"/>
+					<Add directory="/Socket"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googlemock/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googlemock"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest/include"/>
@@ -310,7 +354,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Serveur"/>
+					<Add directory="/Socket"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googlemock/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googlemock"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest/include"/>
@@ -336,7 +380,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Serveur"/>
+					<Add directory="/Socket"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
@@ -360,7 +404,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Serveur"/>
+					<Add directory="/Socket"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
@@ -384,7 +428,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Serveur"/>
+					<Add directory="/Socket"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
@@ -408,7 +452,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Serveur"/>
+					<Add directory="/Socket"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
@@ -426,14 +470,17 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Socket/ClientCheckIn.cpp">
+			<Option target="ClientCheckIn"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Socket/ServeurCheckIn.cpp">
+			<Option target="ServeurCheckIn"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketUtilities.cpp">
 			<Option target="SocketUtilities"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketUtilities.h">
 			<Option target="SocketUtilities"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Socket/main.cpp">
-			<Option target="Socket"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Tests/SocketUtilitiesTests.cpp">
 			<Option target="Tests"/>

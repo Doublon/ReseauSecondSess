@@ -29,7 +29,7 @@ class SocketUtilities
         void InitSocket();
         void GetInfoHost(std::string IP);
         void PrepareSockAddrIn(int port);
-        void SocketBind();
+        void Bind();
         void Listen();
         void Accept(struct sockaddr_in clientAddress);
         void Connect(struct sockaddr_in serveurAddress);

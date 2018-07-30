@@ -24,7 +24,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Serveur"/>
+					<Add directory="/Socket"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googlemock/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googlemock"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest/include"/>
@@ -50,7 +50,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Serveur"/>
+					<Add directory="/Socket"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googlemock/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googlemock"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest/include"/>
@@ -76,7 +76,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Serveur"/>
+					<Add directory="/Socket"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googlemock/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googlemock"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest/include"/>
@@ -102,7 +102,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Serveur"/>
+					<Add directory="/Socket"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googlemock/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googlemock"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest/include"/>
@@ -128,7 +128,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Serveur"/>
+					<Add directory="/Socket"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
@@ -152,7 +152,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Serveur"/>
+					<Add directory="/Socket"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
@@ -176,7 +176,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Serveur"/>
+					<Add directory="/Socket"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
@@ -200,7 +200,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Serveur"/>
+					<Add directory="/Socket"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>

@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ServeurCheckIn.dir/SocketUtilities.cpp.o"
-  "libServeurCheckIn.pdb"
-  "libServeurCheckIn.a"
+  "CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.o"
+  "ServeurCheckIn.pdb"
+  "ServeurCheckIn.exe"
+  "libServeurCheckIn.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

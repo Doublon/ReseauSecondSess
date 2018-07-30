@@ -6,5 +6,5 @@ CXX_FLAGS = -g    -Wall -Wshadow -Werror -DGTEST_HAS_PTHREAD=1 -fexceptions -Wex
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Serveur -isystem /cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest/include -I/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest 
+CXX_INCLUDES = -I/Socket -isystem /cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest/include -I/cygdrive/d/GitHub/ReseauSecondSess/Tests/lib/googletest-master/googletest 
 

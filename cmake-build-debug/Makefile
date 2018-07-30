@@ -181,17 +181,30 @@ SocketUtilities/fast:
 .PHONY : SocketUtilities/fast
 
 #=============================================================================
-# Target rules for targets named Socket
+# Target rules for targets named ServeurCheckIn
 
 # Build rule for target.
-Socket: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Socket
-.PHONY : Socket
+ServeurCheckIn: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ServeurCheckIn
+.PHONY : ServeurCheckIn
 
 # fast build rule for target.
-Socket/fast:
-	$(MAKE) -f Socket/CMakeFiles/Socket.dir/build.make Socket/CMakeFiles/Socket.dir/build
-.PHONY : Socket/fast
+ServeurCheckIn/fast:
+	$(MAKE) -f Socket/CMakeFiles/ServeurCheckIn.dir/build.make Socket/CMakeFiles/ServeurCheckIn.dir/build
+.PHONY : ServeurCheckIn/fast
+
+#=============================================================================
+# Target rules for targets named ClientCheckIn
+
+# Build rule for target.
+ClientCheckIn: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ClientCheckIn
+.PHONY : ClientCheckIn
+
+# fast build rule for target.
+ClientCheckIn/fast:
+	$(MAKE) -f Socket/CMakeFiles/ClientCheckIn.dir/build.make Socket/CMakeFiles/ClientCheckIn.dir/build
+.PHONY : ClientCheckIn/fast
 
 #=============================================================================
 # Target rules for targets named Tests
@@ -272,7 +285,8 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... SocketUtilities"
-	@echo "... Socket"
+	@echo "... ServeurCheckIn"
+	@echo "... ClientCheckIn"
 	@echo "... Tests"
 	@echo "... gmock_main"
 	@echo "... gmock"

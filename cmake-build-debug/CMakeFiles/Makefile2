@@ -64,13 +64,15 @@ CMAKE_BINARY_DIR = /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug
 
 # Convenience name for "all" pass in the directory.
 Socket/all: Socket/CMakeFiles/SocketUtilities.dir/all
-Socket/all: Socket/CMakeFiles/Socket.dir/all
+Socket/all: Socket/CMakeFiles/ServeurCheckIn.dir/all
+Socket/all: Socket/CMakeFiles/ClientCheckIn.dir/all
 
 .PHONY : Socket/all
 
 # Convenience name for "clean" pass in the directory.
 Socket/clean: Socket/CMakeFiles/SocketUtilities.dir/clean
-Socket/clean: Socket/CMakeFiles/Socket.dir/clean
+Socket/clean: Socket/CMakeFiles/ServeurCheckIn.dir/clean
+Socket/clean: Socket/CMakeFiles/ClientCheckIn.dir/clean
 
 .PHONY : Socket/clean
 
@@ -86,7 +88,7 @@ Socket/preinstall:
 Socket/CMakeFiles/SocketUtilities.dir/all:
 	$(MAKE) -f Socket/CMakeFiles/SocketUtilities.dir/build.make Socket/CMakeFiles/SocketUtilities.dir/depend
 	$(MAKE) -f Socket/CMakeFiles/SocketUtilities.dir/build.make Socket/CMakeFiles/SocketUtilities.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target SocketUtilities"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target SocketUtilities"
 .PHONY : Socket/CMakeFiles/SocketUtilities.dir/all
 
 # Include target in all.
@@ -117,39 +119,76 @@ clean: Socket/CMakeFiles/SocketUtilities.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target Socket/CMakeFiles/Socket.dir
+# Target rules for target Socket/CMakeFiles/ServeurCheckIn.dir
 
 # All Build rule for target.
-Socket/CMakeFiles/Socket.dir/all: Socket/CMakeFiles/SocketUtilities.dir/all
-	$(MAKE) -f Socket/CMakeFiles/Socket.dir/build.make Socket/CMakeFiles/Socket.dir/depend
-	$(MAKE) -f Socket/CMakeFiles/Socket.dir/build.make Socket/CMakeFiles/Socket.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Socket"
-.PHONY : Socket/CMakeFiles/Socket.dir/all
+Socket/CMakeFiles/ServeurCheckIn.dir/all: Socket/CMakeFiles/SocketUtilities.dir/all
+	$(MAKE) -f Socket/CMakeFiles/ServeurCheckIn.dir/build.make Socket/CMakeFiles/ServeurCheckIn.dir/depend
+	$(MAKE) -f Socket/CMakeFiles/ServeurCheckIn.dir/build.make Socket/CMakeFiles/ServeurCheckIn.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target ServeurCheckIn"
+.PHONY : Socket/CMakeFiles/ServeurCheckIn.dir/all
 
 # Include target in all.
-all: Socket/CMakeFiles/Socket.dir/all
+all: Socket/CMakeFiles/ServeurCheckIn.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-Socket/CMakeFiles/Socket.dir/rule: cmake_check_build_system
+Socket/CMakeFiles/ServeurCheckIn.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 Socket/CMakeFiles/Socket.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 Socket/CMakeFiles/ServeurCheckIn.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles 0
-.PHONY : Socket/CMakeFiles/Socket.dir/rule
+.PHONY : Socket/CMakeFiles/ServeurCheckIn.dir/rule
 
 # Convenience name for target.
-Socket: Socket/CMakeFiles/Socket.dir/rule
+ServeurCheckIn: Socket/CMakeFiles/ServeurCheckIn.dir/rule
 
-.PHONY : Socket
-
-# clean rule for target.
-Socket/CMakeFiles/Socket.dir/clean:
-	$(MAKE) -f Socket/CMakeFiles/Socket.dir/build.make Socket/CMakeFiles/Socket.dir/clean
-.PHONY : Socket/CMakeFiles/Socket.dir/clean
+.PHONY : ServeurCheckIn
 
 # clean rule for target.
-clean: Socket/CMakeFiles/Socket.dir/clean
+Socket/CMakeFiles/ServeurCheckIn.dir/clean:
+	$(MAKE) -f Socket/CMakeFiles/ServeurCheckIn.dir/build.make Socket/CMakeFiles/ServeurCheckIn.dir/clean
+.PHONY : Socket/CMakeFiles/ServeurCheckIn.dir/clean
+
+# clean rule for target.
+clean: Socket/CMakeFiles/ServeurCheckIn.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target Socket/CMakeFiles/ClientCheckIn.dir
+
+# All Build rule for target.
+Socket/CMakeFiles/ClientCheckIn.dir/all: Socket/CMakeFiles/SocketUtilities.dir/all
+	$(MAKE) -f Socket/CMakeFiles/ClientCheckIn.dir/build.make Socket/CMakeFiles/ClientCheckIn.dir/depend
+	$(MAKE) -f Socket/CMakeFiles/ClientCheckIn.dir/build.make Socket/CMakeFiles/ClientCheckIn.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target ClientCheckIn"
+.PHONY : Socket/CMakeFiles/ClientCheckIn.dir/all
+
+# Include target in all.
+all: Socket/CMakeFiles/ClientCheckIn.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Socket/CMakeFiles/ClientCheckIn.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 Socket/CMakeFiles/ClientCheckIn.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles 0
+.PHONY : Socket/CMakeFiles/ClientCheckIn.dir/rule
+
+# Convenience name for target.
+ClientCheckIn: Socket/CMakeFiles/ClientCheckIn.dir/rule
+
+.PHONY : ClientCheckIn
+
+# clean rule for target.
+Socket/CMakeFiles/ClientCheckIn.dir/clean:
+	$(MAKE) -f Socket/CMakeFiles/ClientCheckIn.dir/build.make Socket/CMakeFiles/ClientCheckIn.dir/clean
+.PHONY : Socket/CMakeFiles/ClientCheckIn.dir/clean
+
+# clean rule for target.
+clean: Socket/CMakeFiles/ClientCheckIn.dir/clean
 
 .PHONY : clean
 
@@ -182,7 +221,7 @@ Tests/CMakeFiles/Tests.dir/all: Tests/lib/googletest-master/googlemock/gtest/CMa
 Tests/CMakeFiles/Tests.dir/all: Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) -f Tests/CMakeFiles/Tests.dir/build.make Tests/CMakeFiles/Tests.dir/depend
 	$(MAKE) -f Tests/CMakeFiles/Tests.dir/build.make Tests/CMakeFiles/Tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=5,6,7 "Built target Tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=7,8,9 "Built target Tests"
 .PHONY : Tests/CMakeFiles/Tests.dir/all
 
 # Include target in all.
@@ -260,7 +299,7 @@ Tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all: Tests/lib/
 Tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all: Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f Tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make Tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f Tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make Tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=12,13 "Built target gmock_main"
 .PHONY : Tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Include target in all.
@@ -297,7 +336,7 @@ clean: Tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/clean
 Tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/all: Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f Tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make Tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f Tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make Tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target gmock"
 .PHONY : Tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/all
 
 # Include target in all.
@@ -354,7 +393,7 @@ Tests/lib/googletest-master/googlemock/gtest/preinstall:
 Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=12,13 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=14,15 "Built target gtest"
 .PHONY : Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Include target in all.
@@ -391,7 +430,7 @@ clean: Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/clean
 Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all: Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=14,15 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=16,17 "Built target gtest_main"
 .PHONY : Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Include target in all.

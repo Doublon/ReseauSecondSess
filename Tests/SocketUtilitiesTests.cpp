@@ -63,7 +63,7 @@ TEST_F(SocketUtilitiesTests, SocketBind_SocketIsBinded)
     _socket.InitSocket();
     _socket.GetInfoHost("127.0.0.1");
     _socket.PrepareSockAddrIn(50000);
-    _socket.SocketBind();
+    _socket . Bind();
 
     ASSERT_EQ(1, 1);
 }
@@ -73,7 +73,7 @@ TEST_F(SocketUtilitiesTests, SocketListen_SocketLisnening)
     _socket.InitSocket();
     _socket.GetInfoHost("127.0.0.1");
     _socket.PrepareSockAddrIn(50000);
-    _socket.SocketBind();
+    _socket . Bind();
     _socket.Listen();
 
     ASSERT_EQ(1, 1);
@@ -84,7 +84,7 @@ TEST_F(SocketUtilitiesTests, SocketListen_SocketLisnening)
 //    _socket.InitSocket();
 //    _socket.GetInfoHost("127.0.0.1");
 //    _socket.PrepareSockAddrIn(50000);
-//    _socket.SocketBind();
+//    _socket.Bind();
 //    _socket.Listen();
 //
 //    ASSERT_EQ(1, 1);
@@ -95,7 +95,7 @@ TEST_F(SocketUtilitiesTests, SocketListen_SocketLisnening)
 //    _socket.InitSocket();
 //    _socket.GetInfoHost("127.0.0.1");
 //    _socket.PrepareSockAddrIn(50000);
-//    _socket.SocketBind();
+//    _socket.Bind();
 //    _socket.Listen();
 //
 //    OpenConnexion(_socket . ListenningSocket(), _socket.SocketAddress());

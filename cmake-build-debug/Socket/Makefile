@@ -113,17 +113,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/cygdrive/c/Users/Doublon/.CLion2018.1/system/cygwin_cmake/bin/ctest.exe --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -134,6 +123,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/cygdrive/c/Users/Doublon/.CLion2018.1/system/cygwin_cmake/bin/ctest.exe --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -183,19 +183,88 @@ SocketUtilities/fast:
 .PHONY : SocketUtilities/fast
 
 # Convenience name for target.
-Socket/CMakeFiles/Socket.dir/rule:
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Socket/CMakeFiles/Socket.dir/rule
-.PHONY : Socket/CMakeFiles/Socket.dir/rule
+Socket/CMakeFiles/ServeurCheckIn.dir/rule:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Socket/CMakeFiles/ServeurCheckIn.dir/rule
+.PHONY : Socket/CMakeFiles/ServeurCheckIn.dir/rule
 
 # Convenience name for target.
-Socket: Socket/CMakeFiles/Socket.dir/rule
+ServeurCheckIn: Socket/CMakeFiles/ServeurCheckIn.dir/rule
 
-.PHONY : Socket
+.PHONY : ServeurCheckIn
 
 # fast build rule for target.
-Socket/fast:
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Socket/CMakeFiles/Socket.dir/build.make Socket/CMakeFiles/Socket.dir/build
-.PHONY : Socket/fast
+ServeurCheckIn/fast:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Socket/CMakeFiles/ServeurCheckIn.dir/build.make Socket/CMakeFiles/ServeurCheckIn.dir/build
+.PHONY : ServeurCheckIn/fast
+
+# Convenience name for target.
+Socket/CMakeFiles/ClientCheckIn.dir/rule:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Socket/CMakeFiles/ClientCheckIn.dir/rule
+.PHONY : Socket/CMakeFiles/ClientCheckIn.dir/rule
+
+# Convenience name for target.
+ClientCheckIn: Socket/CMakeFiles/ClientCheckIn.dir/rule
+
+.PHONY : ClientCheckIn
+
+# fast build rule for target.
+ClientCheckIn/fast:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Socket/CMakeFiles/ClientCheckIn.dir/build.make Socket/CMakeFiles/ClientCheckIn.dir/build
+.PHONY : ClientCheckIn/fast
+
+ClientCheckIn.o: ClientCheckIn.cpp.o
+
+.PHONY : ClientCheckIn.o
+
+# target to build an object file
+ClientCheckIn.cpp.o:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Socket/CMakeFiles/ClientCheckIn.dir/build.make Socket/CMakeFiles/ClientCheckIn.dir/ClientCheckIn.cpp.o
+.PHONY : ClientCheckIn.cpp.o
+
+ClientCheckIn.i: ClientCheckIn.cpp.i
+
+.PHONY : ClientCheckIn.i
+
+# target to preprocess a source file
+ClientCheckIn.cpp.i:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Socket/CMakeFiles/ClientCheckIn.dir/build.make Socket/CMakeFiles/ClientCheckIn.dir/ClientCheckIn.cpp.i
+.PHONY : ClientCheckIn.cpp.i
+
+ClientCheckIn.s: ClientCheckIn.cpp.s
+
+.PHONY : ClientCheckIn.s
+
+# target to generate assembly for a file
+ClientCheckIn.cpp.s:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Socket/CMakeFiles/ClientCheckIn.dir/build.make Socket/CMakeFiles/ClientCheckIn.dir/ClientCheckIn.cpp.s
+.PHONY : ClientCheckIn.cpp.s
+
+ServeurCheckIn.o: ServeurCheckIn.cpp.o
+
+.PHONY : ServeurCheckIn.o
+
+# target to build an object file
+ServeurCheckIn.cpp.o:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Socket/CMakeFiles/ServeurCheckIn.dir/build.make Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.o
+.PHONY : ServeurCheckIn.cpp.o
+
+ServeurCheckIn.i: ServeurCheckIn.cpp.i
+
+.PHONY : ServeurCheckIn.i
+
+# target to preprocess a source file
+ServeurCheckIn.cpp.i:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Socket/CMakeFiles/ServeurCheckIn.dir/build.make Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.i
+.PHONY : ServeurCheckIn.cpp.i
+
+ServeurCheckIn.s: ServeurCheckIn.cpp.s
+
+.PHONY : ServeurCheckIn.s
+
+# target to generate assembly for a file
+ServeurCheckIn.cpp.s:
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Socket/CMakeFiles/ServeurCheckIn.dir/build.make Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.s
+.PHONY : ServeurCheckIn.cpp.s
 
 SocketUtilities.o: SocketUtilities.cpp.o
 
@@ -224,33 +293,6 @@ SocketUtilities.cpp.s:
 	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Socket/CMakeFiles/SocketUtilities.dir/build.make Socket/CMakeFiles/SocketUtilities.dir/SocketUtilities.cpp.s
 .PHONY : SocketUtilities.cpp.s
 
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Socket/CMakeFiles/Socket.dir/build.make Socket/CMakeFiles/Socket.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Socket/CMakeFiles/Socket.dir/build.make Socket/CMakeFiles/Socket.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug && $(MAKE) -f Socket/CMakeFiles/Socket.dir/build.make Socket/CMakeFiles/Socket.dir/main.cpp.s
-.PHONY : main.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -262,16 +304,20 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... SocketUtilities"
-	@echo "... Socket"
-	@echo "... test"
 	@echo "... edit_cache"
+	@echo "... SocketUtilities"
+	@echo "... ServeurCheckIn"
+	@echo "... ClientCheckIn"
+	@echo "... test"
+	@echo "... ClientCheckIn.o"
+	@echo "... ClientCheckIn.i"
+	@echo "... ClientCheckIn.s"
+	@echo "... ServeurCheckIn.o"
+	@echo "... ServeurCheckIn.i"
+	@echo "... ServeurCheckIn.s"
 	@echo "... SocketUtilities.o"
 	@echo "... SocketUtilities.i"
 	@echo "... SocketUtilities.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 .PHONY : help
 
 

@@ -289,16 +289,19 @@ ProcessorCount_cmd_getconf:FILEPATH=/usr/bin/getconf.exe
 ProcessorCount_cmd_sysctl:FILEPATH=ProcessorCount_cmd_sysctl-NOTFOUND
 
 //Value Computed by CMake
-ServeurCheckIn_BINARY_DIR:STATIC=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket
-
-//Dependencies for target
-ServeurCheckIn_LIB_DEPENDS:STATIC=
+Project_BINARY_DIR:STATIC=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug
 
 //Value Computed by CMake
-ServeurCheckIn_SOURCE_DIR:STATIC=/cygdrive/d/GitHub/ReseauSecondSess/Socket
+Project_SOURCE_DIR:STATIC=/cygdrive/d/GitHub/ReseauSecondSess
+
+//Value Computed by CMake
+SocketUtilities_BINARY_DIR:STATIC=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket
 
 //Dependencies for target
 SocketUtilities_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+SocketUtilities_SOURCE_DIR:STATIC=/cygdrive/d/GitHub/ReseauSecondSess/Socket
 
 //Value Computed by CMake
 Tests_BINARY_DIR:STATIC=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Tests
