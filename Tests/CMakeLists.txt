@@ -10,4 +10,4 @@ include_directories(lib/googletest-master/googletest/include)
 include_directories(lib/googletest-master/googlemock/include)
 
 add_executable(Tests main.cpp SocketUtilitiesTests.cpp)
-target_link_libraries(Tests gtest gtest_main ServeurCheckIn)
+target_link_libraries(Tests gtest gtest_main SocketUtilities)

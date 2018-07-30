@@ -60,96 +60,96 @@ CMAKE_SOURCE_DIR = /cygdrive/d/GitHub/ReseauSecondSess
 CMAKE_BINARY_DIR = /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug
 
 #=============================================================================
-# Directory level rules for directory Serveur
+# Directory level rules for directory Socket
 
 # Convenience name for "all" pass in the directory.
-Serveur/all: Serveur/CMakeFiles/ServeurCheckIn.dir/all
-Serveur/all: Serveur/CMakeFiles/Serveur.dir/all
+Socket/all: Socket/CMakeFiles/SocketUtilities.dir/all
+Socket/all: Socket/CMakeFiles/Socket.dir/all
 
-.PHONY : Serveur/all
+.PHONY : Socket/all
 
 # Convenience name for "clean" pass in the directory.
-Serveur/clean: Serveur/CMakeFiles/ServeurCheckIn.dir/clean
-Serveur/clean: Serveur/CMakeFiles/Serveur.dir/clean
+Socket/clean: Socket/CMakeFiles/SocketUtilities.dir/clean
+Socket/clean: Socket/CMakeFiles/Socket.dir/clean
 
-.PHONY : Serveur/clean
+.PHONY : Socket/clean
 
 # Convenience name for "preinstall" pass in the directory.
-Serveur/preinstall:
+Socket/preinstall:
 
-.PHONY : Serveur/preinstall
+.PHONY : Socket/preinstall
 
 #=============================================================================
-# Target rules for target Serveur/CMakeFiles/ServeurCheckIn.dir
+# Target rules for target Socket/CMakeFiles/SocketUtilities.dir
 
 # All Build rule for target.
-Serveur/CMakeFiles/ServeurCheckIn.dir/all:
-	$(MAKE) -f Serveur/CMakeFiles/ServeurCheckIn.dir/build.make Serveur/CMakeFiles/ServeurCheckIn.dir/depend
-	$(MAKE) -f Serveur/CMakeFiles/ServeurCheckIn.dir/build.make Serveur/CMakeFiles/ServeurCheckIn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target ServeurCheckIn"
-.PHONY : Serveur/CMakeFiles/ServeurCheckIn.dir/all
+Socket/CMakeFiles/SocketUtilities.dir/all:
+	$(MAKE) -f Socket/CMakeFiles/SocketUtilities.dir/build.make Socket/CMakeFiles/SocketUtilities.dir/depend
+	$(MAKE) -f Socket/CMakeFiles/SocketUtilities.dir/build.make Socket/CMakeFiles/SocketUtilities.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target SocketUtilities"
+.PHONY : Socket/CMakeFiles/SocketUtilities.dir/all
 
 # Include target in all.
-all: Serveur/CMakeFiles/ServeurCheckIn.dir/all
+all: Socket/CMakeFiles/SocketUtilities.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-Serveur/CMakeFiles/ServeurCheckIn.dir/rule: cmake_check_build_system
+Socket/CMakeFiles/SocketUtilities.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 Serveur/CMakeFiles/ServeurCheckIn.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 Socket/CMakeFiles/SocketUtilities.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles 0
-.PHONY : Serveur/CMakeFiles/ServeurCheckIn.dir/rule
+.PHONY : Socket/CMakeFiles/SocketUtilities.dir/rule
 
 # Convenience name for target.
-ServeurCheckIn: Serveur/CMakeFiles/ServeurCheckIn.dir/rule
+SocketUtilities: Socket/CMakeFiles/SocketUtilities.dir/rule
 
-.PHONY : ServeurCheckIn
-
-# clean rule for target.
-Serveur/CMakeFiles/ServeurCheckIn.dir/clean:
-	$(MAKE) -f Serveur/CMakeFiles/ServeurCheckIn.dir/build.make Serveur/CMakeFiles/ServeurCheckIn.dir/clean
-.PHONY : Serveur/CMakeFiles/ServeurCheckIn.dir/clean
+.PHONY : SocketUtilities
 
 # clean rule for target.
-clean: Serveur/CMakeFiles/ServeurCheckIn.dir/clean
+Socket/CMakeFiles/SocketUtilities.dir/clean:
+	$(MAKE) -f Socket/CMakeFiles/SocketUtilities.dir/build.make Socket/CMakeFiles/SocketUtilities.dir/clean
+.PHONY : Socket/CMakeFiles/SocketUtilities.dir/clean
+
+# clean rule for target.
+clean: Socket/CMakeFiles/SocketUtilities.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target Serveur/CMakeFiles/Serveur.dir
+# Target rules for target Socket/CMakeFiles/Socket.dir
 
 # All Build rule for target.
-Serveur/CMakeFiles/Serveur.dir/all: Serveur/CMakeFiles/ServeurCheckIn.dir/all
-	$(MAKE) -f Serveur/CMakeFiles/Serveur.dir/build.make Serveur/CMakeFiles/Serveur.dir/depend
-	$(MAKE) -f Serveur/CMakeFiles/Serveur.dir/build.make Serveur/CMakeFiles/Serveur.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Serveur"
-.PHONY : Serveur/CMakeFiles/Serveur.dir/all
+Socket/CMakeFiles/Socket.dir/all: Socket/CMakeFiles/SocketUtilities.dir/all
+	$(MAKE) -f Socket/CMakeFiles/Socket.dir/build.make Socket/CMakeFiles/Socket.dir/depend
+	$(MAKE) -f Socket/CMakeFiles/Socket.dir/build.make Socket/CMakeFiles/Socket.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Socket"
+.PHONY : Socket/CMakeFiles/Socket.dir/all
 
 # Include target in all.
-all: Serveur/CMakeFiles/Serveur.dir/all
+all: Socket/CMakeFiles/Socket.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-Serveur/CMakeFiles/Serveur.dir/rule: cmake_check_build_system
+Socket/CMakeFiles/Socket.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 Serveur/CMakeFiles/Serveur.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 Socket/CMakeFiles/Socket.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles 0
-.PHONY : Serveur/CMakeFiles/Serveur.dir/rule
+.PHONY : Socket/CMakeFiles/Socket.dir/rule
 
 # Convenience name for target.
-Serveur: Serveur/CMakeFiles/Serveur.dir/rule
+Socket: Socket/CMakeFiles/Socket.dir/rule
 
-.PHONY : Serveur
-
-# clean rule for target.
-Serveur/CMakeFiles/Serveur.dir/clean:
-	$(MAKE) -f Serveur/CMakeFiles/Serveur.dir/build.make Serveur/CMakeFiles/Serveur.dir/clean
-.PHONY : Serveur/CMakeFiles/Serveur.dir/clean
+.PHONY : Socket
 
 # clean rule for target.
-clean: Serveur/CMakeFiles/Serveur.dir/clean
+Socket/CMakeFiles/Socket.dir/clean:
+	$(MAKE) -f Socket/CMakeFiles/Socket.dir/build.make Socket/CMakeFiles/Socket.dir/clean
+.PHONY : Socket/CMakeFiles/Socket.dir/clean
+
+# clean rule for target.
+clean: Socket/CMakeFiles/Socket.dir/clean
 
 .PHONY : clean
 
@@ -177,7 +177,7 @@ Tests/preinstall: Tests/lib/googletest-master/preinstall
 # Target rules for target Tests/CMakeFiles/Tests.dir
 
 # All Build rule for target.
-Tests/CMakeFiles/Tests.dir/all: Serveur/CMakeFiles/ServeurCheckIn.dir/all
+Tests/CMakeFiles/Tests.dir/all: Socket/CMakeFiles/SocketUtilities.dir/all
 Tests/CMakeFiles/Tests.dir/all: Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 Tests/CMakeFiles/Tests.dir/all: Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) -f Tests/CMakeFiles/Tests.dir/build.make Tests/CMakeFiles/Tests.dir/depend

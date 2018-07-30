@@ -118,7 +118,7 @@ Tests/Tests.exe: Tests/CMakeFiles/Tests.dir/SocketUtilitiesTests.cpp.o
 Tests/Tests.exe: Tests/CMakeFiles/Tests.dir/build.make
 Tests/Tests.exe: Tests/lib/googletest-master/googlemock/gtest/libgtestd.a
 Tests/Tests.exe: Tests/lib/googletest-master/googlemock/gtest/libgtest_maind.a
-Tests/Tests.exe: Serveur/libServeurCheckIn.a
+Tests/Tests.exe: Socket/libSocketUtilities.a
 Tests/Tests.exe: Tests/lib/googletest-master/googlemock/gtest/libgtestd.a
 Tests/Tests.exe: Tests/CMakeFiles/Tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Tests.exe"

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-..//Serveur/SocketUtilities.h
+..//Socket/SocketUtilities.h
 iostream
 -
 stdio.h
@@ -493,8 +493,8 @@ acxx_demangle.h
 /cygdrive/d/GitHub/ReseauSecondSess/Tests/SocketUtilitiesTests.cpp
 gtest/gtest.h
 -
-Serveur/SocketUtilities.h
-/cygdrive/d/GitHub/ReseauSecondSess/Tests/Serveur/SocketUtilities.h
+Socket/SocketUtilities.h
+/cygdrive/d/GitHub/ReseauSecondSess/Tests/Socket/SocketUtilities.h
 
 /cygdrive/d/GitHub/ReseauSecondSess/Tests/main.cpp
 gtest/gtest.h

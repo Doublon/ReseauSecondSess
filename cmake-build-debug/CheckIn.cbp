@@ -5,7 +5,7 @@
 		<Option title="CheckIn"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\Serveur\;CMake Files\Tests\;CMake Files\Tests\lib\;CMake Files\Tests\lib\googletest-master\;CMake Files\Tests\lib\googletest-master\googlemock\;CMake Files\Tests\lib\googletest-master\googlemock\cmake\;CMake Files\Tests\lib\googletest-master\googletest\;CMake Files\Tests\lib\googletest-master\googletest\cmake\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Socket\;CMake Files\Tests\;CMake Files\Tests\lib\;CMake Files\Tests\lib\googletest-master\;CMake Files\Tests\lib\googletest-master\googlemock\;CMake Files\Tests\lib\googletest-master\googlemock\cmake\;CMake Files\Tests\lib\googletest-master\googletest\;CMake Files\Tests\lib\googletest-master\googletest\cmake\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug"/>
@@ -87,14 +87,14 @@
 					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ServeurCheckIn">
-				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur/libServeurCheckIn.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur"/>
+			<Target title="SocketUtilities">
+				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/libSocketUtilities.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Serveur/../libCSV"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Socket/../libCSV"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
@@ -103,20 +103,20 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur/Makefile&quot;  VERBOSE=1 ServeurCheckIn"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 SocketUtilities"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ServeurCheckIn/fast">
-				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur/libServeurCheckIn.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur"/>
+			<Target title="SocketUtilities/fast">
+				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/libSocketUtilities.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Serveur/../libCSV"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Socket/../libCSV"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
@@ -125,20 +125,20 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur/Makefile&quot;  VERBOSE=1 ServeurCheckIn/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 SocketUtilities/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Serveur">
-				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur/Serveur.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur"/>
+			<Target title="Socket">
+				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Socket.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Serveur/../libCSV"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Socket/../libCSV"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
@@ -147,20 +147,20 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur/Makefile&quot;  VERBOSE=1 Serveur"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 Socket"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Serveur/fast">
-				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur/Serveur.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur"/>
+			<Target title="Socket/fast">
+				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Socket.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Serveur/../libCSV"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Socket/../libCSV"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
@@ -169,10 +169,10 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur/Makefile&quot;  VERBOSE=1 Serveur/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Serveur/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 Socket/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Tests">
@@ -426,14 +426,14 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Serveur/SocketUtilities.cpp">
-			<Option target="ServeurCheckIn"/>
+		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketUtilities.cpp">
+			<Option target="SocketUtilities"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Serveur/SocketUtilities.h">
-			<Option target="ServeurCheckIn"/>
+		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketUtilities.h">
+			<Option target="SocketUtilities"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Serveur/main.cpp">
-			<Option target="Serveur"/>
+		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Socket/main.cpp">
+			<Option target="Socket"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Tests/SocketUtilitiesTests.cpp">
 			<Option target="Tests"/>
@@ -456,8 +456,8 @@
 		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Serveur/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\Serveur\"/>
+		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Socket/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Socket\"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Tests/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\Tests\"/>

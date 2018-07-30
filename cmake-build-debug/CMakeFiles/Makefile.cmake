@@ -38,7 +38,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/cygdrive/c/Users/Doublon/.CLion2018.1/system/cygwin_cmake/share/cmake-3.10.3/Modules/Platform/UnixPaths.cmake"
   "/cygdrive/c/Users/Doublon/.CLion2018.1/system/cygwin_cmake/share/cmake-3.10.3/Modules/ProcessorCount.cmake"
   "../CMakeLists.txt"
-  "../Serveur/CMakeLists.txt"
+  "../Socket/CMakeLists.txt"
   "../Tests/CMakeLists.txt"
   "../Tests/lib/googletest-master/CMakeLists.txt"
   "../Tests/lib/googletest-master/googlemock/CMakeLists.txt"
@@ -63,7 +63,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "Serveur/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Socket/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Tests/lib/googletest-master/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Tests/lib/googletest-master/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -72,8 +72,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "Serveur/CMakeFiles/ServeurCheckIn.dir/DependInfo.cmake"
-  "Serveur/CMakeFiles/Serveur.dir/DependInfo.cmake"
+  "Socket/CMakeFiles/SocketUtilities.dir/DependInfo.cmake"
+  "Socket/CMakeFiles/Socket.dir/DependInfo.cmake"
   "Tests/CMakeFiles/Tests.dir/DependInfo.cmake"
   "Tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "Tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"

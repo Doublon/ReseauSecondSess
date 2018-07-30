@@ -30,15 +30,20 @@ class SocketUtilities
         void GetInfoHost(std::string IP);
         void PrepareSockAddrIn(int port);
         void SocketBind();
+        void Listen();
+        void Accept(struct sockaddr_in clientAddress);
+        void Connect(struct sockaddr_in serveurAddress);
+        void CloseConnexion();
 
-        int hSocket() const;
+        int ListenningSocket() const;
+        int ServiceSocket() const;
         struct hostent* InfoHost() const;
         struct sockaddr_in SocketAddress() const;
         std::string IpAddressHost() const;
         int Port() const;
 
     private:
-        int _hSocket;
+        int _listeningSocket, _serviceSocket;
         struct hostent *_infoHost;
         struct in_addr _ipAddress;
         struct sockaddr_in _socketAddress;

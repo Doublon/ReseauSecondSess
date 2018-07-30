@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketUtilities.cpp
+SocketUtilities.h
+/cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketUtilities.h
+
+/cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketUtilities.h
+iostream
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+unistd.h
+-
+sys/socket.h
+-
+netdb.h
+-
+errno.h
+-
+
