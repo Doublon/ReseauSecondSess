@@ -10,11 +10,13 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../Socket/../libConfig"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/DependInfo.cmake"
+  "/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/libConfig/CMakeFiles/libConfig.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

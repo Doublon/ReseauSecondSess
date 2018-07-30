@@ -6,9 +6,17 @@
 
 #IncludeRegexTransform: 
 
+../Socket/../libConfig/Config.h
+string
+-
+iostream
+-
+
 /cygdrive/d/GitHub/ReseauSecondSess/Socket/ClientCheckIn.cpp
 SocketClient.h
 /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketClient.h
+Config.h
+/cygdrive/d/GitHub/ReseauSecondSess/Socket/Config.h
 
 /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketClient.h
 SocketUtilities.h

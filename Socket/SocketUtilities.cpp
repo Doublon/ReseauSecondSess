@@ -33,7 +33,7 @@ void SocketUtilities::GetInfoHost(string IP)
     else
     {
         memcpy(&_ipAddress, _infoHost->h_addr, _infoHost->h_length);
-        cout << "Information host récupérée" << endl;
+        cout << "Information host récupérée : " <<  endl;
     }
 }
 

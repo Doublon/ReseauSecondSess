@@ -9,6 +9,7 @@
       <config projectName="CheckIn" targetName="gmock" />
       <config projectName="CheckIn" targetName="gtest" />
       <config projectName="CheckIn" targetName="ClientCheckIn" />
+      <config projectName="CheckIn" targetName="libConfig" />
       <config projectName="CheckIn" targetName="gmock_main" />
     </generated>
   </component>
@@ -19,78 +20,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bab4c45-8e32-49b4-9bdc-31e4b73036a3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Socket/SocketClient.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Socket/SocketClient.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Socket/SocketServeur.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Socket/SocketServeur.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/ServeurSocketTests.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Socket/ServeurCheckIn.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libConfig/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libConfig/Config.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libConfig/Config.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Socket/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Socket/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Socket/ClientCheckIn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Socket/ClientCheckIn.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Socket/ServeurCheckIn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Socket/ServeurCheckIn.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Socket/SocketUtilities.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Socket/SocketUtilities.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Socket/SocketUtilities.h" beforeDir="false" afterPath="$PROJECT_DIR$/Socket/SocketUtilities.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/SocketUtilitiesTests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/SocketUtilitiesTests.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdC/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CTestTestfile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CheckIn.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CheckIn.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/ClientCheckIn.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/SocketUtilities.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/SocketUtilities.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/ClientCheckIn.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/ClientCheckIn.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/ServeurCheckIn.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/ServeurCheckIn.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/ServeurCheckIn.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/ServeurCheckIn.exe.stackdump" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/SocketUtilities.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/SocketUtilities.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/libSocketUtilities.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/libSocketUtilities.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/SocketUtilitiesTests.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/SocketUtilitiesTests.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/Tests.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/Tests.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/Tests.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/Tests.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/Tests.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gmock.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gmock.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/gtest.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/gtest.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/libgtest_maind.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/libgtest_maind.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/libgtestd.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/libgtestd.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/libgmock_maind.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/libgmock_maind.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/libgmockd.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/libgmockd.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googletest-distribution.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googletest-distribution.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libCSV/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libCSV/CSVUtilities.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libCSV/CSVUtilities.h" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -106,8 +90,50 @@
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Socket/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libConfig/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
-              <caret line="3" column="131" selection-start-line="3" selection-start-column="131" selection-end-line="3" selection-end-column="131" />
+              <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libConfig/Config.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+              <folding>
+                <element signature="e#44#62#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libConfig/Config.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+              <folding>
+                <element signature="e#95#112#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,44 +141,32 @@
       <file leaf-file-name="ServeurCheckIn.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Socket/ServeurCheckIn.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="103">
+              <caret line="13" selection-start-line="13" selection-end-line="18" selection-end-column="43" />
+              <folding>
+                <element signature="e#43#61#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientCheckIn.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ClientCheckIn.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Socket/ClientCheckIn.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            <state relative-caret-position="506">
+              <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+              <folding>
+                <element signature="e#44#69#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SocketClient.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Socket/SocketClient.cpp">
+      <file leaf-file-name="ServeurCheckIn.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Socket/ServeurCheckIn.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SocketUtilities.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Socket/SocketUtilities.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SocketServeur.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Socket/SocketServeur.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="23">
+              <caret line="1" column="12" selection-start-line="1" selection-end-line="1" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -172,8 +186,8 @@
       <find>Serveur</find>
       <find>_hSocket</find>
       <find>serveur</find>
-      <find>SocketUtilities</find>
       <find>_listeningSocket</find>
+      <find>SocketUtilities</find>
     </findStrings>
     <replaceStrings>
       <replace>_socket</replace>
@@ -203,19 +217,26 @@
         <option value="$PROJECT_DIR$/Serveur/SocketUtilities.cpp" />
         <option value="$PROJECT_DIR$/Serveur/SocketUtilities.h" />
         <option value="$PROJECT_DIR$/Serveur/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Tests/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Tests/ServeurSocketTests.cpp" />
-        <option value="$PROJECT_DIR$/Socket/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Socket/SocketClient.cpp" />
         <option value="$PROJECT_DIR$/Tests/SocketUtilitiesTests.cpp" />
-        <option value="$PROJECT_DIR$/Socket/SocketUtilities.cpp" />
         <option value="$PROJECT_DIR$/Socket/SocketServeur.cpp" />
         <option value="$PROJECT_DIR$/Socket/SocketServeur.h" />
         <option value="$PROJECT_DIR$/Socket/SocketUtilities.h" />
         <option value="$PROJECT_DIR$/Socket/SocketClient.h" />
-        <option value="$PROJECT_DIR$/Socket/ClientCheckIn.cpp" />
+        <option value="$PROJECT_DIR$/Socket/ServeurCheckIn.config" />
+        <option value="$PROJECT_DIR$/ConfigFilesUtilities/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Socket/SocketUtilities.cpp" />
+        <option value="$PROJECT_DIR$/libConfig/ConfigFilesUtilities.h" />
+        <option value="$PROJECT_DIR$/libConfig/ConfigFilesUtilities.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/libConfig/Config.h" />
+        <option value="$PROJECT_DIR$/Tests/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/libConfig/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/libConfig/Config.cpp" />
         <option value="$PROJECT_DIR$/Socket/ServeurCheckIn.cpp" />
+        <option value="$PROJECT_DIR$/Socket/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Socket/ClientCheckIn.cpp" />
       </list>
     </option>
   </component>
@@ -228,7 +249,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -253,7 +274,7 @@
             <path>
               <item name="CheckIn" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReseauSecondSess" type="462c0819:PsiDirectoryNode" />
-              <item name="libCSV" type="462c0819:PsiDirectoryNode" />
+              <item name="libConfig" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CheckIn" type="b2602c69:ProjectViewProjectNode" />
@@ -278,6 +299,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\ReseauSecondSess" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -292,44 +318,13 @@
   </component>
   <component name="RunManager" selected="Application.ClientCheckIn">
     <configuration name="AllTest" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" singleton="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CheckIn" RUN_TARGET_NAME="Tests" TEST_MODE="SUITE_TEST" />
-    <configuration name="ServeurTests.SocketBind_SocketIsBinded" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CheckIn" RUN_TARGET_NAME="Tests" TEST_CLASS="ServeurTests" TEST_METHOD="SocketBind_SocketIsBinded" TEST_MODE="SUITE_TEST" />
-    <configuration name="SocketUtilitiesTests.SocketAccept_ConnexionAccepted" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CheckIn" RUN_TARGET_NAME="Tests" TEST_CLASS="SocketUtilitiesTests" TEST_METHOD="SocketAccept_ConnexionAccepted" TEST_MODE="SUITE_TEST" />
-    <configuration name="SocketUtilitiesTests.SocketConnect_SocketConnected" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CheckIn" RUN_TARGET_NAME="Tests" TEST_CLASS="SocketUtilitiesTests" TEST_METHOD="SocketConnect_SocketConnected" TEST_MODE="SUITE_TEST" />
-    <configuration name="SocketUtilitiesTests.SocketListen_SocketLisnening" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CheckIn" RUN_TARGET_NAME="Tests" TEST_CLASS="SocketUtilitiesTests" TEST_METHOD="SocketListen_SocketLisnening" TEST_MODE="SUITE_TEST" />
-    <configuration name="SocketUtilitiesTests.test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CheckIn" RUN_TARGET_NAME="Tests" TEST_CLASS="SocketUtilitiesTests" TEST_METHOD="test" TEST_MODE="SUITE_TEST" />
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CheckIn" RUN_TARGET_NAME="ServeurCheckIn" EXPLICIT_BUILD_TARGET_NAME="all" />
-    <configuration name="ClientCheckIn" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="ClientCheckIn" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CheckIn" RUN_TARGET_NAME="ClientCheckIn" />
-    <configuration name="ServeurCheckIn" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="ServeurCheckIn" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CheckIn" RUN_TARGET_NAME="ServeurCheckIn" />
-    <configuration name="SocketUtilities" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="SocketUtilities" CONFIG_NAME="Debug" />
-    <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="gmock" CONFIG_NAME="Debug" />
-    <configuration name="gmock_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="gmock_main" CONFIG_NAME="Debug" />
-    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="gtest" CONFIG_NAME="Debug" />
-    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="gtest_main" CONFIG_NAME="Debug" />
+    <configuration name="ClientCheckIn" type="CMakeRunConfiguration" factoryName="Application" singleton="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="ClientCheckIn" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CheckIn" RUN_TARGET_NAME="ClientCheckIn" />
+    <configuration name="ServeurCheckIn" type="CMakeRunConfiguration" factoryName="Application" singleton="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="ServeurCheckIn" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CheckIn" RUN_TARGET_NAME="ServeurCheckIn" />
     <list>
-      <item itemvalue="Application.Build All" />
       <item itemvalue="Application.ClientCheckIn" />
       <item itemvalue="Application.ServeurCheckIn" />
-      <item itemvalue="Application.SocketUtilities" />
-      <item itemvalue="Application.gmock" />
-      <item itemvalue="Application.gmock_main" />
-      <item itemvalue="Application.gtest" />
-      <item itemvalue="Application.gtest_main" />
       <item itemvalue="Google Test.AllTest" />
-      <item itemvalue="Google Test.ServeurTests.SocketBind_SocketIsBinded" />
-      <item itemvalue="Google Test.SocketUtilitiesTests.test" />
-      <item itemvalue="Google Test.SocketUtilitiesTests.SocketListen_SocketLisnening" />
-      <item itemvalue="Google Test.SocketUtilitiesTests.SocketAccept_ConnexionAccepted" />
-      <item itemvalue="Google Test.SocketUtilitiesTests.SocketConnect_SocketConnected" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Google Test.SocketUtilitiesTests.SocketAccept_ConnexionAccepted" />
-        <item itemvalue="Google Test.SocketUtilitiesTests.SocketConnect_SocketConnected" />
-        <item itemvalue="Google Test.SocketUtilitiesTests.SocketListen_SocketLisnening" />
-        <item itemvalue="Google Test.SocketUtilitiesTests.test" />
-        <item itemvalue="Google Test.ServeurTests.SocketBind_SocketIsBinded" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -345,14 +340,11 @@
       <workItem from="1532717773358" duration="556000" />
       <workItem from="1532718619378" duration="112000" />
       <workItem from="1532766015209" duration="10999000" />
-      <workItem from="1532953292029" duration="10047000" />
+      <workItem from="1532953292029" duration="17630000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AllTest - 2018.07.30 at 15h 09m 44s.xml">
-      <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
     <history-entry file="AllTest - 2018.07.30 at 15h 13m 02s.xml">
       <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
@@ -380,9 +372,12 @@
     <history-entry file="AllTest - 2018.07.30 at 21h 02m 48s.xml">
       <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
+    <history-entry file="AllTest - 2018.07.30 at 21h 38m 56s.xml">
+      <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22391000" />
+    <option name="totallyTimeSpent" value="29974000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -411,43 +406,21 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.config" />
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Socket/ClientCheckIn.cpp</url>
-          <line>16</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="26" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="77" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Socket/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Socket/ServeurCheckIn.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Socket/SocketUtilities.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1725">
@@ -588,34 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libCSV/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/lib/googletest-master/googlemock/make/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/ServeurSocketTests.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -660,20 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Socket/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="131" selection-start-line="3" selection-start-column="131" selection-end-line="3" selection-end-column="131" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Socket/SocketUtilities.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Socket/SocketClient.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -681,24 +612,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Socket/ServeurCheckIn.cpp">
+    <entry file="file://$PROJECT_DIR$/libCSV/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state>
+          <caret selection-end-line="4" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Socket/ClientCheckIn.cpp">
+    <entry file="file://$PROJECT_DIR$/libConfig/ConfigFilesUtilities.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="28" />
+          <folding>
+            <element signature="e#123#140#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libConfig/ConfigFilesUtilities.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="24" />
+          <folding>
+            <element signature="e#44#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Socket/SocketServeur.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="437">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/lib/googletest-master/googlemock/make/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socket/SocketUtilities.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socket/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socket/ServeurCheckIn.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="12" selection-start-line="1" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libConfig/Config.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+          <folding>
+            <element signature="e#44#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libConfig/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libConfig/Config.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="e#95#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socket/ServeurCheckIn.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="13" selection-start-line="13" selection-end-line="18" selection-end-column="43" />
+          <folding>
+            <element signature="e#43#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socket/ClientCheckIn.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding>
+            <element signature="e#44#69#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

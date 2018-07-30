@@ -5,7 +5,7 @@
 		<Option title="googletest-distribution"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\Socket\;CMake Files\Tests\;CMake Files\Tests\lib\;CMake Files\Tests\lib\googletest-master\;CMake Files\Tests\lib\googletest-master\googlemock\;CMake Files\Tests\lib\googletest-master\googlemock\cmake\;CMake Files\Tests\lib\googletest-master\googletest\;CMake Files\Tests\lib\googletest-master\googletest\cmake\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\libConfig\;CMake Files\Socket\;CMake Files\Tests\;CMake Files\Tests\lib\;CMake Files\Tests\lib\googletest-master\;CMake Files\Tests\lib\googletest-master\googlemock\;CMake Files\Tests\lib\googletest-master\googlemock\cmake\;CMake Files\Tests\lib\googletest-master\googletest\;CMake Files\Tests\lib\googletest-master\googletest\cmake\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Tests/lib/googletest-master"/>
@@ -232,6 +232,9 @@
 		</Unit>
 		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/libConfig/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libConfig\"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Socket/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\Socket\"/>

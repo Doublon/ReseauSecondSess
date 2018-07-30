@@ -168,6 +168,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named libConfig
+
+# Build rule for target.
+libConfig: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libConfig
+.PHONY : libConfig
+
+# fast build rule for target.
+libConfig/fast:
+	$(MAKE) -f libConfig/CMakeFiles/libConfig.dir/build.make libConfig/CMakeFiles/libConfig.dir/build
+.PHONY : libConfig/fast
+
+#=============================================================================
 # Target rules for targets named SocketUtilities
 
 # Build rule for target.
@@ -284,6 +297,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... install"
 	@echo "... list_install_components"
+	@echo "... libConfig"
 	@echo "... SocketUtilities"
 	@echo "... ServeurCheckIn"
 	@echo "... ClientCheckIn"
