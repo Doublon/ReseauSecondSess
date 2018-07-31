@@ -24,4 +24,7 @@ int main(int argc, char* argv[])
     socket.Bind();
     socket.Listen();
     socket.Accept(socket.SocketAddress());
+
+    string messageRecieved = socket.ReceiveMessage();
+    cout << "message recu : " << messageRecieved << endl;
 }

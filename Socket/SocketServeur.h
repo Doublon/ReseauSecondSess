@@ -15,12 +15,13 @@ namespace ServeurCheckIn
             void Bind();
             void Listen();
             void Accept(struct sockaddr_in clientAddress);
+            std::string ReceiveMessage();
             void CloseConnexion() override ;
 
             int hSocketServeur() const;
 
         private:
-            int _hSocketServeur;
+            int _hSocketService;
     };
 }
 

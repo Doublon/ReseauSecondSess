@@ -22,4 +22,6 @@ int main(int argc, char* argv[])
     socket.GetInfoHost(ipServer);
     socket.PrepareSockAddrIn(stoi(port));
     socket.Connect(socket.SocketAddress());
+
+    socket.SendMessage("Coucou mon amour");
 }

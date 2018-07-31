@@ -22,3 +22,15 @@ void SocketClient::Connect(struct sockaddr_in serveurAddress)
     else
         cout << "connect() ok !" << endl;
 }
+
+void SocketClient::SendMessage(std::string message)
+{
+    if(send(_hListeningSocket, message.c_str(), 1024, 0) == -1)
+    {
+        cerr << "Erreur lors de l'envoie du message " << strerror(errno) << endl;
+        CloseConnexion();
+        exit(1);
+    }
+    else
+        cout << "Envoie du message : " << message << endl;
+}

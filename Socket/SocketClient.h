@@ -14,6 +14,7 @@ class SocketClient : public SocketUtilities
 {
     public:
         void Connect(struct sockaddr_in serveurAddress);
+        void SendMessage(std::string message);
 };
 }
 
