@@ -19,7 +19,7 @@ class ServeurSocketTests : public testing::Test
 
 TEST_F(ServeurSocketTests, SocketBind_SocketIsBinded)
 {
-    _socket.InitSocket();
+    _socket . Init();
     _socket.GetInfoHost("127.0.0.1");
     _socket.PrepareSockAddrIn(50000);
     _socket . Bind();
@@ -29,7 +29,7 @@ TEST_F(ServeurSocketTests, SocketBind_SocketIsBinded)
 
 TEST_F(ServeurSocketTests, SocketListen_SocketLisnening)
 {
-    _socket.InitSocket();
+    _socket . Init();
     _socket.GetInfoHost("127.0.0.1");
     _socket.PrepareSockAddrIn(50000);
     _socket . Bind();

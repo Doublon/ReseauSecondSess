@@ -21,20 +21,20 @@ namespace ServeurCheckIn
 class SocketUtilities
 {
     public:
+        SocketUtilities(int port);
         virtual ~SocketUtilities();
 
-        void InitSocket();
+        virtual void Init();
         void GetInfoHost(std::string IP);
-        void PrepareSockAddrIn(int port);
+        void PrepareSockAddrIn();
         virtual void CloseConnexion();
 
         int ListenningSocket() const;
-        int ServiceSocket() const;
         struct hostent* InfoHost() const;
         struct sockaddr_in SocketAddress() const;
 
     protected:
-        int _hListeningSocket;
+        int _port, _hListeningSocket;
         struct hostent *_infoHost;
         struct in_addr _ipAddress;
         struct sockaddr_in _socketAddress;

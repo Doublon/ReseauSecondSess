@@ -11,16 +11,17 @@ using namespace ServeurCheckIn;
 
 int main(int argc, char* argv[])
 {
-    SocketClient socket;
     string ipServer, port;
     Config config("D:\\GitHub\\ReseauSecondSess\\Socket\\ServeurCheckIn.txt");
 
     ipServer = config.GetValue("SERVER_IP");
     port = config.GetValue("CHECKIN_PORT");
+    SocketClient socket(stoi(port));
 
-    socket.InitSocket();
+    socket . Init();
     socket.GetInfoHost(ipServer);
-    socket.PrepareSockAddrIn(stoi(port));
+    socket.PrepareSockAddrIn();
+    sleep(10);
     socket.Connect(socket.SocketAddress());
 
     socket.SendMessage("Coucou mon amour");

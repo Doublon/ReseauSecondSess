@@ -7,6 +7,10 @@
 using namespace std;
 using namespace ServeurCheckIn;
 
+SocketClient::SocketClient(int port) : SocketUtilities(port)
+{
+}
+
 void SocketClient::Connect(struct sockaddr_in serveurAddress)
 {
     unsigned int sizeSockaddr_in = sizeof(struct sockaddr_in);

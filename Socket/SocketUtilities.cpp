@@ -7,12 +7,16 @@
 using namespace std;
 using namespace ServeurCheckIn;
 
+SocketUtilities::SocketUtilities(int port) : _port(port)
+{
+}
+
 SocketUtilities::~SocketUtilities()
 {
     CloseConnexion();
 }
 
-void SocketUtilities::InitSocket()
+void SocketUtilities::Init()
 {
     if( (_hListeningSocket = socket(AF_INET, SOCK_STREAM, 0)) == -1)
     {
@@ -37,11 +41,11 @@ void SocketUtilities::GetInfoHost(string IP)
     }
 }
 
-void SocketUtilities::PrepareSockAddrIn(int port)
+void SocketUtilities::PrepareSockAddrIn()
 {
     memset(&_socketAddress,0, sizeof(struct sockaddr_in));
     _socketAddress.sin_family = AF_INET;
-    _socketAddress.sin_port = htons(port);
+    _socketAddress.sin_port = htons(_port);
 
     memcpy(&_socketAddress.sin_addr, _infoHost->h_addr, _infoHost->h_length);
 }

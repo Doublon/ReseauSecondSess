@@ -19,7 +19,7 @@ class SocketUtilitiesTests : public testing::Test
 
 TEST_F(SocketUtilitiesTests, InitSocket_SocketIsInitialize)
 {
-    _socket.InitSocket();
+    _socket . Init();
 
     ASSERT_NE(-1, _socket . ListenningSocket());
 }

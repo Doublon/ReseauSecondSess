@@ -5,9 +5,9 @@ Socket/CMakeFiles/SocketUtilities.dir/SocketClient.cpp.o: ../Socket/SocketClient
 Socket/CMakeFiles/SocketUtilities.dir/SocketClient.cpp.o: ../Socket/SocketClient.h
 Socket/CMakeFiles/SocketUtilities.dir/SocketClient.cpp.o: ../Socket/SocketUtilities.h
 
-Socket/CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.o: ../Socket/SocketServeur.cpp
-Socket/CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.o: ../Socket/SocketServeur.h
-Socket/CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.o: ../Socket/SocketUtilities.h
+Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o: ../Socket/SocketThreadServer.cpp
+Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o: ../Socket/SocketThreadServer.h
+Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o: ../Socket/SocketUtilities.h
 
 Socket/CMakeFiles/SocketUtilities.dir/SocketUtilities.cpp.o: ../Socket/SocketUtilities.cpp
 Socket/CMakeFiles/SocketUtilities.dir/SocketUtilities.cpp.o: ../Socket/SocketUtilities.h

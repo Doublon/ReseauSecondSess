@@ -81,33 +81,9 @@ Socket/CMakeFiles/SocketUtilities.dir/SocketUtilities.cpp.o.provides: Socket/CMa
 Socket/CMakeFiles/SocketUtilities.dir/SocketUtilities.cpp.o.provides.build: Socket/CMakeFiles/SocketUtilities.dir/SocketUtilities.cpp.o
 
 
-Socket/CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.o: Socket/CMakeFiles/SocketUtilities.dir/flags.make
-Socket/CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.o: ../Socket/SocketServeur.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Socket/CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.o"
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket && /usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.o -c /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketServeur.cpp
-
-Socket/CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.i"
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket && /usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketServeur.cpp > CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.i
-
-Socket/CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.s"
-	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket && /usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketServeur.cpp -o CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.s
-
-Socket/CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.o.requires:
-
-.PHONY : Socket/CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.o.requires
-
-Socket/CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.o.provides: Socket/CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.o.requires
-	$(MAKE) -f Socket/CMakeFiles/SocketUtilities.dir/build.make Socket/CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.o.provides.build
-.PHONY : Socket/CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.o.provides
-
-Socket/CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.o.provides.build: Socket/CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.o
-
-
 Socket/CMakeFiles/SocketUtilities.dir/SocketClient.cpp.o: Socket/CMakeFiles/SocketUtilities.dir/flags.make
 Socket/CMakeFiles/SocketUtilities.dir/SocketClient.cpp.o: ../Socket/SocketClient.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Socket/CMakeFiles/SocketUtilities.dir/SocketClient.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Socket/CMakeFiles/SocketUtilities.dir/SocketClient.cpp.o"
 	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket && /usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SocketUtilities.dir/SocketClient.cpp.o -c /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketClient.cpp
 
 Socket/CMakeFiles/SocketUtilities.dir/SocketClient.cpp.i: cmake_force
@@ -129,18 +105,42 @@ Socket/CMakeFiles/SocketUtilities.dir/SocketClient.cpp.o.provides: Socket/CMakeF
 Socket/CMakeFiles/SocketUtilities.dir/SocketClient.cpp.o.provides.build: Socket/CMakeFiles/SocketUtilities.dir/SocketClient.cpp.o
 
 
+Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o: Socket/CMakeFiles/SocketUtilities.dir/flags.make
+Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o: ../Socket/SocketThreadServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o"
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket && /usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o -c /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketThreadServer.cpp
+
+Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.i"
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket && /usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketThreadServer.cpp > CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.i
+
+Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.s"
+	cd /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/Socket && /usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketThreadServer.cpp -o CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.s
+
+Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o.requires:
+
+.PHONY : Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o.requires
+
+Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o.provides: Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o.requires
+	$(MAKE) -f Socket/CMakeFiles/SocketUtilities.dir/build.make Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o.provides.build
+.PHONY : Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o.provides
+
+Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o.provides.build: Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o
+
+
 # Object files for target SocketUtilities
 SocketUtilities_OBJECTS = \
 "CMakeFiles/SocketUtilities.dir/SocketUtilities.cpp.o" \
-"CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.o" \
-"CMakeFiles/SocketUtilities.dir/SocketClient.cpp.o"
+"CMakeFiles/SocketUtilities.dir/SocketClient.cpp.o" \
+"CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o"
 
 # External object files for target SocketUtilities
 SocketUtilities_EXTERNAL_OBJECTS =
 
 Socket/libSocketUtilities.a: Socket/CMakeFiles/SocketUtilities.dir/SocketUtilities.cpp.o
-Socket/libSocketUtilities.a: Socket/CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.o
 Socket/libSocketUtilities.a: Socket/CMakeFiles/SocketUtilities.dir/SocketClient.cpp.o
+Socket/libSocketUtilities.a: Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o
 Socket/libSocketUtilities.a: Socket/CMakeFiles/SocketUtilities.dir/build.make
 Socket/libSocketUtilities.a: Socket/CMakeFiles/SocketUtilities.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libSocketUtilities.a"
@@ -153,8 +153,8 @@ Socket/CMakeFiles/SocketUtilities.dir/build: Socket/libSocketUtilities.a
 .PHONY : Socket/CMakeFiles/SocketUtilities.dir/build
 
 Socket/CMakeFiles/SocketUtilities.dir/requires: Socket/CMakeFiles/SocketUtilities.dir/SocketUtilities.cpp.o.requires
-Socket/CMakeFiles/SocketUtilities.dir/requires: Socket/CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.o.requires
 Socket/CMakeFiles/SocketUtilities.dir/requires: Socket/CMakeFiles/SocketUtilities.dir/SocketClient.cpp.o.requires
+Socket/CMakeFiles/SocketUtilities.dir/requires: Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o.requires
 
 .PHONY : Socket/CMakeFiles/SocketUtilities.dir/requires
 

@@ -5,9 +5,9 @@ Socket/CMakeFiles/SocketUtilities.dir/SocketClient.cpp.o
  /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketClient.cpp
  /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketClient.h
  /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketUtilities.h
-Socket/CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.o
- /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketServeur.cpp
- /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketServeur.h
+Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o
+ /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketThreadServer.cpp
+ /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketThreadServer.h
  /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketUtilities.h
 Socket/CMakeFiles/SocketUtilities.dir/SocketUtilities.cpp.o
  /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketUtilities.cpp

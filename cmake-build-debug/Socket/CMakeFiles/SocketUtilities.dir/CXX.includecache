@@ -14,11 +14,15 @@ SocketClient.h
 SocketUtilities.h
 /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketUtilities.h
 
-/cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketServeur.cpp
-SocketServeur.h
-/cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketServeur.h
+/cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketThreadServer.cpp
+w32api/ntdef.h
+-
+SocketThreadServer.h
+/cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketThreadServer.h
 
-/cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketServeur.h
+/cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketThreadServer.h
+w32api/minwindef.h
+-
 SocketUtilities.h
 /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketUtilities.h
 

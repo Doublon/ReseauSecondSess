@@ -15,12 +15,14 @@ iostream
 /cygdrive/d/GitHub/ReseauSecondSess/Socket/ServeurCheckIn.cpp
 fstream
 -
-SocketServeur.h
-/cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketServeur.h
+SocketThreadServer.h
+/cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketThreadServer.h
 Config.h
 /cygdrive/d/GitHub/ReseauSecondSess/Socket/Config.h
 
-/cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketServeur.h
+/cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketThreadServer.h
+w32api/minwindef.h
+-
 SocketUtilities.h
 /cygdrive/d/GitHub/ReseauSecondSess/Socket/SocketUtilities.h
 

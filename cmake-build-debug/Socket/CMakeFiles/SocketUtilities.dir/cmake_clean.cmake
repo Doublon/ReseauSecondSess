@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/SocketUtilities.dir/SocketUtilities.cpp.o"
-  "CMakeFiles/SocketUtilities.dir/SocketServeur.cpp.o"
   "CMakeFiles/SocketUtilities.dir/SocketClient.cpp.o"
+  "CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o"
   "libSocketUtilities.pdb"
   "libSocketUtilities.a"
 )
