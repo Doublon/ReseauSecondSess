@@ -1,0 +1,63 @@
+!! Si l'outil keytool est inconnu, il faut mettre le chemin du bin du jdk (C:\Program Files\Java\jdk1.8.0_152\bin) dans le PATH
+Télécharger aussi le "Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files" et placer les 2 fichiers dans jdk/jre/lib/security
+
+cd "C:\Users\Stocka\OneDrive\3eme INPRES 2017-2018\Réseaux et technologies internet\InpresAirport\Etape 6"
+(Permet de générer le keystore et puis le .cer dans le dossier courant, pour les retrouver facilement)
+
+Note : il vaudrait mieux utiliser le type de commande avec keystore nommé dans le sens où il en faut un pour le serveur, et un pour le client...
+=> Il faut, pour avoir les 2 keystores.
+
+(1) keytool -genkey -alias Jim -keyalg RSA -keysize 4096 -dname "CN=Jim Verwimp, C=B" -deststoretype pkcs12
+OU pour un nom différent :
+(2) keytool -genkey -keystore keystore_serveur -alias Jim -keyalg RSA -keysize 4096 -dname "CN=Jim Verwimp, C=B" -deststoretype pkcs12
+
+Mot de passe du fichier de clé : serveur123
+Confirmation du mot de passe : serveur123
+
+(ENTER pour le mot de passe de la clé.)
+=> Cette étape (ENTER) n'est plus nécessaire en rajoutant "-deststoretype pkcs12" à la création du keystore.
+
+NOTE : ce qui suit et est entre parenthèses est selon si la commande (1) ou la commande (2) a été faite
+
+keytool -list -v (1)
+keytool -list -v -keystore keystore_serveur (2)
+
+Si erreur (Trouvé sur Internet : il y a une erreur à cause de la langue (Français) ) :
+
+keytool -J-Duser.language=en -list -v (1)
+keytool -J-Duser.language=en -list -v -keystore keystore_serveur (2)
+
+keytool -export -alias Jim -file certificat.cer (1)
+keytool -export -keystore keystore_serveur -alias Jim -file certificat_serveur.cer (2)
+
+Les 2 fichiers sont bien présents dans la destination de départ.
+
+keytool -printcert -file certificat.cer
+
+Si erreur :
+
+keytool -J-Duser.language=en -printcert -file certificat.cer
+
+On peut aussi afficher les détails du certificat avec la petite application...
+
+=> Refaire la même chose pour le client
+
+=>
+keytool -genkey -keystore keystore_client -alias Jim -keyalg RSA -keysize 4096 -dname "CN=Jim Verwimp, C=B" -deststoretype pkcs12
+password : client123
+confirmer : client123
+keytool -export -keystore keystore_client -alias Jim -file certificat_client.cer 
+password : client123
+
+Idem pour le serveur payment :
+password : payment123
+
+OBLIGATOIRE pour le serveur payment :
+keytool -export -keystore keystore_serveur_payment -alias Jim -file certificat_serveur_payment.cer
+
+Pour l'application web :
+keytool -genkey -keystore keystore_applicationweb -alias Jim -keyalg RSA -keysize 4096 -dname "CN=Jim Verwimp, C=B" -deststoretype pkcs12
+
+password : web123
+
+keytool -export -keystore keystore_applicationweb -alias Jim -file certificat_applicationweb.cer
