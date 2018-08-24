@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="CheckIn" targetName="Tests" />
+      <config projectName="CheckIn" targetName="SocketUtilities" />
+      <config projectName="CheckIn" targetName="gtest_main" />
+      <config projectName="CheckIn" targetName="ServeurCheckIn" />
+      <config projectName="CheckIn" targetName="gmock" />
+      <config projectName="CheckIn" targetName="gtest" />
+      <config projectName="CheckIn" targetName="ClientCheckIn" />
+      <config projectName="CheckIn" targetName="libConfig" />
+      <config projectName="CheckIn" targetName="gmock_main" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2bab4c45-8e32-49b4-9bdc-31e4b73036a3" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/FenAuthentification$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/FenAuthentification$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/FenAuthentification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/FlightsFrame$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/FlightsFrame$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/FlightsFrame$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/FlightsFrame$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/FlightsFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/LugagesFrame$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/LugagesFrame$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/LugagesFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/nbproject/private/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/src/clientpoolthreads/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/src/clientpoolthreads/FenAuthentification.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/src/clientpoolthreads/FenAuthentification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/src/clientpoolthreads/FlightsFrame.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/src/clientpoolthreads/FlightsFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/src/clientpoolthreads/LugagesFrame.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/src/clientpoolthreads/LugagesFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/src/clientpoolthreads/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/build/classes/ProtocoleLUGAP/ReponseLUGAP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/build/classes/ProtocoleLUGAP/RequeteLUGAP$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/build/classes/ProtocoleLUGAP/RequeteLUGAP$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/build/classes/ProtocoleLUGAP/RequeteLUGAP$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/build/classes/ProtocoleLUGAP/RequeteLUGAP$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/build/classes/ProtocoleLUGAP/RequeteLUGAP$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/build/classes/ProtocoleLUGAP/RequeteLUGAP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/dist/RequeteReponseLUGAP.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/nbproject/private/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/src/ProtocoleLUGAP/ReponseLUGAP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/src/ProtocoleLUGAP/RequeteLUGAP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/build/classes/requetepoolthreads/ConsoleServeur.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/build/classes/requetepoolthreads/Reponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/build/classes/requetepoolthreads/Requete.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/dist/RequeteReponseMultiThread.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/src/requetepoolthreads/ConsoleServeur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/src/requetepoolthreads/Reponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/src/requetepoolthreads/Requete.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/build/built-clean.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/build/classes/serveurbagages/FenApplicationServeurBagages$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/build/classes/serveurbagages/FenApplicationServeurBagages.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/build/classes/serveurbagages/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/dist/README.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/dist/ServeurBagages.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/dist/lib/Bean_DB_Access.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/dist/lib/RequeteReponseLUGAP.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/dist/lib/RequeteReponseMultiThread.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/dist/lib/ServeurMultiThread.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/build/classes/serveurpoolthreads/FenApplicationServeur$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/build/classes/serveurpoolthreads/FenApplicationServeur$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/build/classes/serveurpoolthreads/FenApplicationServeur.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/build/classes/serveurpoolthreads/ServerProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/build/classes/serveurpoolthreads/Serveur.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/build/classes/serveurpoolthreads/ThreadClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/build/classes/serveurpoolthreads/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/nbproject/private/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/src/serveurpoolthreads/FenApplicationServeur.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/src/serveurpoolthreads/FenApplicationServeur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/src/serveurpoolthreads/ServerProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/src/serveurpoolthreads/Serveur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/src/serveurpoolthreads/ThreadClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/src/serveurpoolthreads/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/bcprov-jdk15on-158.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bagages/mysql-connector-java-5.1.44-bin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FUSProjectUsageTrigger">
+    <session id="624797882">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="2103650319">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>_serveur</find>
+      <find>Serveur</find>
+      <find>_hSocket</find>
+      <find>serveur</find>
+      <find>_listeningSocket</find>
+      <find>SocketUtilities</find>
+      <find>_hSockerServices</find>
+      <find>index</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>_socket</replace>
+      <replace>SocketUtilities</replace>
+      <replace>_listeningSocket</replace>
+      <replace>SocketServeur</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Tests/main.cpp" />
+        <option value="$PROJECT_DIR$/Socket.h" />
+        <option value="$PROJECT_DIR$/Socket.cpp" />
+        <option value="$PROJECT_DIR$/Serveur/Socket.h" />
+        <option value="$PROJECT_DIR$/libCSV/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/libCSV/CSVUtilities.h" />
+        <option value="$PROJECT_DIR$/Serveur/Socket.cpp" />
+        <option value="$PROJECT_DIR$/Serveur/Serveur.cpp" />
+        <option value="$PROJECT_DIR$/Tests/ServeurTests.cpp" />
+        <option value="$PROJECT_DIR$/Tests/SocketTests.cpp" />
+        <option value="$PROJECT_DIR$/Serveur/Serveur.h" />
+        <option value="$PROJECT_DIR$/Serveur/main.cpp" />
+        <option value="$PROJECT_DIR$/Serveur/SocketUtilities.cpp" />
+        <option value="$PROJECT_DIR$/Serveur/SocketUtilities.h" />
+        <option value="$PROJECT_DIR$/Serveur/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Tests/ServeurSocketTests.cpp" />
+        <option value="$PROJECT_DIR$/Tests/SocketUtilitiesTests.cpp" />
+        <option value="$PROJECT_DIR$/Socket/ServeurCheckIn.config" />
+        <option value="$PROJECT_DIR$/ConfigFilesUtilities/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/libConfig/ConfigFilesUtilities.h" />
+        <option value="$PROJECT_DIR$/libConfig/ConfigFilesUtilities.cpp" />
+        <option value="$PROJECT_DIR$/libConfig/Config.h" />
+        <option value="$PROJECT_DIR$/Tests/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/libConfig/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/libConfig/Config.cpp" />
+        <option value="$PROJECT_DIR$/Socket/ServeurCheckIn.txt" />
+        <option value="$PROJECT_DIR$/Socket/SocketUtilities.cpp" />
+        <option value="$PROJECT_DIR$/Socket/SocketServeur.h" />
+        <option value="$PROJECT_DIR$/Socket/SocketServeur.cpp" />
+        <option value="$PROJECT_DIR$/Socket/SocketClient.h" />
+        <option value="$PROJECT_DIR$/Socket/SocketClient.cpp" />
+        <option value="$PROJECT_DIR$/Socket/ServeurCheckIn.cpp" />
+        <option value="$PROJECT_DIR$/Socket/SocketUtilities.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Socket/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Socket/SocketThreadServer.h" />
+        <option value="$PROJECT_DIR$/Socket/ClientCheckIn.cpp" />
+        <option value="$PROJECT_DIR$/Socket/SocketThreadServer.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CheckIn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C++" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CheckIn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C++" type="462c0819:PsiDirectoryNode" />
+              <item name="libConfig" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CheckIn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C++" type="462c0819:PsiDirectoryNode" />
+              <item name="Socket" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\ReseauSecondSess" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.ServeurCheckIn">
+    <configuration name="AllTest" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" singleton="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CheckIn" RUN_TARGET_NAME="Tests" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientCheckIn" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="ClientCheckIn" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CheckIn" RUN_TARGET_NAME="ClientCheckIn">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServeurCheckIn" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="ServeurCheckIn" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CheckIn" RUN_TARGET_NAME="ServeurCheckIn">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Google Test.AllTest" />
+      <item itemvalue="Application.ClientCheckIn" />
+      <item itemvalue="Application.ServeurCheckIn" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2bab4c45-8e32-49b4-9bdc-31e4b73036a3" name="Default" comment="" />
+      <created>1532717072574</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1532717072574</updated>
+      <workItem from="1532717074187" duration="677000" />
+      <workItem from="1532717773358" duration="556000" />
+      <workItem from="1532718619378" duration="112000" />
+      <workItem from="1532766015209" duration="10999000" />
+      <workItem from="1532953292029" duration="17701000" />
+      <workItem from="1533054252891" duration="4980000" />
+      <workItem from="1533153046240" duration="5227000" />
+      <workItem from="1533231549087" duration="6392000" />
+      <workItem from="1534965397668" duration="650000" />
+      <workItem from="1535123172471" duration="24000" />
+      <workItem from="1535123413621" duration="9000" />
+      <workItem from="1535124052418" duration="101000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="AllTest - 2018.07.30 at 15h 13m 02s.xml">
+      <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="AllTest - 2018.07.30 at 15h 31m 07s.xml">
+      <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="AllTest - 2018.07.30 at 15h 33m 13s.xml">
+      <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="AllTest - 2018.07.30 at 20h 45m 20s.xml">
+      <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="AllTest - 2018.07.30 at 20h 48m 12s.xml">
+      <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="AllTest - 2018.07.30 at 20h 52m 02s.xml">
+      <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="AllTest - 2018.07.30 at 20h 57m 24s.xml">
+      <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="AllTest - 2018.07.30 at 21h 00m 41s.xml">
+      <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="AllTest - 2018.07.30 at 21h 02m 48s.xml">
+      <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="AllTest - 2018.07.30 at 21h 38m 56s.xml">
+      <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="51454000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27985075" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32890365" />
+      <window_info anchor="bottom" x="-1846" y="197" width="1876" height="297" id="Run" order="2" weight="0.32890365" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39977852" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32890365" />
+      <window_info anchor="bottom" x="670" y="243" width="579" height="553" id="Terminal" order="8" type="WINDOWED" weight="0.32890365" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="CMake" order="10" weight="0.3286334" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286334" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="PlantUML" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.config" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>_count</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Socket.cpp" />
+    <entry file="file://$PROJECT_DIR$/Socket.h" />
+    <entry file="file://$PROJECT_DIR$/Tests/main.cpp" />
+    <entry file="file://$PROJECT_DIR$/libCSV/CSVUtilities.h" />
+    <entry file="file://$PROJECT_DIR$/Serveur/Socket.h" />
+    <entry file="file://$PROJECT_DIR$/Serveur/Socket.cpp" />
+    <entry file="file://$PROJECT_DIR$/Tests/SocketTests.cpp" />
+    <entry file="file://$PROJECT_DIR$/Serveur/CMakeLists.txt" />
+    <entry file="file://$PROJECT_DIR$/Tests/ServeurSocketTests.cpp" />
+    <entry file="file://$PROJECT_DIR$/Tests/SocketUtilitiesTests.cpp" />
+    <entry file="file://$PROJECT_DIR$/libCSV/CMakeLists.txt" />
+    <entry file="file://$PROJECT_DIR$/libConfig/ConfigFilesUtilities.h" />
+    <entry file="file://$PROJECT_DIR$/libConfig/ConfigFilesUtilities.cpp" />
+    <entry file="file://$PROJECT_DIR$/Tests/lib/googletest-master/googlemock/make/Makefile" />
+    <entry file="file://$PROJECT_DIR$/libConfig/Config.cpp" />
+    <entry file="file://$PROJECT_DIR$/libConfig/CMakeLists.txt" />
+    <entry file="file://$PROJECT_DIR$/libConfig/Config.h" />
+    <entry file="file://$PROJECT_DIR$/Socket/ServeurCheckIn.txt" />
+    <entry file="file://$PROJECT_DIR$/Tests/CMakeLists.txt" />
+    <entry file="file://$PROJECT_DIR$/Socket/SocketServeur.h" />
+    <entry file="file://$PROJECT_DIR$/Socket/SocketServeur.cpp" />
+    <entry file="file://$PROJECT_DIR$/Socket/SocketUtilities.h" />
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt" />
+    <entry file="file://$PROJECT_DIR$/Socket/SocketThreadServer.h" />
+    <entry file="file://$PROJECT_DIR$/Socket/SocketUtilities.cpp" />
+    <entry file="file://$PROJECT_DIR$/Socket/ServeurCheckIn.cpp" />
+    <entry file="file://$PROJECT_DIR$/Socket/ClientCheckIn.cpp" />
+    <entry file="file://$PROJECT_DIR$/Socket/SocketClient.h" />
+    <entry file="file://$PROJECT_DIR$/Socket/SocketClient.cpp" />
+    <entry file="file://$PROJECT_DIR$/Socket/SocketThreadServer.cpp" />
+    <entry file="file://$PROJECT_DIR$/Socket/CMakeLists.txt" />
+  </component>
+</project>
