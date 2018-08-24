@@ -1,2 +1,0 @@
-V	190112175139Z		01	unknown	/C=BE/ST=Liege/O=Inpres/OU=Dept. Informatique (clients)/CN=Jim Verwimp
-V	190112175535Z		02	unknown	/C=BE/ST=Liege/O=Inpres/OU=Dept. Informatique (serveurs)/CN=Jim Verwimp

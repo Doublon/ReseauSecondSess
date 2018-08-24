@@ -5,5 +5,9 @@
         <group name="SSL (e-c) + Réseaux 6">
             <file>file:/C:/Users/Stocka/OneDrive/3eme%20INPRES%202017-2018/Réseaux%20et%20technologies%20internet/InpresAirport/Etape%206/Serveur_Payment/src/serveur_payment/Serveur_Payment.java</file>
         </group>
+        <group name="Réseau seconde sess">
+            <file>file:/C:/Users/Tusse/Desktop/Etape%206/Serveur_Payment/src/serveurpoolthreads/ThreadServeur.java</file>
+            <file>file:/C:/Users/Tusse/Desktop/Etape%206/Serveur_Payment/src/serveurpoolthreads/ThreadClient.java</file>
+        </group>
     </open-files>
 </project-private>

@@ -1,3 +1,0 @@
-select numvol, datediff(heureDepart, curdate()) from vols where datediff(heureDepart, curdate()) >= 0 and datediff(heureDepart, curdate()) <= 7;
-
-select numvol, datediff(heureDepart, curdate()) from vols

@@ -1,4 +1,1 @@
-C:\Users\Doublon\.CLion2018.1\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/d/GitHub/ReseauSecondSess
--- Configuring done
--- Generating done
--- Build files have been written to: /cygdrive/d/GitHub/ReseauSecondSess/cmake-build-debug
+CMakeLists.txt not found in D:\GitHub\ReseauSecondSess Select CMakeLists.txt file...

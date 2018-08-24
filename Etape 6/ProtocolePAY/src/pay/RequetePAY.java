@@ -34,8 +34,6 @@ import static pay.UtilePAY.asymmetricAlg;
 import pay_classes.Payment;
 import requetepoolthreads.ConsoleServeur;
 import requetepoolthreads.Requete;
-import sebatrap.ReponseSEBATRAP;
-import sebatrap.RequeteSEBATRAP;
 
 public class RequetePAY implements Requete, Serializable
 {
@@ -188,13 +186,13 @@ public class RequetePAY implements Requete, Serializable
                 }*/
                 
                 // Version non sécurisée
-                Socket socketNS;
+                /*Socket socketNS;
                 try
                 {
+                    System.out.println("Adresse souhaité : " + adresse + " port souhaité : " + port);
                     socketNS = new Socket(adresse, port);
-
+                    
                     RequeteSEBATRAP requeteSebatrap = new RequeteSEBATRAP(RequeteSEBATRAP.REQUEST_PAYMENT_OPERATION, payment.getNumClient(), payment.getMontant(), numCarteDechiffre, payment.getAdresseMail());
-
                     ObjectOutputStream oos;
                     ReponseSEBATRAP reponseSebatrap = null;
                     try
@@ -227,12 +225,17 @@ public class RequetePAY implements Requete, Serializable
                         reponse = new ReponsePAY(ReponsePAY.REQUEST_PAYMENT_ERROR);
                         cs.TraceEvenements(sock.getInetAddress() + ":" + sock.getLocalPort() + "#" + "REQUEST_PAYMENT_ERROR#" + Thread.currentThread().getName());
                     }
-                } 
+                }
                 catch (IOException ex)
                 {
+                    Logger.getLogger(RequetePAY.class.getName()).log(Level.SEVERE, null, ex);
                     reponse = new ReponsePAY(ReponsePAY.REQUEST_PAYMENT_ERROR);
-                }
+                }*/ 
+                
+                reponse = new ReponsePAY(ReponsePAY.REQUEST_PAYMENT_OK);
+                cs.TraceEvenements(sock.getInetAddress() + ":" + sock.getLocalPort() + "#" + "REQUEST_PAYMENT_OK#" + Thread.currentThread().getName());   
             }
+                
             else
             {
                 reponse = new ReponsePAY(ReponsePAY.REQUEST_PAYMENT_ERROR);

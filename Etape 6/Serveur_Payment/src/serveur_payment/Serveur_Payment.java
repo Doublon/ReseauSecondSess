@@ -59,6 +59,7 @@ public class Serveur_Payment extends javax.swing.JFrame implements ConsoleServeu
         try
         {
             ADRESSE = InetAddress.getLocalHost().getHostAddress();
+            System.out.println("Adresse Serveur Payment : " + ADRESSE);
             TraceEvenements(InetAddress.getLocalHost().getHostAddress() + ":" + PORT_PAYMENT + "#Acq. port PAYMENT" + "#Main");
         } 
         catch (UnknownHostException ex)

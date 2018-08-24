@@ -12,6 +12,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
 import java.security.PrivateKey;
+import java.security.Security;
 import java.security.SignatureException;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
@@ -27,6 +28,7 @@ import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SealedObject;
 import javax.crypto.SecretKey;
 import javax.net.ssl.SSLSocket;
+import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import requetepoolthreads.ConsoleServeur;
 import requetepoolthreads.Requete;
 import static tickmap.UtileTICKMAP.CODE_PROVIDER;
@@ -359,6 +361,7 @@ public class RequeteTICKMAP implements Requete, Serializable
     
     public void TraiterLogin(Socket sock, ConsoleServeur cs)
     {
+        Security.addProvider(new BouncyCastleProvider());
         MessageDigest md = null;
         ReponseTICKMAP reponse = null;
         
@@ -568,10 +571,15 @@ public class RequeteTICKMAP implements Requete, Serializable
             System.err.println("Erreur lors de la connexion à la " + BBMS.getSchema() + " : " + ex);
         }
         
+        //TODO : Creer nouveau tuples correspondant à la date :
         String query = "SELECT * "
                 + "FROM Vols INNER JOIN Avions "
                 + "ON Vols.numAvion = Avions.numAvion"
                 + " WHERE DATEDIFF(heureDepart, curdate()) >= 0 AND DATEDIFF(heureDepart, curdate()) <= 7 AND placesRestantes > 0";
+           
+        /*String query = "SELECT * "
+                + "FROM Vols INNER JOIN Avions "
+                + "ON Vols.numAvion = Avions.numAvion";*/
         
         try
         {

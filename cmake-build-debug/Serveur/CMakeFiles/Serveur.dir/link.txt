@@ -1,1 +1,0 @@
-/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/Serveur.dir/main.cpp.o  -o Serveur.exe -Wl,--out-implib,libServeur.dll.a -Wl,--major-image-version,0,--minor-image-version,0 libServeurCheckIn.a 

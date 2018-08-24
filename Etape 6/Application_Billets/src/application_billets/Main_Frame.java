@@ -90,7 +90,12 @@ public class Main_Frame extends javax.swing.JFrame
     public Main_Frame()
     {
         initComponents();
-        LireFichierProperties(filename);
+        //LireFichierProperties(filename);
+        
+        ADRESSE_BILLETS = "192.168.0.19";
+        PORT_BILLETS = 30016;
+        ADRESSE_PAYMENT = "192.168.0.19";
+        PORT_PAYMENT = 30017;
         
         login_frame = new Login_Frame(this);
         login_frame.setVisible(true);
@@ -157,12 +162,12 @@ public class Main_Frame extends javax.swing.JFrame
             {
                 FileOutputStream fos = new FileOutputStream(filename);
                 
-                properties.put("ADRESSE_BILLETS", "192.168.0.5");
-                ADRESSE_BILLETS = "192.168.0.5";
+                properties.put("ADRESSE_BILLETS", "192.168.0.19");
+                ADRESSE_BILLETS = "192.168.0.19";
                 properties.put("PORT_BILLETS", "30016");
                 PORT_BILLETS = 30016;
-                properties.put("ADRESSE_PAYMENT", "192.168.0.5");
-                ADRESSE_PAYMENT = "192.168.0.5";
+                properties.put("ADRESSE_PAYMENT", "192.168.0.19");
+                ADRESSE_PAYMENT = "192.168.0.19";
                 properties.put("PORT_PAYMENT", "30017");
                 PORT_PAYMENT = 30017;
                 
@@ -591,6 +596,7 @@ public class Main_Frame extends javax.swing.JFrame
                                             payment_dialog.dispose();
                                             
                                             RequetePAY requetePaiement = new RequetePAY(RequetePAY.REQUEST_PAYMENT, agent.toString().getBytes(), getCertificat(), payment);
+                                            System.out.println("Adresse payment : " + ADRESSE_PAYMENT);
                                             ReponsePAY reponsePaiement = (ReponsePAY) sendReceive(requetePaiement, ADRESSE_PAYMENT, PORT_PAYMENT);
 
                                             if(reponsePaiement != null && reponsePaiement.getCode() == ReponsePAY.REQUEST_PAYMENT_OK)

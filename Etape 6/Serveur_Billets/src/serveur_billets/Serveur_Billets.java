@@ -58,6 +58,7 @@ public class Serveur_Billets extends javax.swing.JFrame implements ConsoleServeu
         try
         {
             ADRESSE = InetAddress.getLocalHost().getHostAddress();
+            System.out.println("Adresse Serveur Billet : " + ADRESSE);
             TraceEvenements(InetAddress.getLocalHost().getHostAddress() + ":" + PORT_BILLETS + "#Acq. port BILLETS" + "#Main");
         } 
         catch (UnknownHostException ex)

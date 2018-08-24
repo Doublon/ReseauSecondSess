@@ -11,6 +11,8 @@ import javax.swing.JOptionPane;
 import tickmap.ReponseTICKMAP;
 import tickmap.RequeteTICKMAP;
 import static tickmap.UtileTICKMAP.CODE_PROVIDER;
+import java.security.Security;
+import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 public class Login_Frame extends javax.swing.JFrame
 {
@@ -154,6 +156,7 @@ public class Login_Frame extends javax.swing.JFrame
 
     private RequeteTICKMAP CreerRequeteLogin()
     {
+        Security.addProvider(new BouncyCastleProvider());
         long temps = 0;
         double alea = 0;
         
@@ -165,6 +168,7 @@ public class Login_Frame extends javax.swing.JFrame
         catch (NoSuchAlgorithmException | NoSuchProviderException ex) 
         {
             System.err.println("Erreur MessageDigest : " + ex);
+            System.err.println("Ici");
         }
 
         if(md != null)

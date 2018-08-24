@@ -95,7 +95,7 @@ public class ThreadServeur extends Thread
             
             if(req != null)
             {
-                Runnable travail = req.createRunnablePAY(CSocket, guiApplication, privateKey, keyStore, ADRESSE_MASTERCARD, PORT_MASTERCARD);
+                Runnable travail = req.createRunnablePAY(CSocket, guiApplication, privateKey, keyStore, "192.168.0.19", 30018);
                 if (travail != null)
                 {
                     tachesAExecuter.recordTache(travail);
