@@ -9,6 +9,7 @@
 using namespace std;
 using namespace libConfig;
 using namespace ServeurCheckIn;
+using namespace CIMP;
 
 int main(int argc, char* argv[])
 {
@@ -26,5 +27,7 @@ int main(int argc, char* argv[])
     socket.Connect(socket.SocketAddress());
 
     RequestCIMP request(separator, trameEnd);
-    socket.SendMessage(request.CreateLoginRequest("tusset", "123"));
+    socket.SendMessage(socket.getHListeningSocket(), request.CreateLoginRequest("tusset", "123"));
+    string state = socket.ReceiveMessage(socket.getHListeningSocket());
+    cout << state << endl;
 }

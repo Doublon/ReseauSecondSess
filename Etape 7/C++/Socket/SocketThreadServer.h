@@ -11,6 +11,7 @@
 
 static int _currentIndex = -1;
 static int _hSocketConnected[MAX_CLIENT];
+static int _hSocketDuplicated;
 
 namespace ServeurCheckIn
 {
@@ -28,20 +29,18 @@ class SocketThreadServer : public SocketUtilities
         void Listen();
         void Accept(struct sockaddr_in clientAddress);
         void FindFreeSocket();
-        std::string ReceiveMessage(int socketTraited);
         void CloseConnexion() override ;
 
         void LaunchThread();
         void * Thread(int *param);
 
     private:
-        int _hSocketDuplicated;
-
         pthread_t _threadHandle[MAX_CLIENT];
         pthread_mutex_t _mutexCurrentIndex;
         pthread_cond_t _condCurrentIndex;
-        
-        void AnalyzeRequest(std::string requestString);
+
+        int AnalyzeRequest(std::string requestString);
+        void SendResponse(int state);
 };
 }
 

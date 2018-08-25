@@ -6,9 +6,11 @@
 #include <iostream>
 #include "RequestCIMP.h"
 #include "CSV.h"
+#include "States.h"
 
 using namespace std;
 using namespace libCSV;
+using namespace CIMP;
 
 RequestCIMP::RequestCIMP(string separator, string endTrame) : _separator(separator), _endTrame(endTrame)
 {
@@ -58,12 +60,16 @@ int RequestCIMP::ProcessLoginRequest(std::string user, std::string password)
 
         if(strcmp(login, user.c_str()) == 0 && strcmp(pwd, password.c_str()) == 0)
             trouve = 1;
-
-        cout << login << endl;
     }
 
     if(trouve == 1)
+    {
         cout << "Utilisateur trouvé !" << endl;
+        return CONNECTED;
+    }
     else
-        cout << "Utilisateur inconnue !" << endl;
+    {
+        cout << "Utilisateur inconnu !" << endl;
+        return DISCONNECTED;
+    }
 }

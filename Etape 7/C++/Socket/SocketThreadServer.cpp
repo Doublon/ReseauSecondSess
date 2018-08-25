@@ -6,10 +6,12 @@
 #include "SocketThreadServer.h"
 #include "RequestCIMP.h"
 #include "Config.h"
+#include "States.h"
 
 using namespace std;
 using namespace ServeurCheckIn;
 using namespace libConfig;
+using namespace CIMP;
 
 
 SocketThreadServer::SocketThreadServer(int port) : SocketUtilities(port)
@@ -115,26 +117,6 @@ void SocketThreadServer::FindFreeSocket()
     }
 }
 
-std::string SocketThreadServer::ReceiveMessage(int socketTraited)
-{
-    char messageReceived[1024];
-
-    //TODO : BOUCLE DE LECTURE
-    if(recv(socketTraited, messageReceived, 1024, 0) == -1)
-    {
-        cerr << "Erreur de reception : " << strerror(errno) << endl;
-        CloseConnexion();
-        exit(1);
-    }
-        //TODO : CLIENT PARTI;
-    else
-    {
-        string message(messageReceived);
-        cout << "message recu : " << message << endl;
-        return  message;
-    }
-}
-
 void SocketThreadServer::CloseConnexion()
 {
     close(_hListeningSocket);
@@ -176,9 +158,10 @@ void *SocketThreadServer::Thread(int * param)
         pthread_mutex_lock(&_mutexCurrentIndex);
         _hSocketConnected[indexTreadedClient] = -1;
         pthread_mutex_unlock(&_mutexCurrentIndex);
-        
-        AnalyzeRequest(message);
-        
+
+        int state = AnalyzeRequest(message);
+        SendResponse(state);
+
         if(!message.compare(""))
             break;
     }while(1);
@@ -186,12 +169,24 @@ void *SocketThreadServer::Thread(int * param)
     pthread_exit(param);
 }
 
-void SocketThreadServer::AnalyzeRequest(std::string requestString)
+int SocketThreadServer::AnalyzeRequest(std::string requestString)
 {
     Config config("D:\\GitHub\\ReseauSecondSess\\Etape 7\\C++\\Socket\\ServeurCheckIn.txt");
     string separator = config.GetValue("TRAME_SEPERATOR");
     string trameEnd = config.GetValue("TRAME_END");
-    
+
     RequestCIMP request(separator, trameEnd);
-    request.AnalyseRequest((char*)requestString.c_str());
+    int ret = request.AnalyseRequest((char*)requestString.c_str());
+    return ret;
+}
+
+void SocketThreadServer::SendResponse(int state)
+{
+    switch(state)
+    {
+        case States::CONNECTED :
+            cout << "Envoie du CONNECTED " <<  endl;
+            SendMessage(_hSocketDuplicated, "CONNECTED");
+            break;
+    }
 }

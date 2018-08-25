@@ -8,6 +8,8 @@
 
 #include <string>
 
+namespace CIMP
+{
 class RequestCIMP
 {
 public:
@@ -20,9 +22,10 @@ public:
 
     RequestCIMP(std::string separator, std::string endTrame);
 
-    char* CreateLoginRequest(std::string user, std::string password);
+    char *CreateLoginRequest(std::string user, std::string password);
 
-    int AnalyseRequest(char* request);
+    int AnalyseRequest(char *request);
+
     int ProcessLoginRequest(std::string user, std::string password);
 
 private:
@@ -30,6 +33,7 @@ private:
     std::string _endTrame;
 
 };
+}
 
 
 #endif //CHECKIN_REQUESTCIMP_H

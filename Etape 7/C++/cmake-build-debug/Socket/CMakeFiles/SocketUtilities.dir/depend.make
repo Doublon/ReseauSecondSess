@@ -10,6 +10,7 @@ Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o: ../Socket/../lib
 Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o: ../Socket/SocketThreadServer.cpp
 Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o: ../Socket/SocketThreadServer.h
 Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o: ../Socket/SocketUtilities.h
+Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o: ../Socket/States.h
 
 Socket/CMakeFiles/SocketUtilities.dir/SocketUtilities.cpp.o: ../Socket/SocketUtilities.cpp
 Socket/CMakeFiles/SocketUtilities.dir/SocketUtilities.cpp.o: ../Socket/SocketUtilities.h

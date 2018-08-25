@@ -21,6 +21,7 @@ namespace ServeurCheckIn
 class SocketUtilities
 {
     public:
+
         SocketUtilities(int port);
         virtual ~SocketUtilities();
 
@@ -33,6 +34,10 @@ class SocketUtilities
         struct hostent* InfoHost() const;
         struct sockaddr_in SocketAddress() const;
 
+        void SendMessage(int hSocket, std::string message);
+        std::string ReceiveMessage(int socketTraited);
+
+        int getHListeningSocket() const;
     protected:
         int _port, _hListeningSocket;
         struct hostent *_infoHost;

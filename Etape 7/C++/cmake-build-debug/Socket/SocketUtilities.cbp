@@ -192,6 +192,9 @@
 		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/SocketUtilities.h">
 			<Option target="SocketUtilities"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/States.h">
+			<Option target="SocketUtilities"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

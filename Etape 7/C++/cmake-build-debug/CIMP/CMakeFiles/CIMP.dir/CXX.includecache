@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+../CIMP/../Socket/States.h
+
 ../CIMP/../libCSV/CSV.h
 string
 -
@@ -19,6 +21,8 @@ RequestCIMP.h
 /cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/CIMP/RequestCIMP.h
 CSV.h
 /cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/CIMP/CSV.h
+States.h
+/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/CIMP/States.h
 
 /cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/CIMP/RequestCIMP.h
 string

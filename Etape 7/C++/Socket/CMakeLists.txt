@@ -9,7 +9,7 @@ include_directories(../CIMP)
 
 
 add_library(SocketUtilities SocketUtilities.cpp SocketUtilities.h
-        SocketClient.h SocketClient.cpp SocketThreadServer.h SocketThreadServer.cpp)
+        SocketClient.h SocketClient.cpp SocketThreadServer.h SocketThreadServer.cpp States.h)
 
 add_executable(ServeurCheckIn ServeurCheckIn.cpp)
 target_link_libraries(ServeurCheckIn SocketUtilities libConfig libCSV CIMP)

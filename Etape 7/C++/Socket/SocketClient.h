@@ -15,7 +15,6 @@ class SocketClient : public SocketUtilities
     public:
         SocketClient(int port);
         void Connect(struct sockaddr_in serveurAddress);
-        void SendMessage(std::string message);
 };
 }
 
