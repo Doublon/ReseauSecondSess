@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../CIMP/../libCSV/CSV.h
+string
+-
+
+/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/CIMP/RequestCIMP.cpp
+cstring
+-
+iostream
+-
+RequestCIMP.h
+/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/CIMP/RequestCIMP.h
+CSV.h
+/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/CIMP/CSV.h
+
+/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/CIMP/RequestCIMP.h
+string
+-
+

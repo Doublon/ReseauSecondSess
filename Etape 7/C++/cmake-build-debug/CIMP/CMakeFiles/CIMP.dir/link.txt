@@ -1,0 +1,2 @@
+/usr/bin/ar.exe qc libCIMP.a  CMakeFiles/CIMP.dir/RequestCIMP.cpp.o CMakeFiles/CIMP.dir/__/libCSV/CSV.cpp.o
+/usr/bin/ranlib.exe libCIMP.a

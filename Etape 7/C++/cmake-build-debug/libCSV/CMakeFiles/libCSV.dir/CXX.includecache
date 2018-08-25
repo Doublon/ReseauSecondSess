@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/libCSV/CSV.cpp
+iostream
+-
+cstring
+-
+CSV.h
+/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/libCSV/CSV.h
+
+/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/libCSV/CSV.h
+string
+-
+

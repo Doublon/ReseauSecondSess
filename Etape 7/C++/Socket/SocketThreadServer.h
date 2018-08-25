@@ -4,7 +4,7 @@
 
 #ifndef CHECKIN_SOCKETTHREADSERVER_H
 #define CHECKIN_SOCKETTHREADSERVER_H
-#define MAX_CLIENT 3
+#define MAX_CLIENT 5
 
 #include <w32api/minwindef.h>
 #include "SocketUtilities.h"
@@ -20,7 +20,7 @@ class SocketThreadServer : public SocketUtilities
     public:
         SocketThreadServer(int port);
 
-        int Start(struct sockaddr_in clientAddress);
+        int Start(std::string ipAddress);
 
         void Init() override;
 
@@ -40,6 +40,8 @@ class SocketThreadServer : public SocketUtilities
         pthread_t _threadHandle[MAX_CLIENT];
         pthread_mutex_t _mutexCurrentIndex;
         pthread_cond_t _condCurrentIndex;
+        
+        void AnalyzeRequest(std::string requestString);
 };
 }
 

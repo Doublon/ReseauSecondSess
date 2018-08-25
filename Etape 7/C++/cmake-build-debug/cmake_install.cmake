@@ -35,6 +35,8 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/libConfig/cmake_install.cmake")
+  include("/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/libCSV/cmake_install.cmake")
+  include("/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/CIMP/cmake_install.cmake")
   include("/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Socket/cmake_install.cmake")
   include("/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Tests/cmake_install.cmake")
 

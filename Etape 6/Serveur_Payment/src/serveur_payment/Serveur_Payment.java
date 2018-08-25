@@ -29,8 +29,8 @@ import serveurpoolthreads.ThreadServeur;
 public class Serveur_Payment extends javax.swing.JFrame implements ConsoleServeur
 {
     private final String propertiesFile = "config.properties";
-    private final String keyStorePath = "D:\\Github\\Etape 6\\Certificats\\keystore_serveur_payment";
-    private final String SSLKeyStorePath = "D:\\Github\\Etape 6\\makecert\\client_payment_keystore";
+    private final String keyStorePath = "D:\\GitHub\\ReseauSecondSess\\Etape 6\\Certificats\\keystore_serveur_payment";
+    private final String SSLKeyStorePath = "D:\\GitHub\\ReseauSecondSess\\Etape 6\\Certificats\\client_payment_keystore";
     
     private Key privateKey;
     private PublicKey publicKey;

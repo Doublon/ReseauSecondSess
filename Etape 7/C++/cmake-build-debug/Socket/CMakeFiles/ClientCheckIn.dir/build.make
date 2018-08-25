@@ -81,6 +81,8 @@ Socket/ClientCheckIn.exe: Socket/CMakeFiles/ClientCheckIn.dir/ClientCheckIn.cpp.
 Socket/ClientCheckIn.exe: Socket/CMakeFiles/ClientCheckIn.dir/build.make
 Socket/ClientCheckIn.exe: Socket/libSocketUtilities.a
 Socket/ClientCheckIn.exe: libConfig/liblibConfig.a
+Socket/ClientCheckIn.exe: libCSV/liblibCSV.a
+Socket/ClientCheckIn.exe: CIMP/libCIMP.a
 Socket/ClientCheckIn.exe: Socket/CMakeFiles/ClientCheckIn.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ClientCheckIn.exe"
 	cd "/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Socket" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ClientCheckIn.dir/link.txt --verbose=$(VERBOSE)

@@ -4,9 +4,12 @@
 
 #include <w32api/ntdef.h>
 #include "SocketThreadServer.h"
+#include "RequestCIMP.h"
+#include "Config.h"
 
 using namespace std;
 using namespace ServeurCheckIn;
+using namespace libConfig;
 
 
 SocketThreadServer::SocketThreadServer(int port) : SocketUtilities(port)
@@ -30,18 +33,22 @@ void SocketThreadServer::Init()
         cout << "Socket créée" << endl;
 }
 
-int SocketThreadServer::Start(struct sockaddr_in clientAddress)
+int SocketThreadServer::Start(std::string ipAddress)
 {
+    Init();
+    GetInfoHost(ipAddress);
+    PrepareSockAddrIn();
+
     Bind();
     LaunchThread();
     do
     {
         Listen();
-        Accept(clientAddress);
+        Accept(_socketAddress);
         FindFreeSocket();
     }while(1);
-
 }
+
 
 void SocketThreadServer::Bind()
 {
@@ -143,7 +150,7 @@ void SocketThreadServer::LaunchThread()
     for(int i = 0; i < MAX_CLIENT; i++)
     {
         pthread_create(&_threadHandle[i], nullptr, (void*(*)(void*))&Thread, &i);
-        cout << "Lancement du thread : " << endl;
+        cout << "Lancement du thread : " << i << endl;
         pthread_detach(_threadHandle[i]);
     }
 }
@@ -169,10 +176,22 @@ void *SocketThreadServer::Thread(int * param)
         pthread_mutex_lock(&_mutexCurrentIndex);
         _hSocketConnected[indexTreadedClient] = -1;
         pthread_mutex_unlock(&_mutexCurrentIndex);
-
+        
+        AnalyzeRequest(message);
+        
         if(!message.compare(""))
             break;
     }while(1);
 
     pthread_exit(param);
+}
+
+void SocketThreadServer::AnalyzeRequest(std::string requestString)
+{
+    Config config("D:\\GitHub\\ReseauSecondSess\\Etape 7\\C++\\Socket\\ServeurCheckIn.txt");
+    string separator = config.GetValue("TRAME_SEPERATOR");
+    string trameEnd = config.GetValue("TRAME_END");
+    
+    RequestCIMP request(separator, trameEnd);
+    request.AnalyseRequest((char*)requestString.c_str());
 }

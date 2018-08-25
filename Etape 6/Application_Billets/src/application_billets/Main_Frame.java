@@ -63,8 +63,8 @@ import tickmap_classes.Vol;
 public class Main_Frame extends javax.swing.JFrame
 {
     private final String filename = "config.properties";
-    public final String keyStorePath = "D:\\Github\\Etape 6\\Certificats\\keystore_client";
-    private final String certificatPaymentPath = "D:\\Github\\Etape 6\\Certificats\\certificat_serveur_payment.cer";
+    public final String keyStorePath = "D:\\GitHub\\ReseauSecondSess\\Etape 6\\Certificats\\keystore_client";
+    private final String certificatPaymentPath = "D:\\GitHub\\ReseauSecondSess\\Etape 6\\Certificats\\certificat_serveur_payment.cer";
     
     private final Login_Frame login_frame;
     private int PORT_BILLETS;

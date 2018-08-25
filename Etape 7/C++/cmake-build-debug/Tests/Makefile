@@ -182,6 +182,33 @@ Tests/fast:
 	cd "/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug" && $(MAKE) -f Tests/CMakeFiles/Tests.dir/build.make Tests/CMakeFiles/Tests.dir/build
 .PHONY : Tests/fast
 
+RequestCIMPTests.o: RequestCIMPTests.cpp.o
+
+.PHONY : RequestCIMPTests.o
+
+# target to build an object file
+RequestCIMPTests.cpp.o:
+	cd "/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug" && $(MAKE) -f Tests/CMakeFiles/Tests.dir/build.make Tests/CMakeFiles/Tests.dir/RequestCIMPTests.cpp.o
+.PHONY : RequestCIMPTests.cpp.o
+
+RequestCIMPTests.i: RequestCIMPTests.cpp.i
+
+.PHONY : RequestCIMPTests.i
+
+# target to preprocess a source file
+RequestCIMPTests.cpp.i:
+	cd "/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug" && $(MAKE) -f Tests/CMakeFiles/Tests.dir/build.make Tests/CMakeFiles/Tests.dir/RequestCIMPTests.cpp.i
+.PHONY : RequestCIMPTests.cpp.i
+
+RequestCIMPTests.s: RequestCIMPTests.cpp.s
+
+.PHONY : RequestCIMPTests.s
+
+# target to generate assembly for a file
+RequestCIMPTests.cpp.s:
+	cd "/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug" && $(MAKE) -f Tests/CMakeFiles/Tests.dir/build.make Tests/CMakeFiles/Tests.dir/RequestCIMPTests.cpp.s
+.PHONY : RequestCIMPTests.cpp.s
+
 ServeurSocketTests.o: ServeurSocketTests.cpp.o
 
 .PHONY : ServeurSocketTests.o
@@ -277,6 +304,9 @@ help:
 	@echo "... test"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... RequestCIMPTests.o"
+	@echo "... RequestCIMPTests.i"
+	@echo "... RequestCIMPTests.s"
 	@echo "... ServeurSocketTests.o"
 	@echo "... ServeurSocketTests.i"
 	@echo "... ServeurSocketTests.s"

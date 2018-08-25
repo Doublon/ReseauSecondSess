@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+../Socket/../CIMP/RequestCIMP.h
+string
+-
+
+../Socket/../libConfig/Config.h
+string
+-
+iostream
+-
+
 /cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/SocketClient.cpp
 SocketClient.h
 /cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/SocketClient.h
@@ -19,6 +29,10 @@ w32api/ntdef.h
 -
 SocketThreadServer.h
 /cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/SocketThreadServer.h
+RequestCIMP.h
+/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/RequestCIMP.h
+Config.h
+/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/Config.h
 
 /cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/SocketThreadServer.h
 w32api/minwindef.h

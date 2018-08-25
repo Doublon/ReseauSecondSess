@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket" -I"/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googlemock/include" -isystem "/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest/include" 
+CXX_INCLUDES = -I"/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket" -I"/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP" -I"/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googlemock/include" -isystem "/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest/include" 
 

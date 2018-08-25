@@ -3,10 +3,12 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="CheckIn" targetName="Tests" />
+      <config projectName="CheckIn" targetName="libCSV" />
       <config projectName="CheckIn" targetName="SocketUtilities" />
       <config projectName="CheckIn" targetName="gtest_main" />
       <config projectName="CheckIn" targetName="ServeurCheckIn" />
       <config projectName="CheckIn" targetName="gmock" />
+      <config projectName="CheckIn" targetName="CIMP" />
       <config projectName="CheckIn" targetName="gtest" />
       <config projectName="CheckIn" targetName="ClientCheckIn" />
       <config projectName="CheckIn" targetName="libConfig" />
@@ -20,113 +22,113 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bab4c45-8e32-49b4-9bdc-31e4b73036a3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/built-jar.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/FenAuthentification$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/FenAuthentification$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/FenAuthentification.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/FlightsFrame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/FlightsFrame$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/FlightsFrame$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/FlightsFrame$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/FlightsFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/LugagesFrame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/LugagesFrame$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/LugagesFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/build/classes/clientpoolthreads/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/manifest.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/nbproject/private/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/nbproject/private/private.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/src/clientpoolthreads/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/src/clientpoolthreads/FenAuthentification.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/src/clientpoolthreads/FenAuthentification.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/src/clientpoolthreads/FlightsFrame.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/src/clientpoolthreads/FlightsFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/src/clientpoolthreads/LugagesFrame.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/src/clientpoolthreads/LugagesFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ClientMultiThread/src/clientpoolthreads/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/build/built-jar.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/build/classes/ProtocoleLUGAP/ReponseLUGAP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/build/classes/ProtocoleLUGAP/RequeteLUGAP$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/build/classes/ProtocoleLUGAP/RequeteLUGAP$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/build/classes/ProtocoleLUGAP/RequeteLUGAP$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/build/classes/ProtocoleLUGAP/RequeteLUGAP$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/build/classes/ProtocoleLUGAP/RequeteLUGAP$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/build/classes/ProtocoleLUGAP/RequeteLUGAP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/dist/RequeteReponseLUGAP.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/nbproject/private/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/nbproject/private/private.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/src/ProtocoleLUGAP/ReponseLUGAP.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseLUGAP/src/ProtocoleLUGAP/RequeteLUGAP.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/build/classes/requetepoolthreads/ConsoleServeur.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/build/classes/requetepoolthreads/Reponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/build/classes/requetepoolthreads/Requete.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/dist/RequeteReponseMultiThread.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/nbproject/private/private.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/src/requetepoolthreads/ConsoleServeur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/src/requetepoolthreads/Reponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/RequeteReponseMultiThread/src/requetepoolthreads/Requete.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/build/built-clean.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/build/built-jar.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/build/classes/serveurbagages/FenApplicationServeurBagages$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/build/classes/serveurbagages/FenApplicationServeurBagages.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/build/classes/serveurbagages/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/dist/README.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/dist/ServeurBagages.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/dist/lib/Bean_DB_Access.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/dist/lib/RequeteReponseLUGAP.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/dist/lib/RequeteReponseMultiThread.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/dist/lib/ServeurMultiThread.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurBagages/nbproject/private/private.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/build/built-jar.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/build/classes/serveurpoolthreads/FenApplicationServeur$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/build/classes/serveurpoolthreads/FenApplicationServeur$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/build/classes/serveurpoolthreads/FenApplicationServeur.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/build/classes/serveurpoolthreads/ServerProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/build/classes/serveurpoolthreads/Serveur.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/build/classes/serveurpoolthreads/ThreadClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/build/classes/serveurpoolthreads/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/manifest.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/nbproject/private/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/nbproject/private/private.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/src/serveurpoolthreads/FenApplicationServeur.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/src/serveurpoolthreads/FenApplicationServeur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/src/serveurpoolthreads/ServerProperties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/src/serveurpoolthreads/Serveur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/src/serveurpoolthreads/ThreadClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/ServeurMultiThread/src/serveurpoolthreads/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/bcprov-jdk15on-158.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Bagages/mysql-connector-java-5.1.44-bin.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/Application_Billets/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Application_Billets/build/built-jar.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/Application_Billets/build/classes/application_billets/Login_Frame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Application_Billets/build/classes/application_billets/Login_Frame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/Application_Billets/build/classes/application_billets/Main_Frame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Application_Billets/build/classes/application_billets/Main_Frame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/Application_Billets/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Application_Billets/nbproject/private/private.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/Application_Billets/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Application_Billets/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/Application_Billets/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Application_Billets/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/Application_Billets/src/application_billets/Main_Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Application_Billets/src/application_billets/Main_Frame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/DatabaseAccess/dist/DatabaseAccess.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/DatabaseAccess/dist/DatabaseAccess.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/DatabaseAccess/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/DatabaseAccess/nbproject/private/private.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/DatabaseAccess/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/DatabaseAccess/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/DatabaseAccess/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/DatabaseAccess/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/ProtocolePAY/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/ProtocolePAY/dist/ProtocolePAY.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/ProtocolePAY/dist/ProtocolePAY.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/ProtocolePAY/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/ProtocolePAY/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/ProtocoleTICKMAP/dist/ProtocoleTICKMAP.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/ProtocoleTICKMAP/dist/ProtocoleTICKMAP.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/ProtocoleTICKMAP/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/ProtocoleTICKMAP/nbproject/private/private.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/ProtocoleTICKMAP/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/ProtocoleTICKMAP/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/ProtocoleTICKMAP/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/ProtocoleTICKMAP/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/RequeteReponseMultithread/dist/RequeteReponseMultithread.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/RequeteReponseMultithread/dist/RequeteReponseMultithread.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/Serveur_Billets/build/classes/serveur_billets/Serveur_Billets.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Serveur_Billets/build/classes/serveur_billets/Serveur_Billets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/Serveur_Billets/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Serveur_Billets/nbproject/private/private.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/Serveur_Billets/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Serveur_Billets/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/Serveur_Billets/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Serveur_Billets/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/Serveur_Billets/src/serveur_billets/Serveur_Billets.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Serveur_Billets/src/serveur_billets/Serveur_Billets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/Serveur_Payment/build/classes/serveur_payment/Serveur_Payment.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Serveur_Payment/build/classes/serveur_payment/Serveur_Payment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/Serveur_Payment/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Serveur_Payment/nbproject/private/private.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/Serveur_Payment/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Serveur_Payment/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/Serveur_Payment/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Serveur_Payment/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Etape 6/Serveur_Payment/src/serveur_payment/Serveur_Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Serveur_Payment/src/serveur_payment/Serveur_Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdC/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdCXX/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CheckIn.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CheckIn.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/ClientCheckIn.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/ClientCheckIn.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ClientCheckIn.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/ServeurCheckIn.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/SocketThreadServer.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/SocketUtilities.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/ClientCheckIn.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/ClientCheckIn.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/ServeurCheckIn.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/ServeurCheckIn.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/SocketUtilities.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/SocketUtilities.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Socket/libSocketUtilities.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Socket/libSocketUtilities.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/Tests.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/Tests.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/Tests.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gmock.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gmock.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/gtest.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/gtest.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googletest-distribution.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests/lib/googletest-master/googletest-distribution.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libConfig/CMakeFiles/libConfig.dir/Config.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libConfig/CMakeFiles/libConfig.dir/Config.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libConfig/CMakeFiles/libConfig.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libConfig/CMakeFiles/libConfig.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libConfig/ConfigUtilities.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libConfig/ConfigUtilities.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libConfig/liblibConfig.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libConfig/liblibConfig.a" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <ignored path="$PROJECT_DIR$/CIMP/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,13 +153,112 @@
         <counts>
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cpp" value="19" />
+          <entry key="h" value="12" />
+          <entry key="txt" value="24" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CMakeLists.txt" value="21" />
+          <entry key="ObjectiveC" value="31" />
+          <entry key="PLAIN_TEXT" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cpp" value="3348" />
+          <entry key="h" value="924" />
+          <entry key="mm" value="20" />
+          <entry key="txt" value="193" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CMakeLists.txt" value="192" />
+          <entry key="ObjectiveC" value="4292" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.cidr.testingFrameworks.usages">
+        <counts>
+          <entry key="Google Test" value="19" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Socket/SocketThreadServer.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="185" column="24" selection-start-line="185" selection-start-column="24" selection-end-line="185" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Socket/SocketThreadServer.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Socket/ClientCheckIn.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+              <folding>
+                <element signature="e#44#69#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CIMP/RequestCIMP.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
+              <folding>
+                <element signature="e#42#60#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libCSV/CSV.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+              <folding>
+                <element signature="e#42#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libCSV/CSV.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -176,6 +277,10 @@
       <find>SocketUtilities</find>
       <find>_hSockerServices</find>
       <find>index</find>
+      <find>Init</find>
+      <find>ReceiveMessage</find>
+      <find>request</find>
+      <find>cerr</find>
     </findStrings>
     <replaceStrings>
       <replace>_socket</replace>
@@ -194,7 +299,6 @@
         <option value="$PROJECT_DIR$/Socket.h" />
         <option value="$PROJECT_DIR$/Socket.cpp" />
         <option value="$PROJECT_DIR$/Serveur/Socket.h" />
-        <option value="$PROJECT_DIR$/libCSV/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/libCSV/CSVUtilities.h" />
         <option value="$PROJECT_DIR$/Serveur/Socket.cpp" />
         <option value="$PROJECT_DIR$/Serveur/Serveur.cpp" />
@@ -205,29 +309,36 @@
         <option value="$PROJECT_DIR$/Serveur/SocketUtilities.cpp" />
         <option value="$PROJECT_DIR$/Serveur/SocketUtilities.h" />
         <option value="$PROJECT_DIR$/Serveur/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Tests/ServeurSocketTests.cpp" />
-        <option value="$PROJECT_DIR$/Tests/SocketUtilitiesTests.cpp" />
         <option value="$PROJECT_DIR$/Socket/ServeurCheckIn.config" />
         <option value="$PROJECT_DIR$/ConfigFilesUtilities/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/libConfig/ConfigFilesUtilities.h" />
         <option value="$PROJECT_DIR$/libConfig/ConfigFilesUtilities.cpp" />
         <option value="$PROJECT_DIR$/libConfig/Config.h" />
-        <option value="$PROJECT_DIR$/Tests/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/libConfig/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/libConfig/Config.cpp" />
-        <option value="$PROJECT_DIR$/Socket/ServeurCheckIn.txt" />
         <option value="$PROJECT_DIR$/Socket/SocketUtilities.cpp" />
         <option value="$PROJECT_DIR$/Socket/SocketServeur.h" />
         <option value="$PROJECT_DIR$/Socket/SocketServeur.cpp" />
         <option value="$PROJECT_DIR$/Socket/SocketClient.h" />
         <option value="$PROJECT_DIR$/Socket/SocketClient.cpp" />
-        <option value="$PROJECT_DIR$/Socket/ServeurCheckIn.cpp" />
         <option value="$PROJECT_DIR$/Socket/SocketUtilities.h" />
+        <option value="$PROJECT_DIR$/Tests/ServeurSocketTests.cpp" />
+        <option value="$PROJECT_DIR$/Tests/SocketUtilitiesTests.cpp" />
+        <option value="$PROJECT_DIR$/Tests/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/CIMP/RequestCIMP.h" />
+        <option value="$PROJECT_DIR$/Tests/RequestCIMPTests.cpp" />
+        <option value="$PROJECT_DIR$/Socket/ServeurCheckIn.txt" />
+        <option value="$PROJECT_DIR$/Socket/ServeurCheckIn.cpp" />
+        <option value="$PROJECT_DIR$/Socket/SocketThreadServer.h" />
+        <option value="$PROJECT_DIR$/Socket/SocketThreadServer.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Socket/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Socket/SocketThreadServer.h" />
+        <option value="$PROJECT_DIR$/libCSV/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/CIMP/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Socket/ClientCheckIn.cpp" />
-        <option value="$PROJECT_DIR$/Socket/SocketThreadServer.cpp" />
+        <option value="$PROJECT_DIR$/libCSV/CSV.h" />
+        <option value="$PROJECT_DIR$/libCSV/CSV.cpp" />
+        <option value="$PROJECT_DIR$/CIMP/RequestCIMP.cpp" />
       </list>
     </option>
   </component>
@@ -239,8 +350,7 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-7" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -262,12 +372,12 @@
             <path>
               <item name="CheckIn" type="b2602c69:ProjectViewProjectNode" />
               <item name="C++" type="462c0819:PsiDirectoryNode" />
-              <item name="libConfig" type="462c0819:PsiDirectoryNode" />
+              <item name="CIMP" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CheckIn" type="b2602c69:ProjectViewProjectNode" />
               <item name="C++" type="462c0819:PsiDirectoryNode" />
-              <item name="Socket" type="462c0819:PsiDirectoryNode" />
+              <item name="libCSV" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -281,10 +391,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\ReseauSecondSess\Etape 7\C++" />
       <recent name="D:\GitHub\ReseauSecondSess" />
     </key>
   </component>
@@ -300,8 +411,38 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ServeurCheckIn">
+  <component name="RunManager" selected="Application.ClientCheckIn">
     <configuration name="AllTest" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" singleton="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CheckIn" RUN_TARGET_NAME="Tests" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RequestCIMPTests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CheckIn" RUN_TARGET_NAME="Tests" TEST_CLASS="RequestCIMPTests" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RequestCIMPTests.AnalyseRequest_RightTypeRequestTraited" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CheckIn" RUN_TARGET_NAME="Tests" TEST_CLASS="RequestCIMPTests" TEST_METHOD="AnalyseRequest_RightTypeRequestTraited" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RequestCIMPTests.CreationLoginRequest_RequestIsCreated" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CheckIn" RUN_TARGET_NAME="Tests" TEST_CLASS="RequestCIMPTests" TEST_METHOD="CreationLoginRequest_RequestIsCreated" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RequestCIMPTests.ProcessLoginRequest_RequestProcessed" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CheckIn" RUN_TARGET_NAME="Tests" TEST_CLASS="RequestCIMPTests" TEST_METHOD="ProcessLoginRequest_RequestProcessed" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SocketUtilitiesTests.PrepareSocket_SocketIsReady" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CheckIn" RUN_TARGET_NAME="Tests" TEST_CLASS="SocketUtilitiesTests" TEST_METHOD="PrepareSocket_SocketIsReady" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CIMP" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="CIMP" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -316,11 +457,32 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="libCSV" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CheckIn" TARGET_NAME="libCSV" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Google Test.AllTest" />
+      <item itemvalue="Application.CIMP" />
+      <item itemvalue="Application.libCSV" />
       <item itemvalue="Application.ClientCheckIn" />
       <item itemvalue="Application.ServeurCheckIn" />
+      <item itemvalue="Google Test.SocketUtilitiesTests.PrepareSocket_SocketIsReady" />
+      <item itemvalue="Google Test.RequestCIMPTests.CreationLoginRequest_RequestIsCreated" />
+      <item itemvalue="Google Test.RequestCIMPTests" />
+      <item itemvalue="Google Test.RequestCIMPTests.AnalyseRequest_RightTypeRequestTraited" />
+      <item itemvalue="Google Test.RequestCIMPTests.ProcessLoginRequest_RequestProcessed" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Google Test.RequestCIMPTests.ProcessLoginRequest_RequestProcessed" />
+        <item itemvalue="Google Test.RequestCIMPTests.AnalyseRequest_RightTypeRequestTraited" />
+        <item itemvalue="Google Test.RequestCIMPTests.CreationLoginRequest_RequestIsCreated" />
+        <item itemvalue="Google Test.RequestCIMPTests" />
+        <item itemvalue="Google Test.SocketUtilitiesTests.PrepareSocket_SocketIsReady" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -344,54 +506,56 @@
       <workItem from="1535123172471" duration="24000" />
       <workItem from="1535123413621" duration="9000" />
       <workItem from="1535124052418" duration="101000" />
+      <workItem from="1535199882300" duration="12949000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AllTest - 2018.07.30 at 15h 13m 02s.xml">
-      <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="RequestCIMPTests - 2018.08.25 at 15h 21m 19s.xml">
+      <configuration name="RequestCIMPTests" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="AllTest - 2018.07.30 at 15h 31m 07s.xml">
-      <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="RequestCIMPTests_CreationLoginRequest_RequestIsCreated - 2018.08.25 at 15h 21m 31s.xml">
+      <configuration name="RequestCIMPTests.CreationLoginRequest_RequestIsCreated" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="AllTest - 2018.07.30 at 15h 33m 13s.xml">
-      <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="RequestCIMPTests_CreationLoginRequest_RequestIsCreated - 2018.08.25 at 15h 22m 27s.xml">
+      <configuration name="RequestCIMPTests.CreationLoginRequest_RequestIsCreated" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="AllTest - 2018.07.30 at 20h 45m 20s.xml">
-      <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="RequestCIMPTests_CreationLoginRequest_RequestIsCreated - 2018.08.25 at 15h 24m 18s.xml">
+      <configuration name="RequestCIMPTests.CreationLoginRequest_RequestIsCreated" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="AllTest - 2018.07.30 at 20h 48m 12s.xml">
-      <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="RequestCIMPTests_CreationLoginRequest_RequestIsCreated - 2018.08.25 at 15h 25m 30s.xml">
+      <configuration name="RequestCIMPTests.CreationLoginRequest_RequestIsCreated" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="AllTest - 2018.07.30 at 20h 52m 02s.xml">
-      <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="RequestCIMPTests_CreationLoginRequest_RequestIsCreated - 2018.08.25 at 15h 36m 50s.xml">
+      <configuration name="RequestCIMPTests.CreationLoginRequest_RequestIsCreated" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="AllTest - 2018.07.30 at 20h 57m 24s.xml">
-      <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="RequestCIMPTests_AnalyseRequest_RightTypeRequestTraited - 2018.08.25 at 15h 39m 41s.xml">
+      <configuration name="RequestCIMPTests.AnalyseRequest_RightTypeRequestTraited" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="AllTest - 2018.07.30 at 21h 00m 41s.xml">
-      <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="RequestCIMPTests_ProcessLoginRequest_RequestProcessed - 2018.08.25 at 15h 49m 40s.xml">
+      <configuration name="RequestCIMPTests.ProcessLoginRequest_RequestProcessed" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="AllTest - 2018.07.30 at 21h 02m 48s.xml">
-      <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="RequestCIMPTests_ProcessLoginRequest_RequestProcessed - 2018.08.25 at 15h 50m 57s.xml">
+      <configuration name="RequestCIMPTests.ProcessLoginRequest_RequestProcessed" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="AllTest - 2018.07.30 at 21h 38m 56s.xml">
-      <configuration name="AllTest" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="RequestCIMPTests_CreationLoginRequest_RequestIsCreated - 2018.08.25 at 17h 18m 47s.xml">
+      <configuration name="RequestCIMPTests.CreationLoginRequest_RequestIsCreated" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51454000" />
+    <option name="totallyTimeSpent" value="64403000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27985075" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28304905" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32890365" />
-      <window_info anchor="bottom" x="-1846" y="197" width="1876" height="297" id="Run" order="2" weight="0.32890365" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39977852" />
+      <window_info active="true" anchor="bottom" x="-1846" y="197" width="1876" height="297" id="Run" order="2" visible="true" weight="0.3253796" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -417,8 +581,33 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="CMakeGoogleTestRunConfigurationType">
+        <watch expression="_request.getRequest()" language="ObjectiveC" />
+      </configuration>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="_csvContent" language="ObjectiveC" />
+      </configuration>
+    </watches-manager>
+  </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>_csvContent</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>_pathCSV</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>_request.getRequest()</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>_count</expression-string>
         <language-id>ObjectiveC</language-id>
@@ -435,28 +624,175 @@
     <entry file="file://$PROJECT_DIR$/Serveur/Socket.cpp" />
     <entry file="file://$PROJECT_DIR$/Tests/SocketTests.cpp" />
     <entry file="file://$PROJECT_DIR$/Serveur/CMakeLists.txt" />
-    <entry file="file://$PROJECT_DIR$/Tests/ServeurSocketTests.cpp" />
-    <entry file="file://$PROJECT_DIR$/Tests/SocketUtilitiesTests.cpp" />
-    <entry file="file://$PROJECT_DIR$/libCSV/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/libConfig/ConfigFilesUtilities.h" />
     <entry file="file://$PROJECT_DIR$/libConfig/ConfigFilesUtilities.cpp" />
     <entry file="file://$PROJECT_DIR$/Tests/lib/googletest-master/googlemock/make/Makefile" />
     <entry file="file://$PROJECT_DIR$/libConfig/Config.cpp" />
-    <entry file="file://$PROJECT_DIR$/libConfig/CMakeLists.txt" />
-    <entry file="file://$PROJECT_DIR$/libConfig/Config.h" />
-    <entry file="file://$PROJECT_DIR$/Socket/ServeurCheckIn.txt" />
-    <entry file="file://$PROJECT_DIR$/Tests/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/Socket/SocketServeur.h" />
     <entry file="file://$PROJECT_DIR$/Socket/SocketServeur.cpp" />
-    <entry file="file://$PROJECT_DIR$/Socket/SocketUtilities.h" />
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt" />
-    <entry file="file://$PROJECT_DIR$/Socket/SocketThreadServer.h" />
-    <entry file="file://$PROJECT_DIR$/Socket/SocketUtilities.cpp" />
-    <entry file="file://$PROJECT_DIR$/Socket/ServeurCheckIn.cpp" />
-    <entry file="file://$PROJECT_DIR$/Socket/ClientCheckIn.cpp" />
     <entry file="file://$PROJECT_DIR$/Socket/SocketClient.h" />
     <entry file="file://$PROJECT_DIR$/Socket/SocketClient.cpp" />
-    <entry file="file://$PROJECT_DIR$/Socket/SocketThreadServer.cpp" />
-    <entry file="file://$PROJECT_DIR$/Socket/CMakeLists.txt" />
+    <entry file="file://$PROJECT_DIR$/Tests/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="60" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socket/SocketUtilities.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socket/SocketUtilities.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/SocketUtilitiesTests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-160">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/ServeurSocketTests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-160">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="24" />
+          <folding>
+            <element signature="e#44#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CIMP/RequestCIMP.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" column="68" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/RequestCIMPTests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+          <folding>
+            <element signature="e#42#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socket/ServeurCheckIn.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socket/ServeurCheckIn.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="9" selection-start-line="3" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libConfig/Config.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libConfig/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socket/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libCSV/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CIMP/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socket/SocketThreadServer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="185" column="24" selection-start-line="185" selection-start-column="24" selection-end-line="185" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socket/SocketThreadServer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socket/ClientCheckIn.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding>
+            <element signature="e#44#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libCSV/CSV.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libCSV/CSV.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+          <folding>
+            <element signature="e#42#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CIMP/RequestCIMP.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
+          <folding>
+            <element signature="e#42#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

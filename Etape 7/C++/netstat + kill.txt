@@ -1,0 +1,2 @@
+netstat -ano | findstr 50000
+Taskkill /PID  6596 /F

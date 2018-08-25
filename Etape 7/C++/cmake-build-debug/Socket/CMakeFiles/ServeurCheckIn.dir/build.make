@@ -81,6 +81,8 @@ Socket/ServeurCheckIn.exe: Socket/CMakeFiles/ServeurCheckIn.dir/ServeurCheckIn.c
 Socket/ServeurCheckIn.exe: Socket/CMakeFiles/ServeurCheckIn.dir/build.make
 Socket/ServeurCheckIn.exe: Socket/libSocketUtilities.a
 Socket/ServeurCheckIn.exe: libConfig/liblibConfig.a
+Socket/ServeurCheckIn.exe: libCSV/liblibCSV.a
+Socket/ServeurCheckIn.exe: CIMP/libCIMP.a
 Socket/ServeurCheckIn.exe: Socket/CMakeFiles/ServeurCheckIn.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ServeurCheckIn.exe"
 	cd "/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Socket" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ServeurCheckIn.dir/link.txt --verbose=$(VERBOSE)

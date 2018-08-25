@@ -32,7 +32,7 @@ public class Serveur_Billets extends javax.swing.JFrame implements ConsoleServeu
 {
     private final String propertiesFile = "config.properties";
     //TODO PATH:
-    private final String keyStorePath = "D:\\Github\\Etape 6\\Certificats\\keystore_serveur";
+    private final String keyStorePath = "D:\\GitHub\\ReseauSecondSess\\Etape 6\\Certificats\\keystore_serveur";
     private Key privateKey;
     private PublicKey publicKey;
     private X509Certificate certificat;

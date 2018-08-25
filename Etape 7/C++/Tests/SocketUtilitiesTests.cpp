@@ -9,7 +9,7 @@ using namespace ServeurCheckIn;
 class SocketUtilitiesTests : public testing::Test
 {
     public:
-        SocketUtilitiesTests()
+        SocketUtilitiesTests() : _socket(50000)
         {
         }
     protected:
@@ -34,7 +34,7 @@ TEST_F(SocketUtilitiesTests, GetInfoHost_InfoIsTaked)
 TEST_F(SocketUtilitiesTests, PrepareSocket_SocketIsReady)
 {
     _socket.GetInfoHost("127.0.0.1");
-    _socket.PrepareSockAddrIn(8080);
+    _socket.PrepareSockAddrIn();
 
-    ASSERT_EQ(htons(8080), _socket.SocketAddress().sin_port);
+    ASSERT_EQ(htons(50000), _socket.SocketAddress().sin_port);
 }

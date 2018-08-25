@@ -5,7 +5,7 @@
 		<Option title="CheckIn"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\libConfig\;CMake Files\Socket\;CMake Files\Tests\;CMake Files\Tests\lib\;CMake Files\Tests\lib\googletest-master\;CMake Files\Tests\lib\googletest-master\googlemock\;CMake Files\Tests\lib\googletest-master\googlemock\cmake\;CMake Files\Tests\lib\googletest-master\googletest\;CMake Files\Tests\lib\googletest-master\googletest\cmake\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\CIMP\;CMake Files\libCSV\;CMake Files\libConfig\;CMake Files\Socket\;CMake Files\Tests\;CMake Files\Tests\lib\;CMake Files\Tests\lib\googletest-master\;CMake Files\Tests\lib\googletest-master\googlemock\;CMake Files\Tests\lib\googletest-master\googlemock\cmake\;CMake Files\Tests\lib\googletest-master\googletest\;CMake Files\Tests\lib\googletest-master\googletest\cmake\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug"/>
@@ -131,6 +131,96 @@
 					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/libConfig/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="libCSV">
+				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/libCSV/liblibCSV.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/libCSV"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/libCSV/Makefile&quot;  VERBOSE=1 libCSV"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/libCSV/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/libCSV/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/libCSV/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libCSV/fast">
+				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/libCSV/liblibCSV.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/libCSV"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/libCSV/Makefile&quot;  VERBOSE=1 libCSV/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/libCSV/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/libCSV/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/libCSV/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CIMP">
+				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/CIMP/libCIMP.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/CIMP"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/CIMP/../libCSV"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/CIMP/Makefile&quot;  VERBOSE=1 CIMP"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/CIMP/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/CIMP/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/CIMP/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CIMP/fast">
+				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/CIMP/libCIMP.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/CIMP"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/CIMP/../libCSV"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/CIMP/Makefile&quot;  VERBOSE=1 CIMP/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/CIMP/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/CIMP/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/CIMP/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="SocketUtilities">
 				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Socket/libSocketUtilities.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Socket"/>
@@ -139,6 +229,8 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../libConfig"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../libCSV"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../CIMP"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
@@ -162,6 +254,8 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../libConfig"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../libCSV"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../CIMP"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
@@ -185,6 +279,8 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../libConfig"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../libCSV"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../CIMP"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
@@ -208,6 +304,8 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../libConfig"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../libCSV"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../CIMP"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
@@ -231,6 +329,8 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../libConfig"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../libCSV"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../CIMP"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
@@ -254,6 +354,8 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../libConfig"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../libCSV"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../CIMP"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
@@ -277,6 +379,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googlemock/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
@@ -302,6 +405,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googlemock/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
@@ -327,6 +431,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googlemock"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googlemock/include"/>
@@ -354,6 +459,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googlemock"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googlemock/include"/>
@@ -381,6 +487,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googlemock/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googlemock"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest"/>
@@ -408,6 +515,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googlemock/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googlemock"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest"/>
@@ -435,6 +543,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
@@ -460,6 +569,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
@@ -485,6 +595,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
@@ -510,6 +621,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
@@ -528,6 +640,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/CIMP/RequestCIMP.cpp">
+			<Option target="CIMP"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/CIMP/RequestCIMP.h">
+			<Option target="CIMP"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/ClientCheckIn.cpp">
 			<Option target="ClientCheckIn"/>
 		</Unit>
@@ -552,6 +670,9 @@
 		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/SocketUtilities.h">
 			<Option target="SocketUtilities"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/RequestCIMPTests.cpp">
+			<Option target="Tests"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/ServeurSocketTests.cpp">
 			<Option target="Tests"/>
 		</Unit>
@@ -573,6 +694,14 @@
 		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/main.cpp">
 			<Option target="Tests"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/libCSV/CSV.cpp">
+			<Option target="libCSV"/>
+			<Option target="CIMP"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/libCSV/CSV.h">
+			<Option target="libCSV"/>
+			<Option target="CIMP"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/libConfig/Config.cpp">
 			<Option target="libConfig"/>
 		</Unit>
@@ -581,6 +710,12 @@
 		</Unit>
 		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/CIMP/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\CIMP\"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/libCSV/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libCSV\"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/libConfig/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libConfig\"/>

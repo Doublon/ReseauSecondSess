@@ -5,7 +5,7 @@
 		<Option title="Tests"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\libConfig\;CMake Files\Socket\;CMake Files\Tests\;CMake Files\Tests\lib\;CMake Files\Tests\lib\googletest-master\;CMake Files\Tests\lib\googletest-master\googlemock\;CMake Files\Tests\lib\googletest-master\googlemock\cmake\;CMake Files\Tests\lib\googletest-master\googletest\;CMake Files\Tests\lib\googletest-master\googletest\cmake\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\CIMP\;CMake Files\libCSV\;CMake Files\libConfig\;CMake Files\Socket\;CMake Files\Tests\;CMake Files\Tests\lib\;CMake Files\Tests\lib\googletest-master\;CMake Files\Tests\lib\googletest-master\googlemock\;CMake Files\Tests\lib\googletest-master\googlemock\cmake\;CMake Files\Tests\lib\googletest-master\googletest\;CMake Files\Tests\lib\googletest-master\googletest\cmake\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Tests"/>
@@ -25,6 +25,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googlemock/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
@@ -50,6 +51,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googlemock/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
@@ -75,6 +77,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googlemock"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googlemock/include"/>
@@ -102,6 +105,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googlemock"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googlemock/include"/>
@@ -129,6 +133,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googlemock/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googlemock"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest"/>
@@ -156,6 +161,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googlemock/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googlemock"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest"/>
@@ -183,6 +189,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
@@ -208,6 +215,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest/include"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
@@ -233,6 +241,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
@@ -258,6 +267,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest"/>
 					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
@@ -276,6 +286,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/RequestCIMPTests.cpp">
+			<Option target="Tests"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/ServeurSocketTests.cpp">
 			<Option target="Tests"/>
 		</Unit>
@@ -299,6 +312,12 @@
 		</Unit>
 		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/CIMP/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\CIMP\"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/libCSV/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libCSV\"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/libConfig/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libConfig\"/>

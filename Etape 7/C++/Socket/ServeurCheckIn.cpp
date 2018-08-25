@@ -12,14 +12,12 @@ using namespace ServeurCheckIn;
 int main(int argc, char* argv[])
 {
     string ipServer, port;
-    Config config("D:\\GitHub\\ReseauSecondSess\\Socket\\ServeurCheckIn.txt");
+    Config config("D:\\GitHub\\ReseauSecondSess\\Etape 7\\C++\\Socket\\ServeurCheckIn.txt");
 
     ipServer = config.GetValue("SERVER_IP");
     port = config.GetValue("CHECKIN_PORT");
 
     SocketThreadServer socket(stoi(port));
-    socket . Init();
-    socket.GetInfoHost(ipServer);
-    socket.PrepareSockAddrIn();
-    socket.Start(socket.SocketAddress());
+
+    socket.Start(ipServer);
 }

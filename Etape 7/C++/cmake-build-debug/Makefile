@@ -181,6 +181,32 @@ libConfig/fast:
 .PHONY : libConfig/fast
 
 #=============================================================================
+# Target rules for targets named libCSV
+
+# Build rule for target.
+libCSV: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libCSV
+.PHONY : libCSV
+
+# fast build rule for target.
+libCSV/fast:
+	$(MAKE) -f libCSV/CMakeFiles/libCSV.dir/build.make libCSV/CMakeFiles/libCSV.dir/build
+.PHONY : libCSV/fast
+
+#=============================================================================
+# Target rules for targets named CIMP
+
+# Build rule for target.
+CIMP: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 CIMP
+.PHONY : CIMP
+
+# fast build rule for target.
+CIMP/fast:
+	$(MAKE) -f CIMP/CMakeFiles/CIMP.dir/build.make CIMP/CMakeFiles/CIMP.dir/build
+.PHONY : CIMP/fast
+
+#=============================================================================
 # Target rules for targets named SocketUtilities
 
 # Build rule for target.
@@ -298,6 +324,8 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... libConfig"
+	@echo "... libCSV"
+	@echo "... CIMP"
 	@echo "... SocketUtilities"
 	@echo "... ServeurCheckIn"
 	@echo "... ClientCheckIn"

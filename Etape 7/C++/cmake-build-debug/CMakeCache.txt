@@ -23,6 +23,12 @@ BUILD_GTEST:BOOL=OFF
 //Build shared libraries (DLLs).
 BUILD_SHARED_LIBS:BOOL=OFF
 
+//Value Computed by CMake
+CIMP_BINARY_DIR:STATIC=/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/CIMP
+
+//Value Computed by CMake
+CIMP_SOURCE_DIR:STATIC=/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/CIMP
+
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar.exe
 
@@ -296,6 +302,12 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip.exe
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+CSVUtilities_BINARY_DIR:STATIC=/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/libCSV
+
+//Value Computed by CMake
+CSVUtilities_SOURCE_DIR:STATIC=/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/libCSV
+
+//Value Computed by CMake
 CheckIn_BINARY_DIR:STATIC=/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug
 
 //Value Computed by CMake
@@ -525,7 +537,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

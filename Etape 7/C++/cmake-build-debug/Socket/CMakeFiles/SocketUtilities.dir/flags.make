@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../libConfig" 
+CXX_INCLUDES = -I"/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../libConfig" -I"/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../libCSV" -I"/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../CIMP" 
 

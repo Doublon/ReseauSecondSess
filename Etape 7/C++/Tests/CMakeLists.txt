@@ -4,10 +4,11 @@ project(Tests)
 find_package(Threads REQUIRED)
 
 include_directories(../Socket)
+include_directories(../CIMP)
 
 add_subdirectory(lib/googletest-master)
 include_directories(lib/googletest-master/googletest/include)
 include_directories(lib/googletest-master/googlemock/include)
 
-add_executable(Tests main.cpp SocketUtilitiesTests.cpp ServeurSocketTests.cpp)
-target_link_libraries(Tests gtest gtest_main SocketUtilities)
+add_executable(Tests main.cpp SocketUtilitiesTests.cpp ServeurSocketTests.cpp RequestCIMPTests.cpp)
+target_link_libraries(Tests gtest gtest_main SocketUtilities CIMP)
