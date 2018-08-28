@@ -12,7 +12,7 @@ libCSV::CSV::CSV(std::string pathCSV) : _pathCSV(pathCSV)
 {
 }
 
-char *libCSV::CSV::ReadCSV()
+void libCSV::CSV::ReadCSV()
 {
     char *csvContent[255];
     for(int i = 0; i < 255; i++)
@@ -38,5 +38,20 @@ char *libCSV::CSV::ReadCSV()
         fclose(file);
         cout << "Fichier .csv chargé" << endl;
     }
-    return *csvContent;
+    _content = *csvContent;
+}
+
+bool libCSV::CSV::Find(std::string element)
+{
+    bool find = false;
+    char * content;
+    for(int i = 0; find == false && _content[i] != NULL && i < 254; i++)
+    {
+        content = strtok(&_content[i], ";");
+        string compare(content);
+        if(compare + "#" == element)
+            find = true;
+    }
+
+    return find;
 }

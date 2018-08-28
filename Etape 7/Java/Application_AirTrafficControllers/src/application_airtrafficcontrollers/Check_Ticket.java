@@ -7,9 +7,17 @@ package application_airtrafficcontrollers;
 
 import ProtocoleACMAP.ReponseACMAP;
 import ProtocoleACMAP.RequeteACMAP;
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -122,11 +130,28 @@ public class Check_Ticket extends javax.swing.JFrame
             RequeteACMAP requete = new RequeteACMAP(RequeteACMAP.REQUEST_CHECKIN_OFF);
             requete.setChargeUtile(ticket);
             System.out.println("ChargeUtile : " + requete.chargeUtile);
-            ReponseACMAP reponse = null;
+            String reponse = null;
             
             try
             {
-                reponse = (ReponseACMAP) parent.sendReceive(requete);
+                reponse = sendReceive(requete);
+                if(reponse.equals("TICKET_CHECKED_OK"))
+                {
+                    this.setAlwaysOnTop(false);
+                    this.setVisible(false);
+                    this.dispose();
+                    parent.setGroupButtons(false,true,true,false,false,false);
+                    parent.setVisible(true);
+                }
+                else
+                {
+                    JOptionPane.showMessageDialog(null,"Numéro de ticket invalide", "Warning", JOptionPane.WARNING_MESSAGE);
+                    this.setAlwaysOnTop(false);
+                    this.setVisible(false);
+                    this.dispose();
+                    parent.setGroupButtons(true,true,false,false,false,false);
+                    parent.setVisible(true);
+                }
             }
             catch (IOException ex)
             {
@@ -140,6 +165,54 @@ public class Check_Ticket extends javax.swing.JFrame
             
     }//GEN-LAST:event_jOkButtonActionPerformed
 
+    public String sendReceive(RequeteACMAP requete) throws IOException, ClassNotFoundException
+    {
+        Socket sockCpp = null;
+        sockCpp = initSocket("127.0.0.1", 50000);
+        
+        DataOutputStream dos = null;
+        dos = new DataOutputStream(new BufferedOutputStream(sockCpp.getOutputStream()));
+        String message = "CHECK_TICKET;" + requete.chargeUtile + "#";
+        dos.write(message.getBytes());
+        dos.flush();
+        
+        DataInputStream dis = null;
+        dis = new DataInputStream(new BufferedInputStream(sockCpp.getInputStream()));
+       
+        byte b = 0;
+        StringBuffer buffer = new StringBuffer();
+        while(b != (byte)'\n')
+        {
+            b = dis.readByte();
+            if(b != (byte)'\n')
+                buffer.append((char)b);   
+        }
+            
+        String reponse = buffer.toString().trim();
+        System.out.println("Reponse : " + reponse);
+        
+        return reponse;        
+    }
+    
+    public Socket initSocket(String adresse, int port)
+    {
+        Socket socket = null;
+        try
+        {
+            socket = new Socket(adresse, port);
+        }
+        catch (UnknownHostException e)
+        { 
+            System.err.println("Erreur ! Host non trouvé [" + e + "]"); 
+        }
+        catch (IOException e)
+        { 
+            System.err.println("Erreur ! Pas de connexion ? [" + e + "]"); 
+        }
+        
+        return socket;
+    }
+    
     /**
      * @param args the command line arguments
      */

@@ -14,10 +14,12 @@ class CSV
 public:
     CSV(std::string pathCSV);
 
-    char* ReadCSV();
+    void ReadCSV();
+    bool Find(std::string element);
 
 private:
     std::string _pathCSV;
+    char* _content;
 };
 }
 

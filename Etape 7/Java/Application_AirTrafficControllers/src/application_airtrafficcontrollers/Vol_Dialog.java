@@ -60,7 +60,7 @@ public class Vol_Dialog extends javax.swing.JDialog
         this.setTitle(vol.toString());
     }
 
-    private void setGroupButtons(boolean busy, boolean checkin_off, boolean ready, boolean readytofly, boolean takingoff, boolean flying)
+    public void setGroupButtons(boolean busy, boolean checkin_off, boolean ready, boolean readytofly, boolean takingoff, boolean flying)
     {
         JRBBusy.setEnabled(busy);
         JRBCheckIn_Off.setEnabled(checkin_off);
@@ -191,8 +191,10 @@ public class Vol_Dialog extends javax.swing.JDialog
     private void JRBCheckIn_OffActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_JRBCheckIn_OffActionPerformed
     {//GEN-HEADEREND:event_JRBCheckIn_OffActionPerformed
         Check_Ticket checkTicket = new Check_Ticket(this, adresse, port);
+        checkTicket.setAlwaysOnTop(true);
         checkTicket.setVisible(true);
-        this.dispose();
+        
+        this.setVisible(false);
         
         Date date = new Date();
         Timestamp now = new Timestamp(date.getTime());
@@ -413,10 +415,6 @@ public class Vol_Dialog extends javax.swing.JDialog
         parent.initSocket(adresse, port);
     }
     
-    public Object sendReceive(Object requete) throws IOException, ClassNotFoundException
-    {
-        return parent.sendReceive(requete);
-    }
     
     public static void main(String args[])
     {

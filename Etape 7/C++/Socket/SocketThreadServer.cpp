@@ -188,5 +188,10 @@ void SocketThreadServer::SendResponse(int state)
             cout << "Envoie du CONNECTED " <<  endl;
             SendMessage(_hSocketDuplicated, "CONNECTED");
             break;
+
+        case States::TICKET_CHECKED_OK :
+            cout << "Envoie du TICKET_CHECKED_OK " <<  endl;
+            SendMessage(_hSocketDuplicated, "TICKET_CHECKED_OK\n");
+            break;
     }
 }

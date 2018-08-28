@@ -36,13 +36,16 @@ int RequestCIMP::AnalyseRequest(char *request)
 
     token = strtok_r(request, _separator.c_str(), &ptr);
 
-    switch(atoi(token))
+    if(strcmp(token, "LOGIN_OFFICER") == 0)
     {
-        case LOGIN_OFFICER :
-            string user(strtok_r(nullptr, _separator.c_str(), &ptr));
-            string password(strtok_r(nullptr, _endTrame.c_str(), &ptr));
-            return ProcessLoginRequest(user, password);
-        break;
+        string user(strtok_r(nullptr, _separator.c_str(), &ptr));
+        string password(strtok_r(nullptr, _endTrame.c_str(), &ptr));
+        return ProcessLoginRequest(user, password);
+    }
+    else if(strcmp(token, "CHECK_TICKET") == 0)
+    {
+        string ticket(strtok_r(nullptr, _separator.c_str(), &ptr));
+        return ProcessCheckInTicket(ticket);
     }
 }
 
@@ -50,19 +53,10 @@ int RequestCIMP::ProcessLoginRequest(std::string user, std::string password)
 {
     char *login, *pwd, *ptr;
     CSV csvFile("D:\\GitHub\\ReseauSecondSess\\Etape 7\\C++\\Socket\\logins.csv");
-    char *csvContent = csvFile.ReadCSV();
+    csvFile.ReadCSV();
+    bool trouve = csvFile.Find("test");
 
-    int trouve = 0;
-    for(int i = 0; trouve == 0 && csvContent[i] != NULL && i < 244; i++)
-    {
-        login = strtok_r(&csvContent[i], ";", &ptr);
-        pwd = strtok_r(NULL, "\r", &ptr);
-
-        if(strcmp(login, user.c_str()) == 0 && strcmp(pwd, password.c_str()) == 0)
-            trouve = 1;
-    }
-
-    if(trouve == 1)
+    if(trouve == true)
     {
         cout << "Utilisateur trouvé !" << endl;
         return CONNECTED;
@@ -73,3 +67,24 @@ int RequestCIMP::ProcessLoginRequest(std::string user, std::string password)
         return DISCONNECTED;
     }
 }
+
+int RequestCIMP::ProcessCheckInTicket(std::string ticket)
+{
+    cout << "Traitement de la requete CHECK_TICKET" << endl;
+
+    CSV csvFile("D:\\GitHub\\ReseauSecondSess\\Etape 7\\C++\\Socket\\tickets.csv");
+    csvFile.ReadCSV();
+    bool find = csvFile.Find(ticket);
+
+    if(find == true)
+    {
+        cout << "Ticket trouvé !" << endl;
+        return States::TICKET_CHECKED_OK;
+    }
+    else
+    {
+        cout << "Ticket non reconnu !" << endl;
+        return States::TICKET_CHECKED_OK;
+    }
+}
+
