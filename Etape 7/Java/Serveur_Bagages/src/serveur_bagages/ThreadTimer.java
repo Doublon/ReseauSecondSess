@@ -22,7 +22,7 @@ public class ThreadTimer extends Thread
     {
         temps = 0;
         interrupted = false;
-        while(temps < 60 && !isInterrupted())
+        while(temps < 10 && !isInterrupted())
         {
             temps++;
             try

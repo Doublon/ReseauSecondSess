@@ -77,28 +77,16 @@ public class ThreadClient extends Thread
                 {
                     ((LoginLUGAP) req).TraiterRequete(CSocket, guiApplication);
                 }
-                else
-                {
-                    if(req instanceof RequeteVolsLUGAP)
-                    {
-                        ((RequeteVolsLUGAP) req).TraiterRequete(CSocket, guiApplication);
-                    }
-                    else
-                    {
-                        if(req instanceof RequeteBagagesLUGAP)
-                        {
-                            ((RequeteBagagesLUGAP) req).TraiterRequete(CSocket, guiApplication);
-                        }
-                        else
-                        {
-                            if(req instanceof RequeteColumnChangedLUGAP)
-                            {
-                                ((RequeteColumnChangedLUGAP) req).TraiterRequete(CSocket, guiApplication);                               
-                            }
-                        }
-                    }
-                }
-            }    
-        }
+                else if(req instanceof RequeteVolsLUGAP)
+                    ((RequeteVolsLUGAP) req).TraiterRequete(CSocket, guiApplication);
+                else if(req instanceof RequeteBagagesLUGAP)
+                    ((RequeteBagagesLUGAP) req).TraiterRequete(CSocket, guiApplication);
+                else if(req instanceof RequeteColumnChangedLUGAP)
+                    ((RequeteColumnChangedLUGAP) req).TraiterRequete(CSocket, guiApplication);
+                else if(req instanceof RequeteReady)
+                    ((RequeteReady) req).TraiterRequete(CSocket, guiApplication);
+
+            }
+        }    
     }
 }

@@ -40,10 +40,8 @@ public class Serveur_Bagages extends javax.swing.JFrame implements ConsoleServeu
             System.err.println("Erreur lors de la récupération de l'adresse : " + ex.getMessage());
         }
         ThreadServeur ts = new ThreadServeur(port_bagages, nombreThreadsBagages, this);
-        ThreadServeurCheckin tsc = new ThreadServeurCheckin(port_checkin, nombreThreadsCheckin, this);
         ThreadReception tr = new ThreadReception(port_takeoff, this);
         ts.start();
-        tsc.start();
         tr.start();
     }
     
