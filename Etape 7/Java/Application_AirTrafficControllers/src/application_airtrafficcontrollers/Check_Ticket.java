@@ -125,16 +125,11 @@ public class Check_Ticket extends javax.swing.JFrame
             JOptionPane.showMessageDialog(null,"Vous devez saisir un numéro de ticket", "Warning", JOptionPane.WARNING_MESSAGE);
         else
         {
-            parent.initSocket(adresse, port);
-            System.out.println("ticket : " + ticket);
-            RequeteACMAP requete = new RequeteACMAP(RequeteACMAP.REQUEST_CHECKIN_OFF);
-            requete.setChargeUtile(ticket);
-            System.out.println("ChargeUtile : " + requete.chargeUtile);
             String reponse = null;
             
             try
             {
-                reponse = sendReceive(requete);
+                reponse = CheckTicket(ticket);
                 if(reponse.equals("TICKET_CHECKED_OK"))
                 {
                     this.setAlwaysOnTop(false);
@@ -165,14 +160,14 @@ public class Check_Ticket extends javax.swing.JFrame
             
     }//GEN-LAST:event_jOkButtonActionPerformed
 
-    public String sendReceive(RequeteACMAP requete) throws IOException, ClassNotFoundException
+    public String CheckTicket(String ticket) throws IOException, ClassNotFoundException
     {
         Socket sockCpp = null;
         sockCpp = initSocket("127.0.0.1", 50000);
         
         DataOutputStream dos = null;
         dos = new DataOutputStream(new BufferedOutputStream(sockCpp.getOutputStream()));
-        String message = "CHECK_TICKET;" + requete.chargeUtile + "#";
+        String message = "CHECK_TICKET;" + ticket + "#";
         dos.write(message.getBytes());
         dos.flush();
         

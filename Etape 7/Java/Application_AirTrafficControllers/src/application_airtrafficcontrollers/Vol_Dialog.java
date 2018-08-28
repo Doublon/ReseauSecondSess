@@ -190,80 +190,18 @@ public class Vol_Dialog extends javax.swing.JDialog
 
     private void JRBCheckIn_OffActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_JRBCheckIn_OffActionPerformed
     {//GEN-HEADEREND:event_JRBCheckIn_OffActionPerformed
+        Date date = new Date();
+        Timestamp now = new Timestamp(date.getTime());
+        long minutes = (vol.getHeureDepart().getTime() - now.getTime())/1000/60;
+        
+        if(minutes >= 0 && minutes <= 20)
+            JOptionPane.showMessageDialog(null,"Il reste moins de 20 minutes avant le départ.","Information",JOptionPane.INFORMATION_MESSAGE);
+        
         Check_Ticket checkTicket = new Check_Ticket(this, adresse, port);
         checkTicket.setAlwaysOnTop(true);
         checkTicket.setVisible(true);
         
         this.setVisible(false);
-        
-        Date date = new Date();
-        Timestamp now = new Timestamp(date.getTime());
-        long minutes = (vol.getHeureDepart().getTime() - now.getTime())/1000/60;
-        System.out.println(minutes);
-        System.out.println("Temps restant : " + minutes + "minutes");
-        
-        /*if(minutes >= 0 && minutes <= 20)
-        {
-            setGroupButtons(false,false,true,false,false,false);
-        
-            parent.initSocket(adresse, port);
-            
-            RequeteACMAP requete = new RequeteACMAP(RequeteACMAP.REQUEST_CHECKIN_OFF);
-            ReponseACMAP reponse = null;
-            try
-            {
-                reponse = (ReponseACMAP) parent.sendReceive(requete); 
-            }
-            catch(ClassNotFoundException ex)
-            {
-                System.err.println("Erreur CNFE lors de la récupération de la réponse : " + ex.getMessage());
-            }
-            catch(IOException ex)
-            {
-                System.err.println("Erreur IO lors de la récupération de la réponse : " + ex.getMessage());
-            }
-            
-            if(reponse != null && reponse.getCode() == ReponseACMAP.REQUEST_CHECKIN_OFF_OK)
-            {
-                JOptionPane.showMessageDialog(null,"Le check in est désormais off.","Information",JOptionPane.INFORMATION_MESSAGE);
-            }
-            else
-            {
-                JOptionPane.showMessageDialog(null,"Le check n'a pas été mis en off.","Erreur",JOptionPane.ERROR_MESSAGE);
-            }
-        }
-        else
-        {
-            //JRBCheckIn_Off.setSelected(false);
-            //JRBBusy.setSelected(true);
-            //JOptionPane.showMessageDialog(null,"Il reste plus de 20 minutes avant le départ.","Information",JOptionPane.INFORMATION_MESSAGE);
-            parent.initSocket(adresse, port);
-            
-            RequeteACMAP requete = new RequeteACMAP(RequeteACMAP.REQUEST_CHECKIN_OFF);
-            ReponseACMAP reponse = null;
-            try
-            {
-                reponse = (ReponseACMAP) parent.sendReceive(requete); 
-            }
-            catch(ClassNotFoundException ex)
-            {
-                System.err.println("Erreur CNFE lors de la récupération de la réponse : " + ex.getMessage());
-            }
-            catch(IOException ex)
-            {
-                System.err.println("Erreur IO lors de la récupération de la réponse : " + ex.getMessage());
-            }
-            
-            if(reponse != null && reponse.getCode() == ReponseACMAP.REQUEST_CHECKIN_OFF_OK)
-            {
-                setGroupButtons(false,false,true,false,false,false);
-                JOptionPane.showMessageDialog(null,"Le check in est désormais off.","Information",JOptionPane.INFORMATION_MESSAGE);
-            }
-            else
-            {
-                JOptionPane.showMessageDialog(null,"Le check n'a pas été mis en off.","Erreur",JOptionPane.ERROR_MESSAGE);
-            }
-        }*/
     }//GEN-LAST:event_JRBCheckIn_OffActionPerformed
 
     private void JRBReadyActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_JRBReadyActionPerformed
