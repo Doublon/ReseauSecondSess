@@ -6,6 +6,7 @@
 package ProtocoleLUGAP;
 
 import java.net.Socket;
+import java.util.LinkedList;
 import requetepoolthreads.ConsoleServeur;
 
 /**
@@ -14,11 +15,18 @@ import requetepoolthreads.ConsoleServeur;
  */
 public class RequeteReady extends RequeteLUGAP
 {
-
+    private LinkedList liste;
+    
+    public RequeteReady()
+    {
+        liste = new LinkedList();
+    }
+    
+    
     @Override
     public void TraiterRequete(Socket sock, ConsoleServeur cs)
     {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Traitement de la requete");
     }
     
 }

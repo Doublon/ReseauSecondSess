@@ -59,9 +59,9 @@ public class Afficher_Bagages extends javax.swing.JDialog implements TableModelL
         ObjectOutputStream oos = null;
 	try
 	{
-		oos = new ObjectOutputStream(cliSock.getOutputStream());
-		oos.writeObject(req); 
-		oos.flush();
+            oos = new ObjectOutputStream(cliSock.getOutputStream());
+            oos.writeObject(req); 
+            oos.flush();
 	}
 	catch (IOException e)
 	{ 

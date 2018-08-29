@@ -12,11 +12,8 @@ import serveurpoolthreads.*;
 public class Serveur_Bagages extends javax.swing.JFrame implements ConsoleServeur
 {
     private int port_bagages;
-    private int port_checkin;
     private int nombreThreadsBagages;
-    private int nombreThreadsCheckin;
     private DefaultTableModel dtm = null;
-    private int port_takeoff;
     private List<Socket> listeClients;
     
     public Serveur_Bagages() 
@@ -33,16 +30,13 @@ public class Serveur_Bagages extends javax.swing.JFrame implements ConsoleServeu
         try
         {
             TraceEvenements(InetAddress.getLocalHost().getHostAddress() + ":" + port_bagages + "#Acquisition du port bagages" + "#Main");
-            TraceEvenements(InetAddress.getLocalHost().getHostAddress() + ":" + port_checkin + "#Acquisition du port checkin" + "#Main");
         } 
         catch (UnknownHostException ex)
         {
             System.err.println("Erreur lors de la récupération de l'adresse : " + ex.getMessage());
         }
         ThreadServeur ts = new ThreadServeur(port_bagages, nombreThreadsBagages, this);
-        ThreadReception tr = new ThreadReception(port_takeoff, this);
         ts.start();
-        tr.start();
     }
     
     private void LireFichierProperties(String filename)
@@ -67,14 +61,8 @@ public class Serveur_Bagages extends javax.swing.JFrame implements ConsoleServeu
         
         if(properties.getProperty("PORT_BAGAGES") != null)
             port_bagages = Integer.parseInt(properties.getProperty("PORT_BAGAGES"));
-        if(properties.getProperty("PORT_CHECKIN") != null)
-            port_checkin = Integer.parseInt(properties.getProperty("PORT_CHECKIN"));
         if(properties.getProperty("NOMBRETHREADSBAGAGES") != null)
             nombreThreadsBagages = Integer.parseInt(properties.getProperty("NOMBRETHREADSBAGAGES"));
-        if(properties.getProperty("NOMBRETHREADSCHECKIN") != null)
-            nombreThreadsCheckin = Integer.parseInt(properties.getProperty("NOMBRETHREADSCHECKIN"));
-        if(properties.getProperty("PORT_TAKEOFF") != null)
-            port_takeoff = Integer.parseInt(properties.getProperty("PORT_TAKEOFF"));
     }
     
     public void AfficherAlerteCheckinOff()

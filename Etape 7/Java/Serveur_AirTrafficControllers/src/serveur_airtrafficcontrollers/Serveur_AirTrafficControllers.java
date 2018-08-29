@@ -16,13 +16,11 @@ import serveurthreadsdemande.ThreadServeur;
 
 public class Serveur_AirTrafficControllers extends javax.swing.JFrame implements ConsoleServeur
 {   
-    private final static String PROPERTIES_FILE = "D:\\GitHub\\Etape 7\\Serveur_AirTrafficControllers\\config.properties";
+    private final static String PROPERTIES_FILE = "config.properties";
     
     private DefaultTableModel dtm = null;
     private int PORT_TOWER;
     private String ADRESSE;
-    private String ADRESSE_CHECKIN;
-    private int PORT_CHECKIN;
     private String ADRESSE_BAGAGES;
     private int PORT_BAGAGES;
     
@@ -46,8 +44,8 @@ public class Serveur_AirTrafficControllers extends javax.swing.JFrame implements
             System.err.println("Erreur lors de la récupération de l'adresse : " + ex.getMessage());
         }
 
-        System.out.println("Port : " + PORT_TOWER + " Adresse : " + ADRESSE);
-        ThreadServeur ts = new ThreadServeur(PORT_TOWER, this, ADRESSE_CHECKIN, PORT_CHECKIN, ADRESSE_BAGAGES, PORT_BAGAGES);
+        System.out.println("Serveur Bagage : " + ADRESSE_BAGAGES + ":" + PORT_BAGAGES);
+        ThreadServeur ts = new ThreadServeur(PORT_TOWER, this, ADRESSE_BAGAGES, PORT_BAGAGES);
         ts.start();
     }
     
@@ -70,27 +68,7 @@ public class Serveur_AirTrafficControllers extends javax.swing.JFrame implements
                 System.err.println("Le numéro de port est introuvable dans le fichier " + filename);
                 System.exit(1);
             }
-            
-            if(properties.getProperty("ADRESSE_CHECKIN") != null)
-            {
-                ADRESSE_CHECKIN = properties.getProperty("ADRESSE_CHECKIN");
-            }
-            else
-            {
-                System.err.println("L'adresse du serveur checkin est introuvable dans le fichier " + filename);
-                System.exit(1);
-            }
-            
-            if(properties.getProperty("PORT_CHECKIN") != null)
-            {
-                PORT_CHECKIN = Integer.parseInt(properties.getProperty("PORT_CHECKIN"));
-            }
-            else
-            {
-                System.err.println("Le numéro de port checkin est introuvable dans le fichier " + filename);
-                System.exit(1);
-            }
-            
+                        
             if(properties.getProperty("ADRESSE_BAGAGES") != null)
             {
                 ADRESSE_BAGAGES = properties.getProperty("ADRESSE_BAGAGES");
@@ -104,6 +82,7 @@ public class Serveur_AirTrafficControllers extends javax.swing.JFrame implements
             if(properties.getProperty("PORT_BAGAGES") != null)
             {
                 PORT_BAGAGES = Integer.parseInt(properties.getProperty("PORT_BAGAGES"));
+                System.out.println("Port : " + PORT_BAGAGES);
             }
             else
             {
@@ -121,14 +100,10 @@ public class Serveur_AirTrafficControllers extends javax.swing.JFrame implements
                 
                 properties.put("PORT_TOWER", "30019");
                 PORT_TOWER = 30019;
-                properties.put("ADRESSE_CHECKIN", "192.168.0.5");
-                ADRESSE_CHECKIN = "192.168.0.5";
-                properties.put("PORT_CHECKIN", "30012");
-                PORT_CHECKIN = 30012;
                 properties.put("ADRESSE_BAGAGES", "192.168.0.5");
-                ADRESSE_BAGAGES = "192.168.0.5";
-                properties.put("PORT_BAGAGES", "30013");
-                PORT_BAGAGES = 30013;
+                ADRESSE_BAGAGES = "192.168.0.19";
+                properties.put("PORT_BAGAGES", "30011");
+                PORT_BAGAGES = 30011;
                 
                 try 
                 {

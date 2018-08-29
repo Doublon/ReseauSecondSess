@@ -10,17 +10,13 @@ public class ThreadClient extends Thread
 {
     private final Socket socket;
     private final ConsoleServeur guiApplication;
-    private final String adresseCheckin;
-    private final int portCheckin;
     private final String adresseBagages;
     private final int portBagages;
     
-    public ThreadClient(Socket sock, ConsoleServeur cs, String aC, int pC, String aB, int pB)
+    public ThreadClient(Socket sock, ConsoleServeur cs, String aB, int pB)
     {
         socket = sock;
         guiApplication = cs;
-        adresseCheckin = aC;
-        portCheckin = pC;
         adresseBagages = aB;
         portBagages = pB;
     }
@@ -68,7 +64,7 @@ public class ThreadClient extends Thread
                 break;
                 
                 case RequeteACMAP.REQUEST_READY:
-                    requete.TraiterReady(socket, guiApplication, adresseCheckin, portCheckin, adresseBagages, portBagages);
+                    requete.TraiterReady(socket, guiApplication, adresseBagages, portBagages);
                 break;
                 
                 case RequeteACMAP.REQUEST_RUNWAYS:

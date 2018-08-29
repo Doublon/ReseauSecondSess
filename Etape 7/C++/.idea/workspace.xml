@@ -2,17 +2,17 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="CheckIn" targetName="Tests" />
       <config projectName="CheckIn" targetName="libCSV" />
-      <config projectName="CheckIn" targetName="SocketUtilities" />
-      <config projectName="CheckIn" targetName="gtest_main" />
-      <config projectName="CheckIn" targetName="ServeurCheckIn" />
-      <config projectName="CheckIn" targetName="gmock" />
-      <config projectName="CheckIn" targetName="CIMP" />
-      <config projectName="CheckIn" targetName="gtest" />
-      <config projectName="CheckIn" targetName="ClientCheckIn" />
       <config projectName="CheckIn" targetName="libConfig" />
+      <config projectName="CheckIn" targetName="gtest" />
       <config projectName="CheckIn" targetName="gmock_main" />
+      <config projectName="CheckIn" targetName="CIMP" />
+      <config projectName="CheckIn" targetName="ServeurCheckIn" />
+      <config projectName="CheckIn" targetName="SocketUtilities" />
+      <config projectName="CheckIn" targetName="Tests" />
+      <config projectName="CheckIn" targetName="gmock" />
+      <config projectName="CheckIn" targetName="ClientCheckIn" />
+      <config projectName="CheckIn" targetName="gtest_main" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -22,12 +22,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bab4c45-8e32-49b4-9bdc-31e4b73036a3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Etape 6/Application_Billets/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Application_Billets/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Etape 6/DatabaseAccess/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/DatabaseAccess/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Etape 6/ProtocolePAY/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/ProtocolePAY/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Etape 6/ProtocoleTICKMAP/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/ProtocoleTICKMAP/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Etape 6/Serveur_Billets/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Serveur_Billets/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Etape 6/Serveur_Payment/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Serveur_Payment/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/ProtocoleACMAP/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/ProtocoleACMAP/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/RequeteReponseLUGAP/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/RequeteReponseLUGAP/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/Serveur_Bagages/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_Bagages/nbproject/private/private.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CIMP/cmake-build-debug/" />
@@ -53,12 +52,12 @@
     <session id="2103650319">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.21" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.21" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -102,7 +101,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Socket/SocketThreadServer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
+            <state relative-caret-position="277">
               <caret line="191" column="38" selection-start-line="191" selection-start-column="21" selection-end-line="191" selection-end-column="38" />
               <folding>
                 <element signature="e#44#69#0" expanded="true" />
@@ -123,7 +122,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CIMP/RequestCIMP.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-782">
+            <state relative-caret-position="828">
               <caret line="36" column="40" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="40" />
             </state>
           </provider>
@@ -132,7 +131,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CIMP/RequestCIMP.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
+            <state relative-caret-position="529">
               <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
             </state>
           </provider>
@@ -399,6 +398,7 @@
       <workItem from="1535199882300" duration="17785000" />
       <workItem from="1535310216494" duration="1300000" />
       <workItem from="1535458289928" duration="6833000" />
+      <workItem from="1535530537181" duration="603000" />
     </task>
     <servers />
   </component>
@@ -435,18 +435,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77372000" />
+    <option name="totallyTimeSpent" value="78499000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28944564" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29264393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32890365" />
-      <window_info active="true" anchor="bottom" x="-1846" y="197" width="1876" height="297" id="Run" order="2" visible="true" weight="0.32104123" />
+      <window_info anchor="bottom" x="-1846" y="197" width="1876" height="297" id="Run" order="2" weight="0.32104123" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -455,7 +455,7 @@
       <window_info anchor="bottom" x="670" y="243" width="579" height="553" id="Terminal" order="8" type="WINDOWED" weight="0.32890365" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="CMake" order="10" weight="0.3286334" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286334" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -561,9 +561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
           <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-          <folding>
-            <element signature="e#42#66#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -643,9 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
           <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-          <folding>
-            <element signature="e#44#69#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -670,20 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Socket/States.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CIMP/RequestCIMP.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libCSV/CSV.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="606">
@@ -698,20 +678,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CIMP/RequestCIMP.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-782">
-          <caret line="36" column="40" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Socket/SocketThreadServer.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
+        <state relative-caret-position="277">
           <caret line="191" column="38" selection-start-line="191" selection-start-column="21" selection-end-line="191" selection-end-column="38" />
           <folding>
             <element signature="e#44#69#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socket/States.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CIMP/RequestCIMP.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="36" column="40" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CIMP/RequestCIMP.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
         </state>
       </provider>
     </entry>

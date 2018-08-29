@@ -26,7 +26,6 @@ public class ThreadClient extends Thread
     @Override
     public void run()
     {
-        //while(!SSocket.isClosed())
         while(!isInterrupted())
         {
             try
@@ -73,6 +72,8 @@ public class ThreadClient extends Thread
                     break;
                 }
                 
+                System.out.println("Recepetion d'une requete");
+                
                 if(req instanceof LoginLUGAP)
                 {
                     ((LoginLUGAP) req).TraiterRequete(CSocket, guiApplication);
@@ -84,7 +85,7 @@ public class ThreadClient extends Thread
                 else if(req instanceof RequeteColumnChangedLUGAP)
                     ((RequeteColumnChangedLUGAP) req).TraiterRequete(CSocket, guiApplication);
                 else if(req instanceof RequeteReady)
-                    ((RequeteReady) req).TraiterRequete(CSocket, guiApplication);
+                    ((RequeteReady)req).TraiterRequete(CSocket, guiApplication);
 
             }
         }    

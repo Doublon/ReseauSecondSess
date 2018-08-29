@@ -10,17 +10,13 @@ public class ThreadServeur extends Thread
     private final int port;
     private ServerSocket SSocket = null;
     private final ConsoleServeur guiApplication;
-    private final String adresseCheckin;
-    private final int portCheckin;
     private final String adresseBagages;
     private final int portBagages;
     
-    public ThreadServeur(int p, ConsoleServeur cs, String aC, int pC, String aB, int pB)
+    public ThreadServeur(int p, ConsoleServeur cs, String aB, int pB)
     {
         port = p;
         guiApplication = cs;
-        adresseCheckin = aC;
-        portCheckin = pC;
         adresseBagages = aB;
         portBagages = pB;
     }
@@ -51,7 +47,7 @@ public class ThreadServeur extends Thread
                 System.err.println("Erreur d'accept ! ? [" + e.getMessage() + "]"); System.exit(1);
             }
             
-            ThreadClient tc = new ThreadClient(CSocket, guiApplication, adresseCheckin, portCheckin, adresseBagages, portBagages);
+            ThreadClient tc = new ThreadClient(CSocket, guiApplication, adresseBagages, portBagages);
             tc.start();
         }
     }

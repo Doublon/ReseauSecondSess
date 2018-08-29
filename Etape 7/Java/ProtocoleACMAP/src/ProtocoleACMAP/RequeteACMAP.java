@@ -9,6 +9,7 @@ package ProtocoleACMAP;
 import ACMAP_classes.Bagage;
 import ACMAP_classes.Billet;
 import ACMAP_classes.Vol;
+import ProtocoleLUGAP.RequeteReady;
 import database.utilities.BeanBDMySQL;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -208,7 +209,10 @@ public class RequeteACMAP implements Requete, Serializable
             System.err.println("Erreur lors de la connexion à la " + BBMS.getSchema() + " : " + ex);
         }
         
-        String query = "SELECT * FROM Vols WHERE TIMESTAMPDIFF(MINUTE, current_timestamp, heureDepart) >= 0 AND TIMESTAMPDIFF(MINUTE, current_timestamp, heureDepart) <= 180";
+        String query = "SELECT * "
+                + "FROM Vols ";
+                //+ "WHERE TIMESTAMPDIFF(MINUTE, current_timestamp, heureDepart) >= 0 "
+                //+ "AND TIMESTAMPDIFF(MINUTE, current_timestamp, heureDepart) <= 180";
         ReponseACMAP reponse;
         try
         {
@@ -287,141 +291,34 @@ public class RequeteACMAP implements Requete, Serializable
 
     }
     
-    public void TraiterReady(Socket socket, ConsoleServeur cs, String adresseCheckin, int portCheckin, String adresseBagages, int portBagages)
-    {
-        String requete = String.valueOf(RequeteACMAP.REQUEST_CHECKIN_OFF) + '\0';
-        
-        Socket socketCheckin = null, socketBagages = null;
-        /*try
-        {
-            socketCheckin = new Socket(adresseCheckin, portCheckin);            
-        } 
-        catch (IOException ex)
-        {
-            System.err.println("Erreur lors de la création de la socket Checkin : " + ex.getMessage());
-        }*/
-        
-        try
-        {
-            System.out.println(adresseBagages+":"+portBagages);
-            socketBagages = new Socket(adresseBagages, portBagages);            
-        } 
-        catch (IOException ex)
-        {
-            System.err.println("Erreur lors de la création de la socket Bagages : " + ex.getMessage());
-        }
-        
-        //if(socketCheckin != null && socketBagages != null)
-        if(socketBagages != null)
-        {
-            DataOutputStream dos;
-            try
-            {
-                /*dos = new DataOutputStream(socketCheckin.getOutputStream());
-                dos.writeUTF(requete);
-                dos.flush();*/
-                dos = new DataOutputStream(socketBagages.getOutputStream());
-                dos.writeUTF(requete);
-                dos.flush();
-            }
-            catch(IOException ex)
-            {
-                System.err.println("Erreur lors de la récupération du flux d'écriture : " + ex.getMessage());
-            }
-            DataInputStream dis;
-            byte[] messageByte = new byte[1000];
-            String reponseCheckin, reponseBagages;
-            try
-            {
-                /*dis = new DataInputStream(socketCheckin.getInputStream());
-                dis.readFully(messageByte);
-                reponseCheckin = new String(messageByte);
-                reponseCheckin = reponseCheckin.trim();*/
-                dis = new DataInputStream(socketBagages.getInputStream());
-                reponseBagages = dis.readUTF();
-                reponseBagages = reponseBagages.trim();
-                
-                //System.out.println("Checkin : " + reponseCheckin);
-                System.out.println("Bagages checkin off : " + reponseBagages);
-                
-                ReponseACMAP reponse;
-                //if(reponseCheckin.equals("OK") && reponseBagages.equals("OK"))
-                if(reponseBagages.equals("OK"))
-                {
-                    reponse = new ReponseACMAP(ReponseACMAP.REQUEST_CHECKIN_OFF_OK);
-                }
-                else
-                {
-                    reponse = new ReponseACMAP(ReponseACMAP.REQUEST_CHECKIN_OFF_ERROR);
-                }
-                
-                ObjectOutputStream oos;
-                oos = new ObjectOutputStream(socket.getOutputStream());
-                oos.writeObject(reponse);
-                oos.flush();
-            }
-            catch(IOException ex)
-            {
-                System.err.println("Erreur lors de la récupération du flux de lecture : " + ex.getMessage());
-            }
-        }
-    }
-    
     public void TraiterReady(Socket socket, ConsoleServeur cs, String adresseBagages, int portBagages)
-    {
-        String requete = String.valueOf(RequeteACMAP.REQUEST_READY) + '\0';
-        
+    {       
         Socket socketBagages = null;
+        
         try
         {
-            socketBagages = new Socket(adresseBagages, portBagages);            
+            System.out.println("Adresse : " + adresseBagages + " Port : " + portBagages);
+            socketBagages = new Socket(adresseBagages, portBagages); 
         } 
         catch (IOException ex)
         {
             System.err.println("Erreur lors de la création de la socket Bagages : " + ex.getMessage());
         }
-        
+       
         if(socketBagages != null)
         {
-            DataOutputStream dos;
+            ObjectOutputStream oos = null;
             try
             {
-                dos = new DataOutputStream(socketBagages.getOutputStream());
-                dos.writeUTF(requete);
-                dos.flush();
-            }
-            catch(IOException ex)
-            {
-                System.err.println("Erreur lors de la récupération du flux d'écriture : " + ex.getMessage());
-            }
-            
-            DataInputStream dis;
-            String reponseBagages;
-            try
-            {
-                dis = new DataInputStream(socketBagages.getInputStream());
-                reponseBagages = dis.readUTF();
-                reponseBagages = reponseBagages.trim();
-                
-                ReponseACMAP reponse;
-                
-                if(reponseBagages.equals("TERMINE"))
-                {
-                    reponse = new ReponseACMAP(ReponseACMAP.REQUEST_READY_OK);
-                }
-                else
-                {
-                    reponse = new ReponseACMAP(ReponseACMAP.REQUEST_READY_ERROR);
-                }
-                
-                ObjectOutputStream oos;
-                oos = new ObjectOutputStream(socket.getOutputStream());
-                oos.writeObject(reponse);
+                RequeteReady requete = new RequeteReady();
+                oos = new ObjectOutputStream(socketBagages.getOutputStream());
+                System.out.println("Envoie de la requete");
+                oos.writeObject(requete); 
                 oos.flush();
             }
             catch(IOException ex)
             {
-                System.err.println("Erreur lors de la récupération du flux de lecture : " + ex.getMessage());
+                System.err.println("Erreur lors de la récupération du flux d'écriture : " + ex.getMessage());
             }
         }
     }
