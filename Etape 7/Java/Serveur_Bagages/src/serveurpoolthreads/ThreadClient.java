@@ -78,6 +78,7 @@ public class ThreadClient extends Thread
                 {
                     ((LoginLUGAP) req).TraiterRequete(CSocket, guiApplication);
                 }
+<<<<<<< HEAD
                 else if(req instanceof RequeteVolsLUGAP)
                     ((RequeteVolsLUGAP) req).TraiterRequete(CSocket, guiApplication);
                 else if(req instanceof RequeteBagagesLUGAP)
@@ -89,5 +90,30 @@ public class ThreadClient extends Thread
 
             }
         }    
+=======
+                else
+                {
+                    if(req instanceof RequeteVolsLUGAP)
+                    {
+                        ((RequeteVolsLUGAP) req).TraiterRequete(CSocket, guiApplication);
+                    }
+                    else
+                    {
+                        if(req instanceof RequeteBagagesLUGAP)
+                        {
+                            ((RequeteBagagesLUGAP) req).TraiterRequete(CSocket, guiApplication);
+                        }
+                        else
+                        {
+                            if(req instanceof RequeteColumnChangedLUGAP)
+                            {
+                                ((RequeteColumnChangedLUGAP) req).TraiterRequete(CSocket, guiApplication);                               
+                            }
+                        }
+                    }
+                }
+            }    
+        }
+>>>>>>> parent of 2599914... Etape 7 : Correction serveur bagage
     }
 }
