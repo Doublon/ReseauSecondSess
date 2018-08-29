@@ -16,6 +16,7 @@ public class Vol_Dialog extends javax.swing.JDialog
     private final Vol vol;
     private final String adresse;
     private final int port;
+    private String ticket;
     
     public Vol_Dialog(java.awt.Frame parent, boolean modal)
     {
@@ -209,6 +210,7 @@ public class Vol_Dialog extends javax.swing.JDialog
         parent.initSocket(adresse, port);
             
         RequeteACMAP requete = new RequeteACMAP(RequeteACMAP.REQUEST_READY);
+        requete.setChargeUtile(getTicket());
         ReponseACMAP reponse = null;
         try
         {
@@ -403,6 +405,16 @@ public class Vol_Dialog extends javax.swing.JDialog
                 dialog.setVisible(true);
             }
         });
+    }
+    
+    public void setTicket(String ticket)
+    {
+        this.ticket = ticket;
+    }
+    
+    public String getTicket()
+    {
+        return this.ticket;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

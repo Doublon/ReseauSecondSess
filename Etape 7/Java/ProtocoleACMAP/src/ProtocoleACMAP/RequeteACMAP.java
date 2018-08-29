@@ -14,9 +14,11 @@ import database.utilities.BeanBDMySQL;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.OutputStreamWriter;
 import java.io.Serializable;
+import java.net.ServerSocket;
 import java.net.Socket;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -41,7 +43,7 @@ public class RequeteACMAP implements Requete, Serializable
     private final int type;
     private final String numBillet;
     private final int nombreAccompagnants;
-    public String chargeUtile;
+    private String chargeUtile;
     
     private final List<Bagage> listeBagages;
     
@@ -310,7 +312,7 @@ public class RequeteACMAP implements Requete, Serializable
             ObjectOutputStream oos = null;
             try
             {
-                RequeteReady requete = new RequeteReady();
+                RequeteReady requete = new RequeteReady(socket, this.chargeUtile);
                 oos = new ObjectOutputStream(socketBagages.getOutputStream());
                 System.out.println("Envoie de la requete");
                 oos.writeObject(requete); 
@@ -319,6 +321,33 @@ public class RequeteACMAP implements Requete, Serializable
             catch(IOException ex)
             {
                 System.err.println("Erreur lors de la récupération du flux d'écriture : " + ex.getMessage());
+            }
+            
+            ServerSocket serveurBagage = null;
+            Socket socketReception = null;
+            
+            try
+            {
+                serveurBagage = new ServerSocket(30024);
+                socketReception = serveurBagage.accept();
+            }
+            catch (IOException ex)
+            {
+                Logger.getLogger(RequeteACMAP.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            
+            
+            ObjectInputStream dis;
+            String reponse;
+            try
+            {
+                dis = new ObjectInputStream(socketReception.getInputStream());
+                reponse = dis.readUTF();
+                System.out.println("Reponse : " + reponse);
+            }
+            catch (IOException ex)
+            {
+                Logger.getLogger(RequeteACMAP.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
@@ -371,6 +400,7 @@ public class RequeteACMAP implements Requete, Serializable
         {
             System.out.println("Erreur lors de l'envoi de la réponse au client : " + ex.getMessage());
         }
+        
     }
     
     public void TraiterChoixPiste(Socket socket, ConsoleServeur cs)

@@ -132,6 +132,7 @@ public class Check_Ticket extends javax.swing.JFrame
                 reponse = CheckTicket(ticket);
                 if(reponse.equals("TICKET_CHECKED_OK"))
                 {
+                    parent.setTicket(ticket);
                     this.setAlwaysOnTop(false);
                     this.setVisible(false);
                     this.dispose();
