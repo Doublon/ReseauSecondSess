@@ -3,16 +3,16 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="CheckIn" targetName="libCSV" />
+      <config projectName="CheckIn" targetName="libConfig" />
       <config projectName="CheckIn" targetName="gtest" />
       <config projectName="CheckIn" targetName="gmock_main" />
       <config projectName="CheckIn" targetName="CIMP" />
       <config projectName="CheckIn" targetName="ServeurCheckIn" />
       <config projectName="CheckIn" targetName="SocketUtilities" />
-      <config projectName="CheckIn" targetName="gtest_main" />
       <config projectName="CheckIn" targetName="Tests" />
       <config projectName="CheckIn" targetName="gmock" />
       <config projectName="CheckIn" targetName="ClientCheckIn" />
-      <config projectName="CheckIn" targetName="libConfig" />
+      <config projectName="CheckIn" targetName="gtest_main" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -22,50 +22,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bab4c45-8e32-49b4-9bdc-31e4b73036a3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/built-jar.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Check_Ticket$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Check_Ticket$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Check_Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Check_Ticket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Vol_Dialog$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Vol_Dialog$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Vol_Dialog$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Vol_Dialog$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Vol_Dialog$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Vol_Dialog$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Vol_Dialog$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Vol_Dialog$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Vol_Dialog$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Vol_Dialog$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Vol_Dialog$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Vol_Dialog$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Vol_Dialog$7$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Vol_Dialog$7$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Vol_Dialog$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Vol_Dialog$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Vol_Dialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Vol_Dialog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/src/application_airtrafficcontrollers/Check_Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/src/application_airtrafficcontrollers/Check_Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/src/application_airtrafficcontrollers/Vol_Dialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/src/application_airtrafficcontrollers/Vol_Dialog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Java/ProtocoleACMAP/build/classes/ProtocoleACMAP/RequeteACMAP.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/ProtocoleACMAP/build/classes/ProtocoleACMAP/RequeteACMAP.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Java/ProtocoleACMAP/src/ProtocoleACMAP/RequeteACMAP.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/ProtocoleACMAP/src/ProtocoleACMAP/RequeteACMAP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/RequeteReponseLUGAP/build/built-jar.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/RequeteReponseLUGAP/build/classes/ProtocoleLUGAP/RequeteReady.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/RequeteReponseLUGAP/build/classes/ProtocoleLUGAP/RequeteReady.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/RequeteReponseLUGAP/dist/RequeteReponseLUGAP.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/RequeteReponseLUGAP/dist/RequeteReponseLUGAP.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/RequeteReponseLUGAP/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/RequeteReponseLUGAP/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/RequeteReponseLUGAP/src/ProtocoleLUGAP/RequeteReady.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/RequeteReponseLUGAP/src/ProtocoleLUGAP/RequeteReady.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Serveur_AirTrafficControllers/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_AirTrafficControllers/build/built-jar.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Serveur_AirTrafficControllers/dist/Serveur_AirTrafficControllers.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_AirTrafficControllers/dist/Serveur_AirTrafficControllers.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Serveur_AirTrafficControllers/dist/lib/DatabaseAccess.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_AirTrafficControllers/dist/lib/DatabaseAccess.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Serveur_AirTrafficControllers/dist/lib/ProtocoleACMAP.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_AirTrafficControllers/dist/lib/ProtocoleACMAP.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Serveur_AirTrafficControllers/dist/lib/RequeteReponseMultithread.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_AirTrafficControllers/dist/lib/RequeteReponseMultithread.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Serveur_AirTrafficControllers/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_AirTrafficControllers/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Serveur_Bagages/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_Bagages/build/built-jar.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Serveur_Bagages/build/classes/serveur_bagages/ThreadTimer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Serveur_Bagages/build/classes/serveurpoolthreads/ThreadClientCheckin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Serveur_Bagages/build/classes/serveurpoolthreads/ThreadServeurCheckin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Serveur_Bagages/dist/Serveur_Bagages.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_Bagages/dist/Serveur_Bagages.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Serveur_Bagages/dist/lib/ProtocoleACMAP.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_Bagages/dist/lib/ProtocoleACMAP.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Serveur_Bagages/dist/lib/RequeteReponseLUGAP.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_Bagages/dist/lib/RequeteReponseLUGAP.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Serveur_Bagages/dist/lib/RequeteReponseMultithread.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_Bagages/dist/lib/RequeteReponseMultithread.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Serveur_Bagages/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_Bagages/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Serveur_Bagages/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_Bagages/nbproject/project.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Serveur_Bagages/src/serveur_bagages/Serveur_Bagages.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_Bagages/src/serveur_bagages/Serveur_Bagages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Serveur_Bagages/src/serveur_bagages/ThreadTimer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/RequeteReponseLUGAP/build/classes/ProtocoleLUGAP/RequeteReady.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/RequeteReponseLUGAP/src/ProtocoleLUGAP/RequeteReady.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/RequeteReponseLUGAP/src/ProtocoleLUGAP/RequeteReadyLUGAP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/Serveur_Bagages/build/classes/serveurpoolthreads/ThreadClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_Bagages/build/classes/serveurpoolthreads/ThreadClient.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Java/Serveur_Bagages/src/serveurpoolthreads/ThreadClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_Bagages/src/serveurpoolthreads/ThreadClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Serveur_Bagages/src/serveurpoolthreads/ThreadClientCheckin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Serveur_Bagages/src/serveurpoolthreads/ThreadServeurCheckin.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CIMP/cmake-build-debug/" />
@@ -97,7 +59,8 @@
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.22" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.42" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -286,7 +249,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -313,6 +275,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -440,6 +403,7 @@
       <workItem from="1535458289928" duration="6833000" />
       <workItem from="1535530537181" duration="1256000" />
       <workItem from="1535562793818" duration="2137000" />
+      <workItem from="1535619601475" duration="1122000" />
     </task>
     <servers />
   </component>
@@ -476,13 +440,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81887000" />
+    <option name="totallyTimeSpent" value="83009000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29584223" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29904053" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />

@@ -9,7 +9,7 @@ package ProtocoleACMAP;
 import ACMAP_classes.Bagage;
 import ACMAP_classes.Billet;
 import ACMAP_classes.Vol;
-import ProtocoleLUGAP.RequeteReady;
+import ProtocoleLUGAP.RequeteReadyLUGAP;
 import database.utilities.BeanBDMySQL;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -309,14 +309,14 @@ public class RequeteACMAP implements Requete, Serializable
        
         if(socketBagages != null)
         {
-            ObjectOutputStream oos = null;
+            ObjectOutputStream oosBagages = null;
             try
             {
-                RequeteReady requete = new RequeteReady(socket, this.chargeUtile);
-                oos = new ObjectOutputStream(socketBagages.getOutputStream());
+                RequeteReadyLUGAP requete = new RequeteReadyLUGAP(this.chargeUtile);
+                oosBagages = new ObjectOutputStream(socketBagages.getOutputStream());
                 System.out.println("Envoie de la requete");
-                oos.writeObject(requete); 
-                oos.flush();
+                oosBagages.writeObject(requete); 
+                oosBagages.flush();
             }
             catch(IOException ex)
             {
@@ -338,17 +338,42 @@ public class RequeteACMAP implements Requete, Serializable
             
             
             ObjectInputStream dis;
-            String reponse;
+            String reponseBagages = null;
             try
             {
                 dis = new ObjectInputStream(socketReception.getInputStream());
-                reponse = dis.readUTF();
-                System.out.println("Reponse : " + reponse);
+                reponseBagages = dis.readUTF();
+                
             }
             catch (IOException ex)
             {
                 Logger.getLogger(RequeteACMAP.class.getName()).log(Level.SEVERE, null, ex);
             }
+            
+            ReponseACMAP reponse;
+            if(reponseBagages.equals("TERMINE"))
+            {
+                reponse = new ReponseACMAP(ReponseACMAP.REQUEST_READY_OK);
+                cs.TraceEvenements(socket.getInetAddress().getHostAddress()+"#REQUEST_READY_OK#" + Thread.currentThread().getName());
+            }
+            else
+            {
+                reponse = new ReponseACMAP(ReponseACMAP.REQUEST_READY_ERROR);
+                cs.TraceEvenements(socket.getInetAddress().getHostAddress()+"#REQUEST_READY_ERROR#" + Thread.currentThread().getName());
+            }
+            
+            ObjectOutputStream oos;
+            try
+            {
+                oos = new ObjectOutputStream(socket.getOutputStream());
+                oos.writeObject(reponse);
+                oos.flush();
+            }
+            catch(IOException ex)
+            {
+                System.out.println("Erreur lors de l'envoi de la réponse au client : " + ex.getMessage());
+            }
+
         }
     }
     

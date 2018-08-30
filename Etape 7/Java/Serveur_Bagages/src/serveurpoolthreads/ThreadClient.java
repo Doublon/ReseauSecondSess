@@ -84,8 +84,8 @@ public class ThreadClient extends Thread
                     ((RequeteBagagesLUGAP) req).TraiterRequete(CSocket, guiApplication);
                 else if(req instanceof RequeteColumnChangedLUGAP)
                     ((RequeteColumnChangedLUGAP) req).TraiterRequete(CSocket, guiApplication);
-                else if(req instanceof RequeteReady)
-                    ((RequeteReady)req).TraiterRequete(CSocket, guiApplication);
+                else if(req instanceof RequeteReadyLUGAP)
+                    ((RequeteReadyLUGAP)req).TraiterRequete(CSocket, guiApplication);
 
             }
         }    

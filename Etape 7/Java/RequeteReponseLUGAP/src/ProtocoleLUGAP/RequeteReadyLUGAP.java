@@ -13,6 +13,7 @@ import java.net.Socket;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.LinkedList;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import requetepoolthreads.ConsoleServeur;
@@ -21,12 +22,11 @@ import requetepoolthreads.ConsoleServeur;
  *
  * @author Tusse
  */
-public class RequeteReady extends RequeteLUGAP
+public class RequeteReadyLUGAP extends RequeteLUGAP
 {
-    private Socket socketTower;
     private String ticket;
     
-    public RequeteReady(Socket socket, String ticket)
+    public RequeteReadyLUGAP(String ticket)
     {
         this.ticket = ticket;
     }
@@ -75,11 +75,15 @@ public class RequeteReady extends RequeteLUGAP
                 dos = new ObjectOutputStream(socket.getOutputStream());
                 dos.writeUTF("TERMINE");
                 dos.flush();
-                System.out.println("Réponse envoyé");
             }
             else
             {
-                System.out.println("KO");
+                System.out.println("Chargement des bagages");
+                TimeUnit.SECONDS.sleep(10);
+                ObjectOutputStream dos; 
+                dos = new ObjectOutputStream(socket.getOutputStream());
+                dos.writeUTF("TERMINE");
+                dos.flush();
             }
         } 
         catch (SQLException ex)
@@ -88,7 +92,11 @@ public class RequeteReady extends RequeteLUGAP
         }
         catch (IOException ex)
         {
-            Logger.getLogger(RequeteReady.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(RequeteReadyLUGAP.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        catch (InterruptedException ex)
+        {
+            Logger.getLogger(RequeteReadyLUGAP.class.getName()).log(Level.SEVERE, null, ex);
         }
         
     }

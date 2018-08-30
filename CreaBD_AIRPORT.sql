@@ -8,9 +8,16 @@ DROP TABLE Reserve;
 DROP TABLE Vols;
 DROP TABLE Avions;
 DROP TABLE Clients;
+DROP TABLE Pistes;
 
 DROP PROCEDURE procedureVerifTimeOut;
 DROP EVENT verifTimeOut;
+
+CREATE TABLE Pistes
+(
+	numPiste INT PRIMARY KEY,
+    libre INT
+);
 
 CREATE TABLE Clients 
 (
@@ -116,7 +123,11 @@ CREATE TABLE Comptes
 )
 ENGINE=INNODB DEFAULT CHARSET=utf8;
 
-
+INSERT INTO Pistes VALUES(1, 0);
+INSERT INTO Pistes VALUES(2, 1);
+INSERT INTO Pistes VALUES(3, 1);
+INSERT INTO Pistes VALUES(4, 0);
+INSERT INTO Pistes VALUES(5, 1);
 
 INSERT INTO Clients VALUES (1,"Verwimp","Jim","H","client1","password1");
 INSERT INTO Clients VALUES (2,"Rorive","Olivier","H","client2","password2");
