@@ -21,14 +21,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2bab4c45-8e32-49b4-9bdc-31e4b73036a3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../Java/ProtocoleACMAP/build/classes/ProtocoleACMAP/RequeteACMAP.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/ProtocoleACMAP/build/classes/ProtocoleACMAP/RequeteACMAP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/ProtocoleACMAP/src/ProtocoleACMAP/RequeteACMAP.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/ProtocoleACMAP/src/ProtocoleACMAP/RequeteACMAP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/RequeteReponseLUGAP/build/classes/ProtocoleLUGAP/RequeteReady.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/RequeteReponseLUGAP/src/ProtocoleLUGAP/RequeteReady.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/RequeteReponseLUGAP/src/ProtocoleLUGAP/RequeteReadyLUGAP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Serveur_Bagages/build/classes/serveurpoolthreads/ThreadClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_Bagages/build/classes/serveurpoolthreads/ThreadClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Serveur_Bagages/src/serveurpoolthreads/ThreadClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_Bagages/src/serveurpoolthreads/ThreadClient.java" afterDir="false" />
-    </list>
+    <list default="true" id="2bab4c45-8e32-49b4-9bdc-31e4b73036a3" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CIMP/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,7 +46,7 @@
     <session id="2103650319">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.20" value="1" />
@@ -403,7 +396,7 @@
       <workItem from="1535458289928" duration="6833000" />
       <workItem from="1535530537181" duration="1256000" />
       <workItem from="1535562793818" duration="2137000" />
-      <workItem from="1535619601475" duration="1122000" />
+      <workItem from="1535619601475" duration="1333000" />
     </task>
     <servers />
   </component>
@@ -440,18 +433,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83009000" />
+    <option name="totallyTimeSpent" value="83220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29904053" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32890365" />
-      <window_info active="true" anchor="bottom" x="-1846" y="197" width="1876" height="297" id="Run" order="2" visible="true" weight="0.32104123" />
+      <window_info anchor="bottom" x="-1846" y="197" width="1876" height="297" id="Run" order="2" weight="0.32104123" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
