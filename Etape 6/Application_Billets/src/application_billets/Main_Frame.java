@@ -90,12 +90,12 @@ public class Main_Frame extends javax.swing.JFrame
     public Main_Frame()
     {
         initComponents();
-        //LireFichierProperties(filename);
+        LireFichierProperties(filename);
         
-        ADRESSE_BILLETS = "192.168.0.19";
+        /*ADRESSE_BILLETS = "192.168.0.26";
         PORT_BILLETS = 30016;
-        ADRESSE_PAYMENT = "192.168.0.19";
-        PORT_PAYMENT = 30017;
+        ADRESSE_PAYMENT = "192.168.0.26";
+        PORT_PAYMENT = 30017;*/
         
         login_frame = new Login_Frame(this);
         login_frame.setVisible(true);
@@ -242,6 +242,7 @@ public class Main_Frame extends javax.swing.JFrame
     
     public Object sendReceive(Object requete, String adresse, int port)
     {
+        System.out.println(adresse + " : " + port);
         initSocket(adresse, port);
 
         boolean retour = UtileTICKMAP.sendObject(cliSock, requete);

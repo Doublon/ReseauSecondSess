@@ -571,15 +571,10 @@ public class RequeteTICKMAP implements Requete, Serializable
             System.err.println("Erreur lors de la connexion à la " + BBMS.getSchema() + " : " + ex);
         }
         
-        //TODO : Creer nouveau tuples correspondant à la date :
         String query = "SELECT * "
                 + "FROM Vols INNER JOIN Avions "
                 + "ON Vols.numAvion = Avions.numAvion"
                 + " WHERE DATEDIFF(heureDepart, curdate()) >= 0 AND DATEDIFF(heureDepart, curdate()) <= 7 AND placesRestantes > 0";
-           
-        /*String query = "SELECT * "
-                + "FROM Vols INNER JOIN Avions "
-                + "ON Vols.numAvion = Avions.numAvion";*/
         
         try
         {
