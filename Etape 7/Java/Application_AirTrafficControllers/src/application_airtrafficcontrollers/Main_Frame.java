@@ -21,7 +21,7 @@ import javax.swing.table.DefaultTableModel;
 
 public class Main_Frame extends javax.swing.JFrame
 {
-    private final static String PROPERTIES_PATH = "D:\\GitHub\\Etape 7\\Application_AirTrafficControllers\\config.properties";
+    private final static String PROPERTIES_PATH = "config.properties";
     
     private String ADRESSE_TOWER;
     private int PORT_TOWER;
@@ -133,7 +133,6 @@ public class Main_Frame extends javax.swing.JFrame
         socket = null;
         try
         {
-            System.out.println("Port : " + port + " Adresse : " + adresse);
             socket = new Socket(adresse, port);
         }
         catch (UnknownHostException e)

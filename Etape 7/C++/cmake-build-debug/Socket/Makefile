@@ -68,18 +68,6 @@ install/strip/fast: preinstall/fast
 	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -102,16 +90,28 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
-.PHONY : rebuild_cache/fast
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/ctest.exe --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -124,16 +124,16 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/ctest.exe --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
 
-.PHONY : test/fast
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,21 +168,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-Socket/CMakeFiles/SocketUtilities.dir/rule:
-	cd "/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 Socket/CMakeFiles/SocketUtilities.dir/rule
-.PHONY : Socket/CMakeFiles/SocketUtilities.dir/rule
-
-# Convenience name for target.
-SocketUtilities: Socket/CMakeFiles/SocketUtilities.dir/rule
-
-.PHONY : SocketUtilities
-
-# fast build rule for target.
-SocketUtilities/fast:
-	cd "/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug" && $(MAKE) -f Socket/CMakeFiles/SocketUtilities.dir/build.make Socket/CMakeFiles/SocketUtilities.dir/build
-.PHONY : SocketUtilities/fast
-
-# Convenience name for target.
 Socket/CMakeFiles/ServeurCheckIn.dir/rule:
 	cd "/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 Socket/CMakeFiles/ServeurCheckIn.dir/rule
 .PHONY : Socket/CMakeFiles/ServeurCheckIn.dir/rule
@@ -196,6 +181,21 @@ ServeurCheckIn: Socket/CMakeFiles/ServeurCheckIn.dir/rule
 ServeurCheckIn/fast:
 	cd "/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug" && $(MAKE) -f Socket/CMakeFiles/ServeurCheckIn.dir/build.make Socket/CMakeFiles/ServeurCheckIn.dir/build
 .PHONY : ServeurCheckIn/fast
+
+# Convenience name for target.
+Socket/CMakeFiles/SocketUtilities.dir/rule:
+	cd "/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 Socket/CMakeFiles/SocketUtilities.dir/rule
+.PHONY : Socket/CMakeFiles/SocketUtilities.dir/rule
+
+# Convenience name for target.
+SocketUtilities: Socket/CMakeFiles/SocketUtilities.dir/rule
+
+.PHONY : SocketUtilities
+
+# fast build rule for target.
+SocketUtilities/fast:
+	cd "/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug" && $(MAKE) -f Socket/CMakeFiles/SocketUtilities.dir/build.make Socket/CMakeFiles/SocketUtilities.dir/build
+.PHONY : SocketUtilities/fast
 
 # Convenience name for target.
 Socket/CMakeFiles/ClientCheckIn.dir/rule:
@@ -354,15 +354,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... install/local"
 	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... SocketUtilities"
 	@echo "... ServeurCheckIn"
-	@echo "... ClientCheckIn"
+	@echo "... install/local"
 	@echo "... test"
+	@echo "... SocketUtilities"
+	@echo "... edit_cache"
+	@echo "... ClientCheckIn"
+	@echo "... rebuild_cache"
 	@echo "... ClientCheckIn.o"
 	@echo "... ClientCheckIn.i"
 	@echo "... ClientCheckIn.s"

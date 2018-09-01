@@ -80,17 +80,16 @@ install/local/fast: preinstall/fast
 	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -P cmake_install.cmake
-.PHONY : install
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/ctest.exe --force-new-ctest-process $(ARGS)
+.PHONY : test
 
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -P cmake_install.cmake
-.PHONY : install/fast
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -113,17 +112,6 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/ctest.exe --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -134,6 +122,18 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -P cmake_install.cmake
+.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -217,12 +217,12 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... install"
+	@echo "... test"
 	@echo "... list_install_components"
 	@echo "... libConfig"
 	@echo "... edit_cache"
-	@echo "... test"
 	@echo "... rebuild_cache"
+	@echo "... install"
 	@echo "... Config.o"
 	@echo "... Config.i"
 	@echo "... Config.s"

@@ -66,7 +66,7 @@ public class RequeteReadyLUGAP extends RequeteLUGAP
             BBMS.DeconnexionDB();
             
             Socket socket = null;
-            socket = new Socket("192.168.0.19", 30024);
+            socket = new Socket("192.168.0.26", 30024);
             
             if(charge.equals("O"))
             {

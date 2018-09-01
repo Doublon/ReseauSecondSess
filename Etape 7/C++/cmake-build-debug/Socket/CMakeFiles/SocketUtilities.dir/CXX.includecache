@@ -16,6 +16,14 @@ string
 iostream
 -
 
+/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/SocketClient.cpp
+SocketClient.h
+/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/SocketClient.h
+
+/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/SocketClient.h
+SocketUtilities.h
+/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/SocketUtilities.h
+
 /cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/SocketThreadServer.cpp
 w32api/ntdef.h
 -
@@ -31,6 +39,10 @@ States.h
 /cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/SocketThreadServer.h
 w32api/minwindef.h
 -
+SocketUtilities.h
+/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/SocketUtilities.h
+
+/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/SocketUtilities.cpp
 SocketUtilities.h
 /cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/SocketUtilities.h
 

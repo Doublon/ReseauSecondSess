@@ -27,11 +27,21 @@
 					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="install/local">
+			<Target title="edit_cache">
 				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
 					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -47,11 +57,11 @@
 					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
+			<Target title="install/local">
 				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
 					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -72,16 +82,6 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="list_install_components">
-				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
 					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -223,56 +223,6 @@
 					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/CIMP/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="SocketUtilities">
-				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Socket/libSocketUtilities.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Socket"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../libConfig"/>
-					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../libCSV"/>
-					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../CIMP"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 SocketUtilities"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="SocketUtilities/fast">
-				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Socket/libSocketUtilities.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Socket"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../libConfig"/>
-					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../libCSV"/>
-					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../CIMP"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 SocketUtilities/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="ServeurCheckIn">
 				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Socket/ServeurCheckIn.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Socket"/>
@@ -318,6 +268,56 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 ServeurCheckIn/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SocketUtilities">
+				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Socket/libSocketUtilities.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Socket"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../libConfig"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../libCSV"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../CIMP"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 SocketUtilities"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SocketUtilities/fast">
+				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Socket/libSocketUtilities.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Socket"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../libConfig"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../libCSV"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Socket/../CIMP"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 SocketUtilities/fast"/>
 					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Socket/Makefile&quot;  VERBOSE=1 clean"/>
@@ -537,58 +537,6 @@
 					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="gtest">
-				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/libgtestd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
-					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
-					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest/include"/>
-					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gtest/fast">
-				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/libgtestd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
-					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
-					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest/include"/>
-					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="gtest_main">
 				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest"/>
@@ -636,6 +584,58 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest/include"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../Socket"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/../CIMP"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest/include"/>
+					<Add directory="/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/Tests/lib/googletest-master/googletest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
 					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/GitHub/ReseauSecondSess/Etape\ 7/C++/cmake-build-debug/Tests/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>

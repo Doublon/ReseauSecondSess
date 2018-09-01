@@ -68,6 +68,29 @@ install/strip/fast: preinstall/fast
 	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -80,17 +103,16 @@ install/local/fast: preinstall/fast
 	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -P cmake_install.cmake
-.PHONY : install
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/ctest.exe --force-new-ctest-process $(ARGS)
+.PHONY : test
 
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -P cmake_install.cmake
-.PHONY : install/fast
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -112,28 +134,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/cygdrive/c/Users/Tusse/.CLion2018.2/system/cygwin_cmake/bin/ctest.exe --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,21 +168,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule:
-	cd "/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule
-.PHONY : Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule
-
-# Convenience name for target.
-gtest: Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule
-
-.PHONY : gtest
-
-# fast build rule for target.
-gtest/fast:
-	cd "/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug" && $(MAKE) -f Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build
-.PHONY : gtest/fast
-
-# Convenience name for target.
 Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/rule:
 	cd "/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
 .PHONY : Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
@@ -196,6 +181,21 @@ gtest_main: Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.d
 gtest_main/fast:
 	cd "/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug" && $(MAKE) -f Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
+
+# Convenience name for target.
+Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule:
+	cd "/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule
+.PHONY : Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule
+
+# Convenience name for target.
+gtest: Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule
+
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	cd "/cygdrive/d/GitHub/ReseauSecondSess/Etape 7/C++/cmake-build-debug" && $(MAKE) -f Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make Tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
 
 src/gtest-all.o: src/gtest-all.cc.o
 
@@ -258,14 +258,14 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... install/local"
 	@echo "... install"
-	@echo "... list_install_components"
-	@echo "... rebuild_cache"
-	@echo "... gtest"
-	@echo "... gtest_main"
 	@echo "... edit_cache"
+	@echo "... install/local"
 	@echo "... test"
+	@echo "... gtest_main"
+	@echo "... list_install_components"
+	@echo "... gtest"
+	@echo "... rebuild_cache"
 	@echo "... src/gtest-all.o"
 	@echo "... src/gtest-all.i"
 	@echo "... src/gtest-all.s"
