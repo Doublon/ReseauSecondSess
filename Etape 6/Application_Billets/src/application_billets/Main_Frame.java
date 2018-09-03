@@ -92,17 +92,10 @@ public class Main_Frame extends javax.swing.JFrame
         initComponents();
         LireFichierProperties(filename);
         
-        /*ADRESSE_BILLETS = "192.168.0.26";
-        PORT_BILLETS = 30016;
-        ADRESSE_PAYMENT = "192.168.0.26";
-        PORT_PAYMENT = 30017;*/
-        
         login_frame = new Login_Frame(this);
         login_frame.setVisible(true);
         
         dtm = (DefaultTableModel) JTVols.getModel();
-        
-        ReadPaymentCertificate(certificatPaymentPath);
     }
     
     private void LireFichierProperties(String filename)
@@ -558,72 +551,90 @@ public class Main_Frame extends javax.swing.JFrame
                                         Payment_Dialog payment_dialog = new Payment_Dialog(this, true);
                                         payment_dialog.setVisible(true);
                                         payment_dialog.setModal(true);
-
-                                        Signature s;
-                                        byte[] signature = null;
-                                        try
+                                        
+                                        System.out.println("Avant");
+                                        ReponsePAY r = sendCertificateToServeurPayment();
+                                        System.out.println("Apres");
+                                        
+                                        if(r != null && r.getCode() == ReponsePAY.SEND_SERVER_OK) 
                                         {
-                                            s = Signature.getInstance(UtilePAY.signatureAlg, UtilePAY.CODE_PROVIDER);
-                                            s.initSign((PrivateKey)getPrivateKey());
-                                            s.update(agent.toString().getBytes());
-                                            signature = s.sign();
-                                        } 
-                                        catch (NoSuchAlgorithmException | NoSuchProviderException | InvalidKeyException | SignatureException ex)
-                                        {
-                                            System.err.println("Erreur lors de la confection de la signature : " + ex.getMessage());
-                                        }
-
-                                        if(signature != null)
-                                        {
-                                            Payment payment = new Payment();
-                                            payment.setNumClient(reservation.getClient().getNumClient());
-                                            payment.setProprietaireCarte(payment_dialog.proprietaire);
-                                            Cipher chiffrement;
-                                            byte[] crypte;
-                                            try 
+                                            Signature s;
+                                            byte[] signature = null;
+                                            try
                                             {
-                                                chiffrement = Cipher.getInstance(asymmetricAlg, CODE_PROVIDER);
-                                                chiffrement.init(Cipher.ENCRYPT_MODE, certificat_serveur_payment.getPublicKey());
-                                                crypte = chiffrement.doFinal(payment_dialog.numCarte.getBytes());
-                                                payment.setNumeroCarte(crypte);
+                                                s = Signature.getInstance(UtilePAY.signatureAlg, UtilePAY.CODE_PROVIDER);
+                                                s.initSign((PrivateKey)getPrivateKey());
+                                                s.update(agent.toString().getBytes());
+                                                signature = s.sign();
                                             } 
-                                            catch (NoSuchAlgorithmException | NoSuchProviderException | NoSuchPaddingException | InvalidKeyException | IllegalBlockSizeException | BadPaddingException ex) 
+                                            catch (NoSuchAlgorithmException | NoSuchProviderException | InvalidKeyException | SignatureException ex)
                                             {
-                                                System.err.println("Erreur lors du cryptage du numéro de carte : " + ex.getMessage());
+                                                System.err.println("Erreur lors de la confection de la signature : " + ex.getMessage());
                                             }
-                                            payment.setMontant(reponseReservation.getPrixReservation());
-                                            payment.setSignature(signature);
-                                            payment.setAdresseMail(payment_dialog.adresseMail);
-                                            payment_dialog.dispose();
-                                            
-                                            RequetePAY requetePaiement = new RequetePAY(RequetePAY.REQUEST_PAYMENT, agent.toString().getBytes(), getCertificat(), payment);
-                                            System.out.println("Adresse payment : " + ADRESSE_PAYMENT);
-                                            ReponsePAY reponsePaiement = (ReponsePAY) sendReceive(requetePaiement, ADRESSE_PAYMENT, PORT_PAYMENT);
 
-                                            if(reponsePaiement != null && reponsePaiement.getCode() == ReponsePAY.REQUEST_PAYMENT_OK)
+                                            if(signature != null)
                                             {
-                                                RequeteTICKMAP requeteValidation = new RequeteTICKMAP(RequeteTICKMAP.RESERVATION_VALIDATION, reservation, reponseReservation.getListeNumerosPlaces());
-                                                Cipher cipherEVal = UtileTICKMAP.initCipher(symmetricAlg, CODE_PROVIDER, Cipher.ENCRYPT_MODE, cleChiffrement);
-                                                SealedObject sealedObjectValidation = UtileTICKMAP.createSealedObject(requeteValidation, cipherEVal);
-                                                ReponseTICKMAP reponseValidation = (ReponseTICKMAP) sendReceive(sealedObjectValidation, ADRESSE_BILLETS, PORT_BILLETS);
-
-                                                if(reponseValidation != null && reponseValidation.getCode() == ReponseTICKMAP.RESERVATION_VALIDATION_OK)
+                                                Payment payment = new Payment();
+                                                payment.setNumClient(reservation.getClient().getNumClient());
+                                                payment.setProprietaireCarte(payment_dialog.proprietaire);
+                                                Cipher chiffrement;
+                                                byte[] crypte;
+                                                try 
                                                 {
-                                                    JOptionPane.showMessageDialog(null,"La réservation a été validée avec succès. Tout est en ordre !","Information",JOptionPane.INFORMATION_MESSAGE);
+                                                    chiffrement = Cipher.getInstance(asymmetricAlg, CODE_PROVIDER);
+                                                    //chiffrement.init(Cipher.ENCRYPT_MODE, certificat_serveur_payment.getPublicKey());
+                                                    chiffrement.init(Cipher.ENCRYPT_MODE, r.getCertificatServeur().getPublicKey());
+                                                    crypte = chiffrement.doFinal(payment_dialog.numCarte.getBytes());
+                                                    payment.setNumeroCarte(crypte);
+                                                } 
+                                                catch (NoSuchAlgorithmException | NoSuchProviderException | NoSuchPaddingException | InvalidKeyException | IllegalBlockSizeException | BadPaddingException ex) 
+                                                {
+                                                    System.err.println("Erreur lors du cryptage du numéro de carte : " + ex.getMessage());
+                                                }
+                                                payment.setMontant(reponseReservation.getPrixReservation());
+                                                payment.setSignature(signature);
+                                                payment.setAdresseMail(payment_dialog.adresseMail);
+                                                payment_dialog.dispose();
+                                            
+                                                RequetePAY requetePaiement = new RequetePAY(RequetePAY.REQUEST_PAYMENT, agent.toString().getBytes(), getCertificat(), payment);
+                                                System.out.println("Adresse payment : " + ADRESSE_PAYMENT);
+                                                ReponsePAY reponsePaiement = (ReponsePAY) sendReceive(requetePaiement, ADRESSE_PAYMENT, PORT_PAYMENT);
+
+                                                if(reponsePaiement != null && reponsePaiement.getCode() == ReponsePAY.REQUEST_PAYMENT_OK)
+                                                {
+                                                    RequeteTICKMAP requeteValidation = new RequeteTICKMAP(RequeteTICKMAP.RESERVATION_VALIDATION, reservation, reponseReservation.getListeNumerosPlaces());
+                                                    Cipher cipherEVal = UtileTICKMAP.initCipher(symmetricAlg, CODE_PROVIDER, Cipher.ENCRYPT_MODE, cleChiffrement);
+                                                    SealedObject sealedObjectValidation = UtileTICKMAP.createSealedObject(requeteValidation, cipherEVal);
+                                                    ReponseTICKMAP reponseValidation = (ReponseTICKMAP) sendReceive(sealedObjectValidation, ADRESSE_BILLETS, PORT_BILLETS);
+
+                                                    if(reponseValidation != null && reponseValidation.getCode() == ReponseTICKMAP.RESERVATION_VALIDATION_OK)
+                                                    {
+                                                        JOptionPane.showMessageDialog(null,"La réservation a été validée avec succès. Tout est en ordre !","Information",JOptionPane.INFORMATION_MESSAGE);
+                                                    }
+                                                    else
+                                                    {
+                                                        JOptionPane.showMessageDialog(null,"Une erreur est survenue lors de la validation de la réservation.","Erreur",JOptionPane.ERROR_MESSAGE);
+                                                    }
                                                 }
                                                 else
                                                 {
-                                                    JOptionPane.showMessageDialog(null,"Une erreur est survenue lors de la validation de la réservation.","Erreur",JOptionPane.ERROR_MESSAGE);
+                                                    JOptionPane.showMessageDialog(null,"Une erreur est survenue lors du paiement.","Erreur",JOptionPane.ERROR_MESSAGE);
                                                 }
                                             }
                                             else
                                             {
-                                                JOptionPane.showMessageDialog(null,"Une erreur est survenue lors du paiement.","Erreur",JOptionPane.ERROR_MESSAGE);
+                                                JOptionPane.showMessageDialog(null,"Une erreur est survenue.","Erreur",JOptionPane.ERROR_MESSAGE);
                                             }
                                         }
-                                        else
-                                        {
-                                            JOptionPane.showMessageDialog(null,"Une erreur est survenue.","Erreur",JOptionPane.ERROR_MESSAGE);
+                                        else {
+                                            if(r != null && reponseReservation.getCode() == ReponsePAY.CLIENT_CERTIFICAT_CHECK_ERROR)
+                                            {
+                                                JOptionPane.showMessageDialog(null,"Une erreur est survenue lors de la réception du certificat serveur.","Erreur",JOptionPane.ERROR_MESSAGE);
+                                            }
+                                            else
+                                            {
+                                                System.err.println("Erreur inattendue lors de l'échange des certificats...");
+                                            }
                                         }
                                     }
                                 }
@@ -669,67 +680,38 @@ public class Main_Frame extends javax.swing.JFrame
             RecupererListeVols();
         }
     }//GEN-LAST:event_JTVolsMouseClicked
-    
-    private void ReadPaymentCertificate(String path)
+        
+    public ReponsePAY sendCertificateToServeurPayment()
     {
-        InputStream inStream = null;
-        try
+        RequetePAY requete = new RequetePAY(RequetePAY.SEND_CLIENT_CERTIFICATE, getCertificat());
+        ReponsePAY reponse = (ReponsePAY) sendReceive(requete, ADRESSE_PAYMENT, PORT_PAYMENT);
+
+        if(reponse != null && reponse.getCode() == ReponsePAY.SEND_SERVER_OK)
         {
-            inStream = new FileInputStream(path);
+            try
+            {
+                reponse.getCertificatServeur().verify(reponse.getCertificatServeur().getPublicKey());  
+                reponse.getCertificatServeur().checkValidity();
+                return reponse;
+            } 
+            catch (CertificateException | NoSuchAlgorithmException | InvalidKeyException | NoSuchProviderException | SignatureException ex)
+            {
+                System.out.println("Ici2");
+                System.err.println("Exception lors de la vérification du certificat du serveur : " + ex.getMessage());
+                return null;
+            }
         }
-        catch (FileNotFoundException e)
+        else
         {
-            System.out.println("Fichier certificat : " + e.getMessage());
-        }
-        
-        CertificateFactory cf = null;
-        try
-        {
-            cf = CertificateFactory.getInstance("X.509");
-            certificat_serveur_payment = (X509Certificate)cf.generateCertificate(inStream);
-        }
-        catch (CertificateException ex)
-        {
-            System.err.println("Erreur lors de l'instanciation du certificat du serveur payment : " + ex.getMessage());
+            if(reponse != null && reponse.getCode() == ReponseTICKMAP.CLIENT_CERTIFICAT_CHECK_ERROR)
+                System.err.println("Le certificat envoyé par le client a été refusé par le serveur.");
+            else
+                System.err.println("Arrêt du client pour cause de code réponse inconnu.");
+            
             System.exit(1);
+            return null;
         }
-        
-        try 
-        { 
-            if(inStream != null)
-                inStream.close(); 
-        }
-        catch (FileNotFoundException ex)
-        { 
-            System.err.println("Erreur FNFE lors de la fermeture du fichier : " + ex.getMessage()); 
-            System.exit(1);
-        }
-        catch (IOException ex)
-        { 
-            System.err.println("Erreur IO lors de la fermeture du fichier : " + ex.getMessage());
-            System.exit(1);
-        }
-        
-        try
-        {
-            certificat_serveur_payment.verify(certificat_serveur_payment.getPublicKey());
-        } 
-        catch (CertificateException | NoSuchAlgorithmException | InvalidKeyException | NoSuchProviderException | SignatureException ex)
-        {
-            System.err.println("Le certificat du serveur payment récupéré n'est pas vérifiable : " + ex.getMessage());
-            System.exit(1);
-        }
-        
-        try
-        {
-            certificat_serveur_payment.checkValidity();
-        } 
-        catch (CertificateExpiredException | CertificateNotYetValidException ex)
-        {
-            System.err.println("Le certificat du serveur payment récupéré n'est pas valide : " + ex.getMessage());
-            System.exit(1);
-        }
-    }
+    }    
     
     public static void main(String args[])
     {

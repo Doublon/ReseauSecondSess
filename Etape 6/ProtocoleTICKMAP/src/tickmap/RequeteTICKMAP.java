@@ -1257,12 +1257,6 @@ public class RequeteTICKMAP implements Requete, Serializable
     }
 
     @Override
-    public Runnable createRunnablePAY(Socket s, ConsoleServeur cs, PrivateKey key, KeyStore keyStore, String adresse, int port)
-    {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
     public Runnable createRunnableSEBATRAP(SSLSocket sslS, ConsoleServeur cs)
     {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -1270,6 +1264,12 @@ public class RequeteTICKMAP implements Requete, Serializable
 
     @Override
     public Runnable createRunnableSEBATRAP(Socket s, ConsoleServeur cs)
+    {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Runnable createRunnablePAY(Socket s, ConsoleServeur cs, PrivateKey key, KeyStore keyStore, String adresse, int port, X509Certificate certificat_serveur)
     {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
