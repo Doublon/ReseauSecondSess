@@ -9,6 +9,7 @@ import database.utilities.BeanBDMySQL;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
+import java.net.InetAddress;
 import java.net.Socket;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -66,7 +67,7 @@ public class RequeteReadyLUGAP extends RequeteLUGAP
             BBMS.DeconnexionDB();
             
             Socket socket = null;
-            socket = new Socket("172.20.10.2", 30024);
+            socket = new Socket(InetAddress.getLocalHost().getHostAddress(), 30024);
             
             if(charge.equals("O"))
             {

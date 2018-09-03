@@ -14,8 +14,13 @@ public class Vol_Dialog extends javax.swing.JDialog
     private final Main_Frame parent;
     private final ButtonGroup groupe;
     private final Vol vol;
-    private final String adresse;
-    private final int port;
+    
+    private final String adresseTower;
+    private final int portTower;
+    
+    private final String adresseCheckIn;
+    private final int portCheckIn;
+    
     private String ticket;
     
     public Vol_Dialog(java.awt.Frame parent, boolean modal)
@@ -34,11 +39,14 @@ public class Vol_Dialog extends javax.swing.JDialog
         
         this.parent = (Main_Frame) parent;
         vol = null;
-        adresse = null;
-        port = -1;
+        adresseTower = null;
+        portTower = -1;
+        adresseCheckIn = null;
+        portCheckIn = -1;
     }
     
-    public Vol_Dialog(java.awt.Frame parent, boolean modal, String a, int p, Vol v)
+    public Vol_Dialog(java.awt.Frame parent, boolean modal, String aT, int pT, 
+            String aC, int pC, Vol v)
     {
         super(parent, modal);
         initComponents();
@@ -53,9 +61,11 @@ public class Vol_Dialog extends javax.swing.JDialog
         groupe.add(JRBTakingOff);
         
         this.parent = (Main_Frame) parent;
-        adresse = a;
-        port = p;
+        adresseTower = aT;
+        portTower = pT;
         vol = v;
+        adresseCheckIn = aC;
+        portCheckIn = pC;
         
         JLVols.setText(vol.toString());
         this.setTitle(vol.toString());
@@ -198,7 +208,7 @@ public class Vol_Dialog extends javax.swing.JDialog
         if(minutes >= 0 && minutes <= 20)
             JOptionPane.showMessageDialog(null,"Il reste moins de 20 minutes avant le départ.","Information",JOptionPane.INFORMATION_MESSAGE);
         
-        Check_Ticket checkTicket = new Check_Ticket(this, adresse, port);
+        Check_Ticket checkTicket = new Check_Ticket(this, adresseCheckIn, portCheckIn);
         checkTicket.setAlwaysOnTop(true);
         checkTicket.setVisible(true);
         
@@ -207,7 +217,7 @@ public class Vol_Dialog extends javax.swing.JDialog
 
     private void JRBReadyActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_JRBReadyActionPerformed
     {//GEN-HEADEREND:event_JRBReadyActionPerformed
-        parent.initSocket(adresse, port);
+        parent.initSocket(adresseTower, portTower);
             
         RequeteACMAP requete = new RequeteACMAP(RequeteACMAP.REQUEST_READY);
         requete.setChargeUtile(getTicket());
@@ -283,7 +293,7 @@ public class Vol_Dialog extends javax.swing.JDialog
     {
         int retour = -1;
         
-        parent.initSocket(adresse, port);
+        parent.initSocket(adresseTower, portTower);
             
         RequeteACMAP requete = new RequeteACMAP(RequeteACMAP.REQUEST_RUNWAYS);
         ReponseACMAP reponse = null;
@@ -352,7 +362,7 @@ public class Vol_Dialog extends javax.swing.JDialog
     
     public void initSocket(String adress, int port)
     {
-        parent.initSocket(adresse, port);
+        parent.initSocket(adresseTower, port);
     }
     
     

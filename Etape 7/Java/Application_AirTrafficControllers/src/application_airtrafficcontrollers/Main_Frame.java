@@ -26,6 +26,9 @@ public class Main_Frame extends javax.swing.JFrame
     private String ADRESSE_TOWER;
     private int PORT_TOWER;
     
+    private String ADRESSE_CHECKIN;
+    private int PORT_CHECKIN;
+    
     private Socket socket;
     
     private final DefaultTableModel dtm;
@@ -66,6 +69,26 @@ public class Main_Frame extends javax.swing.JFrame
             if(properties.getProperty("PORT_TOWER") != null)
             {
                 PORT_TOWER = Integer.parseInt(properties.getProperty("PORT_TOWER"));
+            }
+            else
+            {
+                System.err.println("Le numéro de port billets est introuvable dans le fichier " + PROPERTIES_PATH);
+                System.exit(1);
+            }
+            
+            if(properties.getProperty("ADRESSE_CHECKIN") != null)
+            {
+                ADRESSE_CHECKIN = properties.getProperty("ADRESSE_CHECKIN");
+            }
+            else
+            {
+                System.err.println("L'adresse du serveur billets est introuvable dans le fichier " + PROPERTIES_PATH);
+                System.exit(1);
+            }
+            
+            if(properties.getProperty("PORT_CHECKIN") != null)
+            {
+                PORT_CHECKIN = Integer.parseInt(properties.getProperty("PORT_CHECKIN"));
             }
             else
             {
@@ -274,7 +297,8 @@ public class Main_Frame extends javax.swing.JFrame
             {
                 Vol vol = listeVols.get(JTVols.getSelectedRow());
                 
-                Vol_Dialog vol_dialog = new Vol_Dialog(this, true, ADRESSE_TOWER, PORT_TOWER, vol);
+                Vol_Dialog vol_dialog = new Vol_Dialog(this, true, ADRESSE_TOWER, PORT_TOWER, 
+                        ADRESSE_CHECKIN, PORT_CHECKIN, vol);
                 vol_dialog.setVisible(true);
                 vol_dialog.setModal(true);
             }

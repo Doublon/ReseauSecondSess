@@ -32,8 +32,6 @@ public class Check_Ticket extends javax.swing.JFrame
     static private String adresse;
     static private int port;
     
-    private Socket socket = null;
-    
     public Check_Ticket(javax.swing.JDialog parent, String adresse, int port)
     {
         this.parent = (Vol_Dialog) parent;
@@ -164,7 +162,7 @@ public class Check_Ticket extends javax.swing.JFrame
     public String CheckTicket(String ticket) throws IOException, ClassNotFoundException
     {
         Socket sockCpp = null;
-        sockCpp = initSocket("127.0.0.1", 50000);
+        sockCpp = initSocket(adresse, port);
         
         DataOutputStream dos = null;
         dos = new DataOutputStream(new BufferedOutputStream(sockCpp.getOutputStream()));
