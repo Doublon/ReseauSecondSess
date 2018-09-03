@@ -696,7 +696,6 @@ public class Main_Frame extends javax.swing.JFrame
             } 
             catch (CertificateException | NoSuchAlgorithmException | InvalidKeyException | NoSuchProviderException | SignatureException ex)
             {
-                System.out.println("Ici2");
                 System.err.println("Exception lors de la vérification du certificat du serveur : " + ex.getMessage());
                 return null;
             }

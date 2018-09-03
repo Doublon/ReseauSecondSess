@@ -220,7 +220,7 @@ public class Vol_Dialog extends javax.swing.JDialog
         parent.initSocket(adresseTower, portTower);
             
         RequeteACMAP requete = new RequeteACMAP(RequeteACMAP.REQUEST_READY);
-        requete.setChargeUtile(getTicket());
+        requete.setChargeUtile(vol.getNumAvion());
         ReponseACMAP reponse = null;
         try
         {

@@ -14,6 +14,7 @@ import java.net.Socket;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -25,11 +26,11 @@ import requetepoolthreads.ConsoleServeur;
  */
 public class RequeteReadyLUGAP extends RequeteLUGAP
 {
-    private String ticket;
+    private String vol;
     
-    public RequeteReadyLUGAP(String ticket)
+    public RequeteReadyLUGAP(String vol)
     {
-        this.ticket = ticket;
+        this.vol = vol;
     }
     
     
@@ -37,7 +38,6 @@ public class RequeteReadyLUGAP extends RequeteLUGAP
     public void TraiterRequete(Socket sock, ConsoleServeur cs)
     {
         System.out.println("Traitement de la requete");
-        System.out.println("Ticket : " + ticket);
         
         BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "jim", "root", "BD_AIRPORT");
         
@@ -50,28 +50,42 @@ public class RequeteReadyLUGAP extends RequeteLUGAP
             System.err.println("Erreur lors de la connexion à la " + BBMS.getSchema() + " : " + ex);
         }
         
-        String query = "select chargeSoute "
-                + "from bagages "
-                + "where numBillet = \"" + ticket + "\"";
+        String query = "SELECT chargeSoute "
+                + "FROM vols JOIN billets "
+                + "ON vols.numVol = billets.numVol "
+                + "JOIN bagages "
+                + "ON billets.numBillet = bagages.numBillet "
+                + "WHERE vols.numVol = " + vol;
         
         try
         {
             BBMS.setResultat(BBMS.executerRequete(query));
 
             ResultSet rs = BBMS.getResultat();
-            String charge = null;
+            List<String> etatBagages = null;
             while(rs.next())
             {
-                charge = rs.getString("chargeSoute");
+                etatBagages.add(rs.getString("chargeSoute"));
             }
             BBMS.DeconnexionDB();
+            
+            boolean toutCharge = false;
+            if(etatBagages != null)
+            {
+                toutCharge = true;
+                for(int i = 0; i < etatBagages.size() && toutCharge == true; i++)
+                {
+                    if(etatBagages.get(i).equals("N"))
+                        toutCharge = false;
+                } 
+            }
             
             Socket socket = null;
             socket = new Socket(InetAddress.getLocalHost().getHostAddress(), 30024);
             
-            if(charge.equals("O"))
+            if(toutCharge)
             {
-                System.out.println("Bagages chargés");
+                System.out.println("Tous les bagages sont chargés");
                 ObjectOutputStream dos; 
                 dos = new ObjectOutputStream(socket.getOutputStream());
                 dos.writeUTF("TERMINE");

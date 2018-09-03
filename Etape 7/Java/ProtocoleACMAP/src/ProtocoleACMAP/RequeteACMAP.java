@@ -299,7 +299,6 @@ public class RequeteACMAP implements Requete, Serializable
         
         try
         {
-            System.out.println("Adresse : " + adresseBagages + " Port : " + portBagages);
             socketBagages = new Socket(adresseBagages, portBagages); 
         } 
         catch (IOException ex)
