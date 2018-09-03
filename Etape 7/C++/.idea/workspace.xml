@@ -3,16 +3,16 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="CheckIn" targetName="libCSV" />
-      <config projectName="CheckIn" targetName="libConfig" />
       <config projectName="CheckIn" targetName="gtest" />
       <config projectName="CheckIn" targetName="gmock_main" />
       <config projectName="CheckIn" targetName="CIMP" />
       <config projectName="CheckIn" targetName="ServeurCheckIn" />
       <config projectName="CheckIn" targetName="SocketUtilities" />
+      <config projectName="CheckIn" targetName="gtest_main" />
       <config projectName="CheckIn" targetName="Tests" />
       <config projectName="CheckIn" targetName="gmock" />
       <config projectName="CheckIn" targetName="ClientCheckIn" />
-      <config projectName="CheckIn" targetName="gtest_main" />
+      <config projectName="CheckIn" targetName="libConfig" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -22,24 +22,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bab4c45-8e32-49b4-9bdc-31e4b73036a3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Etape 6/Application_Billets/build/classes/application_billets/Main_Frame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Application_Billets/build/classes/application_billets/Main_Frame$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Etape 6/Application_Billets/build/classes/application_billets/Main_Frame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Application_Billets/build/classes/application_billets/Main_Frame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Etape 6/Application_Billets/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Application_Billets/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Etape 6/Application_Billets/src/application_billets/Main_Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Application_Billets/src/application_billets/Main_Frame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Etape 6/DatabaseAccess/dist/DatabaseAccess.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/DatabaseAccess/dist/DatabaseAccess.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Etape 6/ProtocolePAY/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/ProtocolePAY/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Etape 6/ProtocoleTICKMAP/dist/ProtocoleTICKMAP.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/ProtocoleTICKMAP/dist/ProtocoleTICKMAP.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Etape 6/ProtocoleTICKMAP/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/ProtocoleTICKMAP/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Etape 6/RequeteReponseMultithread/dist/RequeteReponseMultithread.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/RequeteReponseMultithread/dist/RequeteReponseMultithread.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Etape 6/Serveur_Billets/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Serveur_Billets/build/built-jar.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Etape 6/Serveur_Billets/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Etape 6/Serveur_Billets/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Vol_Dialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/build/classes/application_airtrafficcontrollers/Vol_Dialog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/src/application_airtrafficcontrollers/Vol_Dialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/src/application_airtrafficcontrollers/Vol_Dialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Application_AirTrafficControllers/nbproject/private/private.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Java/ProtocoleACMAP/build/classes/ProtocoleACMAP/RequeteACMAP.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/ProtocoleACMAP/build/classes/ProtocoleACMAP/RequeteACMAP.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Java/ProtocoleACMAP/src/ProtocoleACMAP/RequeteACMAP.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/ProtocoleACMAP/src/ProtocoleACMAP/RequeteACMAP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Java/RequeteReponseLUGAP/build/classes/ProtocoleLUGAP/RequeteReadyLUGAP.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/RequeteReponseLUGAP/build/classes/ProtocoleLUGAP/RequeteReadyLUGAP.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Java/RequeteReponseLUGAP/src/ProtocoleLUGAP/RequeteReadyLUGAP.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/RequeteReponseLUGAP/src/ProtocoleLUGAP/RequeteReadyLUGAP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/Serveur_AirTrafficControllers/build/classes/serveurthreadsdemande/ThreadClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_AirTrafficControllers/build/classes/serveurthreadsdemande/ThreadClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/Serveur_AirTrafficControllers/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_AirTrafficControllers/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/Serveur_AirTrafficControllers/src/serveurthreadsdemande/ThreadClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_AirTrafficControllers/src/serveurthreadsdemande/ThreadClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/Serveur_Bagages/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_Bagages/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/Serveur_Bagages/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/Serveur_Bagages/nbproject/private/private.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CIMP/cmake-build-debug/" />
@@ -65,14 +57,14 @@
     <session id="2103650319">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="2" />
-          <entry key="project.open.time.22" value="2" />
+          <entry key="project.open.time.22" value="3" />
           <entry key="project.open.time.42" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -153,7 +145,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Socket/SocketThreadServer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
+            <state relative-caret-position="851">
               <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
               <folding>
                 <element signature="e#44#69#0" expanded="true" />
@@ -183,7 +175,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Socket/ServeurCheckIn.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
+            <state relative-caret-position="483">
               <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
             </state>
           </provider>
@@ -192,8 +184,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CIMP/RequestCIMP.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
-              <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
+            <state relative-caret-position="1817">
+              <caret line="79" column="5" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -466,6 +458,7 @@
       <workItem from="1535956215509" duration="1494000" />
       <workItem from="1535964448079" duration="545000" />
       <workItem from="1535988790088" duration="1645000" />
+      <workItem from="1536006936862" duration="289000" />
     </task>
     <servers />
   </component>
@@ -502,13 +495,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87393000" />
+    <option name="totallyTimeSpent" value="87682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31183368" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31503198" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -739,6 +732,16 @@
       </provider>
     </entry>
     <entry file="file://D:/cygwin64/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++/bits/basic_string.tcc" />
+    <entry file="file://$PROJECT_DIR$/Socket/SocketThreadServer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="851">
+          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+          <folding>
+            <element signature="e#44#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Socket/SocketThreadServer.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -746,27 +749,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CIMP/RequestCIMP.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Socket/ServeurCheckIn.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
+        <state relative-caret-position="483">
           <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Socket/SocketThreadServer.cpp">
+    <entry file="file://$PROJECT_DIR$/CIMP/RequestCIMP.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
-          <folding>
-            <element signature="e#44#69#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1817">
+          <caret line="79" column="5" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
         </state>
       </provider>
     </entry>
