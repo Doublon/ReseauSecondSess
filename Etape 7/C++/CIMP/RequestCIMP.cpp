@@ -84,7 +84,7 @@ int RequestCIMP::ProcessCheckInTicket(std::string ticket)
     else
     {
         cout << "Ticket non reconnu !" << endl;
-        return States::TICKET_CHECKED_OK;
+        return States::TICKET_CHECKED_KO;
     }
 }
 

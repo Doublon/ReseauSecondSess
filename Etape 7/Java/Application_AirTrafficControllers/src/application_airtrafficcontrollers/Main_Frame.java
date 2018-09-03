@@ -80,7 +80,7 @@ public class Main_Frame extends javax.swing.JFrame
                 FileOutputStream fos = new FileOutputStream(PROPERTIES_PATH);
                 
                 properties.put("ADRESSE_TOWER", "192.168.0.5");
-                ADRESSE_TOWER = "192.168.0.19";
+                ADRESSE_TOWER = "10.59.22.2";
                 properties.put("PORT_TOWER", "30019");
                 PORT_TOWER = 30019;
                 
@@ -133,6 +133,7 @@ public class Main_Frame extends javax.swing.JFrame
         socket = null;
         try
         {
+            System.out.println(adresse + " : " + port);
             socket = new Socket(adresse, port);
         }
         catch (UnknownHostException e)

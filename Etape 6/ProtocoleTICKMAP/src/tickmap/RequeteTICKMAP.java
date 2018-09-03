@@ -428,7 +428,9 @@ public class RequeteTICKMAP implements Requete, Serializable
         
         try
         {
+            System.out.println("Avant");
             BBMS.ConnexionDB();
+            System.out.println("Apres");
         } 
         catch (SQLException | ClassNotFoundException ex)
         {
