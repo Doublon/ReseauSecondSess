@@ -425,7 +425,7 @@ public class RequeteTICKMAP implements Requete, Serializable
     
     private Agent RechercheBDD(String login)
     {        
-        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "jim", "root", "BD_AIRPORT");
+        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "tusset", "123soleil", "BD_AIRPORT");
         //BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "olivier", "root", "BD_AIRPORT");
         
         try
@@ -564,7 +564,7 @@ public class RequeteTICKMAP implements Requete, Serializable
     {
         List<Vol> retour = null;
         
-        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "jim", "root", "BD_AIRPORT");
+        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "tusset", "123soleil", "BD_AIRPORT");
         
         try
         {
@@ -665,7 +665,7 @@ public class RequeteTICKMAP implements Requete, Serializable
     {
         Client retour = null;
         
-        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "jim", "root", "BD_AIRPORT");
+        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "tusset", "123soleil", "BD_AIRPORT");
         
         try
         {
@@ -755,7 +755,7 @@ public class RequeteTICKMAP implements Requete, Serializable
     {
         int retour;
         
-        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "jim", "root", "BD_AIRPORT");
+        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "tusset", "123soleil", "BD_AIRPORT");
         
         try
         {
@@ -822,7 +822,7 @@ public class RequeteTICKMAP implements Requete, Serializable
     {
         int retour;
         
-        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "jim", "root", "BD_AIRPORT");
+        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "tusset", "123soleil", "BD_AIRPORT");
         
         try
         {
@@ -863,7 +863,7 @@ public class RequeteTICKMAP implements Requete, Serializable
         boolean retour = false;
         int nbreTuples = 0;
         
-        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "jim", "root", "BD_AIRPORT");
+        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "tusset", "123soleil", "BD_AIRPORT");
         
         try
         {
@@ -933,7 +933,7 @@ public class RequeteTICKMAP implements Requete, Serializable
     {
         List<Integer> retour = new ArrayList();
         
-        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "jim", "root", "BD_AIRPORT");
+        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "tusset", "123soleil", "BD_AIRPORT");
         
         try
         {
@@ -1050,7 +1050,7 @@ public class RequeteTICKMAP implements Requete, Serializable
     {
         Agent retour = null;
         
-        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "jim", "root", "BD_AIRPORT");
+        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "tusset", "123soleil", "BD_AIRPORT");
         
         try
         {
@@ -1126,7 +1126,7 @@ public class RequeteTICKMAP implements Requete, Serializable
             listePlaces += ", " + listeNumerosPlaces.get(i);
         }
         
-        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "jim", "root", "BD_AIRPORT");
+        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "tusset", "123soleil", "BD_AIRPORT");
         
         try
         {
@@ -1190,7 +1190,7 @@ public class RequeteTICKMAP implements Requete, Serializable
         boolean retour = false;
         int nbreTuples = 0;
         
-        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "jim", "root", "BD_AIRPORT");
+        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "tusset", "123soleil", "BD_AIRPORT");
         
         try
         {
