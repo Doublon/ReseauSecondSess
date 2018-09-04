@@ -39,7 +39,7 @@ public class RequeteReadyLUGAP extends RequeteLUGAP
     {
         System.out.println("Traitement de la requete");
         
-        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "jim", "root", "BD_AIRPORT");
+        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "tusset", "123soleil", "BD_AIRPORT");
         
         try
         {

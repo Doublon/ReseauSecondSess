@@ -46,7 +46,7 @@ public class RequeteVolsLUGAP extends RequeteLUGAP
         String query = null;
         LinkedList retour = null;
         
-        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "jim", "root", "BD_AIRPORT");
+        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "tusset", "123soleil", "BD_AIRPORT");
         
         try
         {

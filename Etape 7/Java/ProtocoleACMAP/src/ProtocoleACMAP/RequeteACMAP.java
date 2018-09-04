@@ -88,7 +88,7 @@ public class RequeteACMAP implements Requete, Serializable
     
     public void TraiterVerificationBillet(Socket socket, ConsoleServeur cs)
     {
-        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "jim", "root", "BD_AIRPORT");
+        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "tusset", "123soleil", "BD_AIRPORT");
         
         try
         {
@@ -141,7 +141,7 @@ public class RequeteACMAP implements Requete, Serializable
     
     public void TraiterAjoutBagages(Socket socket, ConsoleServeur cs)
     {
-        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "jim", "root", "BD_AIRPORT");
+        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "tusset", "123soleil", "BD_AIRPORT");
         
         try
         {
@@ -200,7 +200,7 @@ public class RequeteACMAP implements Requete, Serializable
     {
         List<Vol> listeVols = null;
         
-        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "jim", "root", "BD_AIRPORT");
+        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "tusset", "123soleil", "BD_AIRPORT");
         
         try
         {
@@ -380,7 +380,7 @@ public class RequeteACMAP implements Requete, Serializable
     {
         List<Integer> listePistes = null;
         
-        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "jim", "root", "BD_AIRPORT");
+        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "tusset", "123soleil", "BD_AIRPORT");
         
         try
         {
@@ -430,7 +430,7 @@ public class RequeteACMAP implements Requete, Serializable
     public void TraiterChoixPiste(Socket socket, ConsoleServeur cs)
     {
         System.out.println("Dans TraiterChoixPiste");
-        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "jim", "root", "BD_AIRPORT");
+        BeanBDMySQL BBMS = new BeanBDMySQL("localhost", "3306", "tusset", "123soleil", "BD_AIRPORT");
         
         try
         {
