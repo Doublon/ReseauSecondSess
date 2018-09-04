@@ -21,6 +21,8 @@ import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.Mac;
@@ -1198,45 +1200,43 @@ public class RequeteTICKMAP implements Requete, Serializable
         {
             System.err.println("Erreur lors de la connexion à la " + BBMS.getSchema() + " : " + ex);
         }        
-           
+        
+        int numPlace;
+        String numBillet, queriesInsert, queriesDelete;
         SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyy");
+        String date = sdf.format(reservation.getVol().getHeureDepart());      
         
-        int numPlace = listeNumerosPlaces.get(0);
-        String num = String.format("%04d", numPlace);
-        String date = sdf.format(reservation.getVol().getHeureDepart());
-        String numBillet = reservation.getVol().getNumVol() + "-" + date + "-" + num;
-                
-        String[] queriesInsert = new String[reservation.getListeAccompagnants().size()+1];
-        String[] queriesDelete = new String[reservation.getListeAccompagnants().size()+1];
-        queriesInsert[0] = "INSERT INTO Billets VALUES ('" + 
-                numBillet + "', " + reservation.getListeAccompagnants().size() + ", " + reservation.getClient().getNumClient()
-                + ", " + numPlace + ", '" + reservation.getVol().getNumVol() + "');";
-        queriesDelete[0] = "DELETE FROM Reserve WHERE numVol = '" + reservation.getVol().getNumVol() + "' AND "
-                + "numPlace = " + numPlace + " AND numClient = " + reservation.getClient().getNumClient() + ";";
+        numPlace = listeNumerosPlaces.get(0);
+        numBillet = reservation.getVol().getNumVol() + "-" + date + "-" + numPlace;
         
-        for(int i = 1 ; i < reservation.getListeAccompagnants().size()+1 ; i++)
+        queriesInsert = "INSERT INTO Billets VALUES ('" + 
+            numBillet + "', " + reservation.getListeAccompagnants().size() + ", " + reservation.getClient().getNumClient()
+            + ", " + numPlace + ", '" + reservation.getVol().getNumVol() + "');";
+        
+        queriesDelete = "DELETE FROM Reserve WHERE numVol = '" + reservation.getVol().getNumVol() + "' AND "
+        + "numPlace = " + numPlace + " AND numClient = " + reservation.getClient().getNumClient() + ";";
+        
+        for(int i = 1 ; i < listeNumerosPlaces.size(); i++)
         {
+            try 
+            {
+                BBMS.executerUpdate(queriesInsert);
+                BBMS.executerUpdate(queriesDelete);
+            } 
+            catch (SQLException ex) 
+            {
+                Logger.getLogger(RequeteTICKMAP.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            
             numPlace = listeNumerosPlaces.get(i);
-            num = String.format("%04d", numPlace);
-            numBillet = reservation.getVol().getNumVol() + "-" + date + "-" + num;
-            queriesInsert[i] = "INSERT INTO Billets VALUES ('" + numBillet + "', null, " + reservation.getListeAccompagnants().get(i-1).getNumClient()
+            numBillet = reservation.getVol().getNumVol() + "-" + date + "-" + numPlace;
+            queriesInsert = "INSERT INTO Billets VALUES ('" + numBillet + "', null, " + reservation.getListeAccompagnants().get(i-1).getNumClient()
                     + ", " + numPlace + ", '" + reservation.getVol().getNumVol() + "');";
             
-            queriesDelete[i] = "DELETE FROM Reserve WHERE numVol = '" + reservation.getVol().getNumVol() + "' AND "
-                + "numPlace = " + numPlace + " AND numClient = " + reservation.getListeAccompagnants().get(i-1).getNumClient() + ";";
-        }
-        
-        for(int i = 0 ; i < queriesInsert.length ; i++)
-        {
-            try
-            {
-                BBMS.executerUpdate(queriesInsert[i]);
-                nbreTuples += BBMS.executerUpdate(queriesDelete[i]);
-            } 
-            catch (SQLException ex)
-            {
-                System.err.println("Erreur lors de l'insertion d'un billet dans la table : " + ex.getMessage());
-            }
+            queriesDelete= "DELETE FROM Reserve "
+                    + "WHERE numVol = '" + reservation.getVol().getNumVol() 
+                    + "' AND numClient = " + reservation.getListeAccompagnants().get(i-1).getNumClient() + ";";            
+            nbreTuples++;
         }
         
         try
@@ -1248,7 +1248,8 @@ public class RequeteTICKMAP implements Requete, Serializable
             System.err.println("Erreur SQL lors de la déconnexion à la base de données : " + ex);
         }
         
-        if(nbreTuples == reservation.getListeAccompagnants().size()+1)
+        System.out.println("nbreTuples : " + nbreTuples);
+        if(nbreTuples+1 == reservation.getListeAccompagnants().size()+1)
         {
             retour = true;
         }
